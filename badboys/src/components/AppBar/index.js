@@ -35,7 +35,7 @@ const IconButton = styled.div`
 const AppBar = () => {
   return (
     <Bar>
-      <Headline>Badboys</Headline>
+      <Headline>BadBoys</Headline>
       <IconContainer>
         <IconButton>
           <Search size={20} />

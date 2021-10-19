@@ -6,9 +6,11 @@ import styled ,{ ThemeProvider }  from 'styled-components';
 import theme, { GlobalStyle } from './Theme';
 import ContentLandingPage from "./components/ContentLandingPage";
 
+
+
 const BallContainer = styled.div`
   position: absolute;
-  top: 2rem;
+  top: 6rem;
   right: 8rem;
 `;
 
@@ -28,8 +30,10 @@ const App = () => {
         </BallContainer>
         <ContentContainer>
           <ContentLandingPage/>
+          
         </ContentContainer>
       </ThemeProvider>
+      
     </div>
   );
 }
