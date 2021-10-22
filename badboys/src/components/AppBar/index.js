@@ -19,6 +19,13 @@ const Headline = styled.div`
   font-weight: 700;
 `;
 
+const Text = styled.div`
+  color: ${({ theme }) => theme.palette.text.light};
+  font-size: 1rem;
+  margin-left: 3rem;
+  font-weight: 500;
+`;
+
 const IconContainer = styled.div`
   margin-right: 3rem;
   display: flex;
@@ -36,6 +43,9 @@ const AppBar = () => {
   return (
     <Bar>
       <Headline>BadBoys</Headline>
+      <Text>Team</Text>
+      <Text>Spielplan</Text>
+      <Text>Tabelle</Text>
       <IconContainer>
         <IconButton>
           <Search size={20} />

@@ -36,8 +36,7 @@ const ContentLandingPage = () => {
       <Text>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
       </Text>
-      <Button onClick={Clickme}>Get Started now!</Button>
-      <Button onClick={Clickme}>Get Started now!</Button>
+      
     </Container>
   );
 };
