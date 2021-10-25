@@ -1,10 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Clickme () {
-  alert ("Hallo Hallo Hallo");
-}
-
 const Container = styled.div`
   padding: 1rem;
   color: ${({theme}) => theme.palette.text.light};
@@ -19,13 +15,6 @@ const Headline = styled.h2`
 const Text = styled.div`
   font-size: 1.2rem;
 `;
-
-const Button = styled.button`
-  background-color: #E64A19;
-  `;
-
-
-
 
 const ContentLandingPage = () => {
   return (

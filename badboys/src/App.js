@@ -1,10 +1,12 @@
 import './App.css';
 import React from 'react';
 import { HeadlineDrawing }  from "./components/HeadlineDrawing";
-import AppBar from "./components/AppBar";
+import AppBar from "./components/AppBar/appbar";
 import styled ,{ ThemeProvider }  from 'styled-components';
 import theme, { GlobalStyle } from './Theme';
 import ContentLandingPage from "./components/ContentLandingPage";
+
+
 
 
 
@@ -24,7 +26,11 @@ const App = () => {
     <div className="App">
       <ThemeProvider theme={theme}>
         <GlobalStyle/>
-        <AppBar/>
+        
+            
+              <AppBar />
+              
+        
         <BallContainer>
           <HeadlineDrawing size={500}/>
         </BallContainer>

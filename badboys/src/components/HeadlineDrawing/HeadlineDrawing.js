@@ -27,7 +27,7 @@ const TextBubbleRed = styled.div`
   height: 8rem;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: rgba(238, 108, 77, 0.8);
+  background-color: rgba(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +45,7 @@ const TextBubbleWhite = styled.div`
   height: 10rem;
   padding: 1rem;
   border-radius: 50%;
-  background-color: rgba(61, 90, 128, 0.8);
+  background-color: rgba(0,0,0);
   display: flex;
   align-items: center;
   justify-content: center;
