@@ -3,13 +3,7 @@ import styled from 'styled-components';
 import { Search } from '@styled-icons/bootstrap/Search';
 import { PersonCircle } from '@styled-icons/bootstrap/PersonCircle';
 import {Paypal} from '@styled-icons/boxicons-logos/Paypal';
-
-
-import {
-  
-  Link
-} from "react-router-dom";
-
+import { Link } from 'react-router-dom';
 
 const Bar = styled.div`
   height: 4rem;
@@ -20,7 +14,8 @@ const Bar = styled.div`
   justify-content: space-between;
 `;
 
-const Headline = styled.div`
+const HeadlineLink = styled(Link)`
+  text-decoration: none;
   color: ${({ theme }) => theme.palette.text.light};
   font-size: 1.2rem;
   margin-right: 5rem;
@@ -42,12 +37,13 @@ const Logo = styled.div`
 `;
 
 
-const Text = styled.div`
+const StyledLink = styled(Link)`
   color: ${({ theme }) => theme.palette.text.light};
   font-size: 1rem;
-  
   font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
+  
   @media screen and (max-width: 900px) {
     display:none;
     transition: ease all .5s;
@@ -67,23 +63,16 @@ const IconButton = styled.div`
   opacity: 0.8;
 `;
 
-
-
-
-
 const AppBar = () => {
   return (
-    
-    <Bar>
-      
-      <Logo><i className = "fas fa-user-ninja"></i></Logo>
-      <Headline><Link to="/Home" style={{ textDecoration: 'none', color: 'white'}}>BadBoys</Link></Headline>
-      
-      <Text><Link to="/Team" style={{ textDecoration: 'none', color: 'red'}}>Team</Link></Text>
 
-      <Text><Link to="/Tabelle" style={{ textDecoration: 'none', color: 'white'}}>Tabelle</Link></Text>
-      <Text><Link to="/Spielplan" style={{ textDecoration: 'none', color: 'white'}}>Spielplan</Link></Text>
-      <Text><Link to="/News" style={{ textDecoration: 'none', color: 'white'}}>News</Link></Text>
+    <Bar>
+      <Logo><i className = "fas fa-user-ninja" /></Logo>
+      <HeadlineLink to="/" >BadBoys</HeadlineLink>
+      <StyledLink to="/Team" >Team</StyledLink>
+      <StyledLink to="/Tabelle" >Tabelle</StyledLink>
+      <StyledLink to="/Spielplan">Spielplan</StyledLink>
+      <StyledLink to="/news" >News</StyledLink>
       <IconContainer>
         <IconButton>
           <Search size={20} />
@@ -96,9 +85,9 @@ const AppBar = () => {
         </IconButton>
       </IconContainer>
 
-    
+
     </Bar>
-   
+
   );
 };
 
