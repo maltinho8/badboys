@@ -16,11 +16,11 @@ const Text = styled.div`
   font-size: 1.2rem;
 `;
 
-const ContentLandingPage = () => {
+const ContentTeam = () => {
   return (
     <Container>
       <Headline>
-        Frohnauer SC II.
+        Team
       </Headline>
       <Text>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -30,4 +30,4 @@ const ContentLandingPage = () => {
   );
 };
 
-export default ContentLandingPage;
+export default ContentTeam;

@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Getting Started with Create React App - Projekt BadBoys
+
+# Workflow & Anmerkungen
+
+Projekt im dev Ordner ablegen - Projekt über: 
+
+npx create-react-app badboys
+cd badboys
+npm start
+
+Projekt läuft über localhost:3000
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

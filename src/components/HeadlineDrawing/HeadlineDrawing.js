@@ -1,6 +1,7 @@
 import React from 'react';
-import Ball from '../../assets/img/soccer-ball.png'
+import Foto from '../../assets/img/soccer.jpg'
 import styled from 'styled-components';
+import FSC from '../../assets/img/Frohnauer_SC.gif';
 
 const Container = styled.div`
   position: relative;
@@ -15,11 +16,11 @@ const Container = styled.div`
 `;
 
 const SoccerBall = styled.img`
-  width: 85%;
-  height: 85%;
+  width: 70%;
+  height: 70%;
 `;
 
-const TextBubbleRed = styled.div`
+const TextBubbleWhite = styled.div`
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -37,7 +38,7 @@ const TextBubbleRed = styled.div`
   font-size: 1.2rem;
 `;
 
-const TextBubbleWhite = styled.div`
+const TextBubbleBlack = styled.div`
   position: absolute;
   bottom: -5rem;
   right: 5rem;
@@ -59,13 +60,13 @@ const TextBubbleWhite = styled.div`
 const HeadlineDrawing = ({size}) => {
   return (
     <Container size={size}>
-      <SoccerBall src={Ball} />
-      <TextBubbleRed>
-        Easy to manage
-      </TextBubbleRed>
+      <SoccerBall />
       <TextBubbleWhite>
-        A platform for all kind of teams
+      <img src = {FSC} style = {{width: '9rem' , height: '9rem'}} ></img>
       </TextBubbleWhite>
+      <TextBubbleBlack>
+      <img src = {FSC} style = {{width: '12rem' , height: '12rem', filter: 'invert(1)'}} ></img>
+      </TextBubbleBlack>
     </Container>
   );
 };
