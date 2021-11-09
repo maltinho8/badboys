@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Profil from '../Card/card';
+
 
 const Container = styled.div`
   padding: 1rem;
@@ -26,10 +26,7 @@ const ContentTeam = () => {
       <Text>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
       </Text>
-      <br />
-      <br />
-      <Profil /> 
-      <Profil />
+  
     </Container>
     
   );
