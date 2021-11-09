@@ -2,13 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 
+
+
+
+
 const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
 
-  li {
-    display: none
+
   }
   
   @media (max-width: 900px) {
@@ -24,15 +27,27 @@ const Ul = styled.ul`
     
     transition: transform 0.3s ease-in-out;
 
+
     
+  }
+
+  i {
+    padding-top: 10px;
+    text-align:center;
+    color: #fff;
   }
 `;
 
 const RightNav = ({open}) => {
   return (
     <Ul open={open}>
+
      
-          
+
+      
+
+     
+      
             
            
     </Ul>
