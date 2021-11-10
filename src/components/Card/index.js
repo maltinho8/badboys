@@ -3,8 +3,6 @@ import styled from "styled-components";
 import Soccer from '../../assets/img/soccer-ball.png';
 import Details from './details';
 
-import FSCImage from '../../assets/img/Frohnauer_SC.gif';
-
 const CardContainer = styled.div`
   width: 285px;
   height: 500px;
@@ -87,35 +85,26 @@ const Logo = styled.div`
   }
 `;
 
-
-
-
-
-
-
 const Card = (props) => {
-    return(
-        
+  return (
+    <CardContainer>
+      <TopContainer>
+        <CircleWrapper>
+          <Circle />
+        </CircleWrapper>
+        <LogoWrapper>
+          <Logo>
+            <img src={Soccer} alt = "Soccer" />
+          </Logo>
+        </LogoWrapper>
+        <ProfilText>Paul Conradt</ProfilText>
+      </TopContainer>
+      <BottomContainer><Details /></BottomContainer>
+    </CardContainer>
 
-            <CardContainer>
-                <TopContainer>
-                 <CircleWrapper>
-                    <Circle />
-                 </CircleWrapper>
-                 <LogoWrapper>
-                     <Logo>
-                         <img src = {Soccer} />
-                     </Logo>
-                 </LogoWrapper>
-                 <ProfilText>Paul Conradt</ProfilText>
-                 
-                </TopContainer>
-                <BottomContainer><Details /></BottomContainer>
-            </CardContainer>
 
-        
 
-    );
+  );
 }
 
 export default Card;

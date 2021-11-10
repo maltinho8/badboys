@@ -1,25 +1,24 @@
-
 import React from 'react';
 import styled ,{ ThemeProvider }  from 'styled-components';
-import theme, { GlobalStyle } from '../../Theme';
-import ContentSpielplan from "../ContentSpielplan";
+import theme, { GlobalStyle } from '../../../Theme';
+import ContentTabelle from '../../PagesContent/ContentTabelle/index';
 
 const ContentContainer = styled.div`
   width: 50%;
   margin: 2rem 0 0 4rem;
 `;
 
-const Spielplan = () => {
+const Tabelle = () => {
   return (
-    <div className="Spielplan">
+    <div className="Tabelle">
       <ThemeProvider theme={theme}>
         <GlobalStyle/>
         <ContentContainer>
-          <ContentSpielplan/>
+          <ContentTabelle/>
         </ContentContainer>
       </ThemeProvider>
     </div>
   );
 }
 
-export default Spielplan;
+export default Tabelle;

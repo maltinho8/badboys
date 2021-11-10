@@ -11,10 +11,10 @@ import {
     Link
   } from "react-router-dom";
 
-  import Homepage from '../LandingPage/LandingPage';
-  import Spielplan from '../Spielplan/spielplan';
-  import Tabelle from '../Tabelle/tabelle';
-  import Team from '../Team/team';
+  import Homepage from '../../Pages/LandingPage/LandingPage';
+  import Spielplan from '../../Pages/Spielplan/spielplan';
+  import Tabelle from '../../Pages/Tabelle/tabelle';
+  import Team from '../../Pages/Team/team';
 
 const Logo = styled.div`
     color: ${({ theme }) => theme.palette.text.light};

@@ -1,11 +1,7 @@
 import React from 'react';
 import theme, { GlobalStyle } from './Theme';
-import styled, { ThemeProvider } from 'styled-components';
-import NavBar from './components/NavBar/navbar';
-
-
-
-
+import { ThemeProvider } from 'styled-components';
+import NavBar from './components/NavigationBar/NavBar/navbar';
 
 const App = () => {
   return (

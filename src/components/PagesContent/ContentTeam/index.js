@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Card from '../Card/index';
+import Card from '../../Card/index';
 
 
 const Container = styled.div`
