@@ -3,15 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import Homepage from './components/LandingPage/LandingPage';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    
-    
   </React.StrictMode>,
-  
   document.getElementById('root')
 );
 
