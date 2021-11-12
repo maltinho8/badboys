@@ -1,7 +1,7 @@
-import React from 'react'
-import Foto from '../../assets/img/soccer.jpg'
-import styled from 'styled-components'
-import FSC from '../../assets/img/Frohnauer_SC.gif'
+import React from 'react';
+import Foto from '../../assets/img/soccer.jpg';
+import styled from 'styled-components';
+import FSC from '../../assets/img/Frohnauer_SC.gif';
 
 const Container = styled.div`
   position: relative;
@@ -14,12 +14,12 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 13px 13px rgba(0, 0, 0, 0.53);
-`
+`;
 
 const SoccerBall = styled.img`
   width: 70%;
   height: 70%;
-`
+`;
 
 const TextBubbleWhite = styled.div`
   position: absolute;
@@ -37,7 +37,7 @@ const TextBubbleWhite = styled.div`
   color: ${({ theme }) => theme.palette.text.light};
   font-weight: 700;
   font-size: 1.2rem;
-`
+`;
 
 const TextBubbleBlack = styled.div`
   position: absolute;
@@ -55,7 +55,7 @@ const TextBubbleBlack = styled.div`
   color: ${({ theme }) => theme.palette.text.light};
   font-weight: 700;
   font-size: 1.2rem;
-`
+`;
 
 const HeadlineDrawing = ({ size }) => {
   return (
@@ -71,7 +71,7 @@ const HeadlineDrawing = ({ size }) => {
         ></img>
       </TextBubbleBlack>
     </Container>
-  )
-}
+  );
+};
 
-export default HeadlineDrawing
+export default HeadlineDrawing;

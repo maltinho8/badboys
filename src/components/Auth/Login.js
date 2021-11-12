@@ -1,18 +1,18 @@
-import React, { useState } from 'react'
-import fire from '../../fire.js'
+import React, { useState } from 'react';
+import fire from '../../fire.js';
 const Login = () => {
-  const [email, setEmail] = useState()
-  const [password, setPassword] = useState()
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     fire
       .auth()
       .signInWithEmailAndPassword(email, password)
       .catch((error) => {
-        console.error('Incorrect username or password')
-      })
-  }
+        console.error('Incorrect username or password');
+      });
+  };
   return (
     <div>
       <h2>Login</h2>
@@ -32,6 +32,6 @@ const Login = () => {
         <button type="submit">Sign in</button>
       </form>
     </div>
-  )
-}
-export default Login
+  );
+};
+export default Login;

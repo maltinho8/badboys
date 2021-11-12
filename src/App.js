@@ -1,16 +1,16 @@
-import React, { useState } from 'react'
-import { Search } from '@styled-icons/bootstrap/Search'
-import { PersonCircle } from '@styled-icons/bootstrap/PersonCircle'
-import theme, { GlobalStyle } from './Theme'
-import styled, { ThemeProvider } from 'styled-components'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import fire from './fire'
+import React, { useState } from 'react';
+import { Search } from '@styled-icons/bootstrap/Search';
+import { PersonCircle } from '@styled-icons/bootstrap/PersonCircle';
+import theme, { GlobalStyle } from './Theme';
+import styled, { ThemeProvider } from 'styled-components';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import fire from './fire';
 
-import Homepage from './components/LandingPage/LandingPage'
-import Spielplan from './components/Spielplan/spielplan'
-import Tabelle from './components/Tabelle/tabelle'
-import Team from './components/Team/team'
-import { Login } from './components/Auth'
+import Homepage from './components/LandingPage/LandingPage';
+import Spielplan from './components/Spielplan/spielplan';
+import Tabelle from './components/Tabelle/tabelle';
+import Team from './components/Team/team';
+import { Login } from './components/Auth';
 
 const Bar = styled.div`
   height: 4rem;
@@ -19,7 +19,7 @@ const Bar = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-`
+`;
 
 const Headline = styled.div`
   color: ${({ theme }) => theme.palette.text.light};
@@ -31,7 +31,7 @@ const Headline = styled.div`
     display: none;
     transition: ease all 0.5s;
   }
-`
+`;
 
 const Logo = styled.div`
   color: ${({ theme }) => theme.palette.text.light};
@@ -40,7 +40,7 @@ const Logo = styled.div`
 
   font-weight: 700;
   cursor: pointer;
-`
+`;
 
 const Text = styled.div`
   color: ${({ theme }) => theme.palette.text.light};
@@ -52,12 +52,12 @@ const Text = styled.div`
     display: none;
     transition: ease all 0.5s;
   }
-`
+`;
 
 const IconContainer = styled.div`
   margin-right: 3rem;
   display: flex;
-`
+`;
 
 const IconButton = styled.div`
   background: transparent;
@@ -65,20 +65,20 @@ const IconButton = styled.div`
   margin-left: 1.5rem;
   cursor: pointer;
   opacity: 0.8;
-`
+`;
 
 const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   fire.auth().onAuthStateChanged((user) => {
-    return user ? setIsLoggedIn(true) : setIsLoggedIn(false)
-  })
+    return user ? setIsLoggedIn(true) : setIsLoggedIn(false);
+  });
 
   const signOut = () => {
-    fire.auth().signOut()
-  }
+    fire.auth().signOut();
+  };
 
-  console.log('logged in?', isLoggedIn)
+  console.log('logged in?', isLoggedIn);
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
@@ -150,7 +150,7 @@ const App = () => {
         </div>
       </Router>
     </ThemeProvider>
-  )
-}
+  );
+};
 
-export default App
+export default App;

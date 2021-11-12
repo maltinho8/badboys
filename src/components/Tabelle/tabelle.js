@@ -1,12 +1,12 @@
-import React from 'react'
-import styled, { ThemeProvider } from 'styled-components'
-import theme, { GlobalStyle } from '../../Theme'
-import ContentTabelle from '../ContentTabelle'
+import React from 'react';
+import styled, { ThemeProvider } from 'styled-components';
+import theme, { GlobalStyle } from '../../Theme';
+import ContentTabelle from '../ContentTabelle';
 
 const ContentContainer = styled.div`
   width: 50%;
   margin: 2rem 0 0 4rem;
-`
+`;
 
 const Tabelle = () => {
   return (
@@ -18,7 +18,7 @@ const Tabelle = () => {
         </ContentContainer>
       </ThemeProvider>
     </div>
-  )
-}
+  );
+};
 
-export default Tabelle
+export default Tabelle;

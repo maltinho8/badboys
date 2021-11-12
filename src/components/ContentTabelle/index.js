@@ -1,26 +1,26 @@
-import React from 'react'
-import styled from 'styled-components'
-import ScriptTag from 'react-script-tag'
+import React from 'react';
+import styled from 'styled-components';
+import ScriptTag from 'react-script-tag';
 
 const Container = styled.div`
   padding: 1rem;
   color: ${({ theme }) => theme.palette.text.light};
-`
+`;
 
 const Headline = styled.h2`
   font-size: 5rem;
   line-height: 1;
   margin-bottom: 3rem;
-`
+`;
 
 const Text = styled.div`
   font-size: 1.2rem;
-`
+`;
 
 const Table = styled.div`
   padding: 1rem;
   color: ${({ theme }) => theme.palette.text.light};
-`
+`;
 
 const ContentTabelle = () => {
   return (
@@ -42,7 +42,7 @@ const ContentTabelle = () => {
         </ScriptTag>
       </Table>
     </Container>
-  )
-}
+  );
+};
 
-export default ContentTabelle
+export default ContentTabelle;

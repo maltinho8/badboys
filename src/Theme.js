@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1.7rem;
     margin-bottom: 8px;
   }
-`
+`;
 
 const theme = {
   palette: {
@@ -54,6 +54,6 @@ const theme = {
     medium: '2em',
     large: '3em',
   },
-}
+};
 
-export default theme
+export default theme;
