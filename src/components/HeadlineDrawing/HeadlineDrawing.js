@@ -1,24 +1,25 @@
-import React from 'react';
+import React from 'react'
 import Foto from '../../assets/img/soccer.jpg'
-import styled from 'styled-components';
-import FSC from '../../assets/img/Frohnauer_SC.gif';
+import styled from 'styled-components'
+import FSC from '../../assets/img/Frohnauer_SC.gif'
 
 const Container = styled.div`
   position: relative;
-  height: ${({size}) => size ? size : 300}px;
-  width: ${({size}) => size ? size : 300}px;
+  height: ${({ size }) => (size ? size : 300)}px;
+  width: ${({ size }) => (size ? size : 300)}px;
   border-radius: 50%;
-  background: ${({theme}) => `linear-gradient(${theme.palette.primary.main}, ${theme.palette.secondary.main})`};
+  background: ${({ theme }) =>
+    `linear-gradient(${theme.palette.primary.main}, ${theme.palette.secondary.main})`};
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 13px 13px rgba(0,0,0,0.53);
-`;
+  box-shadow: 0px 0px 13px 13px rgba(0, 0, 0, 0.53);
+`
 
 const SoccerBall = styled.img`
   width: 70%;
   height: 70%;
-`;
+`
 
 const TextBubbleWhite = styled.div`
   position: absolute;
@@ -33,10 +34,10 @@ const TextBubbleWhite = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: ${({theme}) => theme.palette.text.light};
+  color: ${({ theme }) => theme.palette.text.light};
   font-weight: 700;
   font-size: 1.2rem;
-`;
+`
 
 const TextBubbleBlack = styled.div`
   position: absolute;
@@ -46,29 +47,31 @@ const TextBubbleBlack = styled.div`
   height: 10rem;
   padding: 1rem;
   border-radius: 50%;
-  background-color: rgba(0,0,0);
+  background-color: rgba(0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: ${({theme}) => theme.palette.text.light};
+  color: ${({ theme }) => theme.palette.text.light};
   font-weight: 700;
   font-size: 1.2rem;
-`;
+`
 
-
-const HeadlineDrawing = ({size}) => {
+const HeadlineDrawing = ({ size }) => {
   return (
     <Container size={size}>
       <SoccerBall />
       <TextBubbleWhite>
-      <img src = {FSC} style = {{width: '9rem' , height: '9rem'}} ></img>
+        <img src={FSC} style={{ width: '9rem', height: '9rem' }}></img>
       </TextBubbleWhite>
       <TextBubbleBlack>
-      <img src = {FSC} style = {{width: '12rem' , height: '12rem', filter: 'invert(1)'}} ></img>
+        <img
+          src={FSC}
+          style={{ width: '12rem', height: '12rem', filter: 'invert(1)' }}
+        ></img>
       </TextBubbleBlack>
     </Container>
-  );
-};
+  )
+}
 
-export default HeadlineDrawing;
+export default HeadlineDrawing
