@@ -4,9 +4,6 @@ import { HeadlineDrawing } from '../HeadlineDrawing/index';
 import styled, { ThemeProvider } from 'styled-components';
 import theme, { GlobalStyle } from '../../Theme';
 import ContentLandingPage from '../ContentLandingPage';
-import axios from 'axios';
-
-const url = 'http://localhost:8080/api';
 
 const BallContainer = styled.div`
   position: absolute;
@@ -20,20 +17,6 @@ const ContentContainer = styled.div`
 `;
 
 const Homepage = () => {
-  const getTeam = async () => {
-          const res = await axios.get(url);
-
-
-
-
-
-       console.log(res)
-
-  };
-
-
-  getTeam();
-
   return (
     <div className="Homepage">
       <ThemeProvider theme={theme}>

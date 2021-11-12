@@ -4,12 +4,12 @@ const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     fire
       .auth()
       .signInWithEmailAndPassword(email, password)
-      .catch((error) => {
+      .catch(error => {
         console.error('Incorrect username or password');
       });
   };

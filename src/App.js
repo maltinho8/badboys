@@ -11,6 +11,9 @@ import Spielplan from './components/Spielplan/spielplan';
 import Tabelle from './components/Tabelle/tabelle';
 import Team from './components/Team/team';
 import { Login } from './components/Auth';
+import axios from 'axios';
+
+const url = 'http://localhost:8080/api';
 
 const Bar = styled.div`
   height: 4rem;
@@ -70,7 +73,7 @@ const IconButton = styled.div`
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  fire.auth().onAuthStateChanged((user) => {
+  fire.auth().onAuthStateChanged(user => {
     return user ? setIsLoggedIn(true) : setIsLoggedIn(false);
   });
 
@@ -78,7 +81,25 @@ const App = () => {
     fire.auth().signOut();
   };
 
-  console.log('logged in?', isLoggedIn);
+  const createToken = async () => {
+    const user = fire.auth().currentUser;
+    const token = user && (await user.getIdToken());
+    return {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+    };
+  };
+
+  const getTeam = async () => {
+    const header = await createToken();
+    const res = await axios.get(url, header);
+    console.log(res);
+  };
+
+  getTeam();
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
@@ -92,27 +113,42 @@ const App = () => {
               <i className="fas fa-user-ninja"></i>
             </Logo>
             <Headline>
-              <Link to="/Home" style={{ textDecoration: 'none', color: 'white' }}>
+              <Link
+                to="/Home"
+                style={{ textDecoration: 'none', color: 'white' }}
+              >
                 BadBoys
               </Link>
             </Headline>
             <Text>
-              <Link to="/Team" style={{ textDecoration: 'none', color: 'white' }}>
+              <Link
+                to="/Team"
+                style={{ textDecoration: 'none', color: 'white' }}
+              >
                 Team
               </Link>
             </Text>
             <Text>
-              <Link to="/Tabelle" style={{ textDecoration: 'none', color: 'white' }}>
+              <Link
+                to="/Tabelle"
+                style={{ textDecoration: 'none', color: 'white' }}
+              >
                 Tabelle
               </Link>
             </Text>
             <Text>
-              <Link to="/Spielplan" style={{ textDecoration: 'none', color: 'white' }}>
+              <Link
+                to="/Spielplan"
+                style={{ textDecoration: 'none', color: 'white' }}
+              >
                 Spielplan
               </Link>
             </Text>
             <Text>
-              <Link to="/News" style={{ textDecoration: 'none', color: 'white' }}>
+              <Link
+                to="/News"
+                style={{ textDecoration: 'none', color: 'white' }}
+              >
                 News
               </Link>
             </Text>
