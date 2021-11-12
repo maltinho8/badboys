@@ -89,7 +89,7 @@ const App = () => {
           </span>
           <Bar>
             <Logo>
-                <i className="fas fa-user-ninja"></i>
+              <i className="fas fa-user-ninja"></i>
             </Logo>
             <Headline>
               <Link to="/Home" style={{ textDecoration: 'none', color: 'white' }}>
