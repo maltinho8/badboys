@@ -21,8 +21,13 @@ const ContentContainer = styled.div`
 
 const Homepage = () => {
   const getTeam = async () => {
-    const res = await axios.get(url);
-    console.log(res)
+          const res = await axios.get(url);
+
+
+
+
+
+       console.log(res)
 
   };
 
