@@ -1,19 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search } from '@styled-icons/bootstrap/Search';
 import { PersonCircle } from '@styled-icons/bootstrap/PersonCircle';
 import theme, { GlobalStyle } from './Theme';
 import styled, { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import fire from './fire';
-
-import Homepage from './components/LandingPage/LandingPage';
-import Spielplan from './components/Spielplan/spielplan';
-import Tabelle from './components/Tabelle/tabelle';
-import Team from './components/Team/team';
-import { Login } from './components/Auth';
-import axios from 'axios';
-
-const url = 'http://localhost:8080/api';
+import Content from './Content';
+import { UserProvider } from './components/Contexts';
 
 const Bar = styled.div`
   height: 4rem;
@@ -71,120 +63,69 @@ const IconButton = styled.div`
 `;
 
 const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  fire.auth().onAuthStateChanged(user => {
-    return user ? setIsLoggedIn(true) : setIsLoggedIn(false);
-  });
-
-  const signOut = () => {
-    fire.auth().signOut();
-  };
-
-  const createToken = async () => {
-    const user = fire.auth().currentUser;
-    const token = user && (await user.getIdToken());
-    return {
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${token}`,
-      },
-    };
-  };
-
-  const getTeam = async () => {
-    const header = await createToken();
-    const res = await axios.get(url, header);
-    console.log(res);
-  };
-
-  getTeam();
-
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Router>
-        <div className="App">
-          <span onClick={signOut}>
-            <a href="#">Sign out</a>
-          </span>
-          <Bar>
-            <Logo>
-              <i className="fas fa-user-ninja"></i>
-            </Logo>
-            <Headline>
-              <Link
-                to="/Home"
-                style={{ textDecoration: 'none', color: 'white' }}
-              >
-                BadBoys
-              </Link>
-            </Headline>
-            <Text>
-              <Link
-                to="/Team"
-                style={{ textDecoration: 'none', color: 'white' }}
-              >
-                Team
-              </Link>
-            </Text>
-            <Text>
-              <Link
-                to="/Tabelle"
-                style={{ textDecoration: 'none', color: 'white' }}
-              >
-                Tabelle
-              </Link>
-            </Text>
-            <Text>
-              <Link
-                to="/Spielplan"
-                style={{ textDecoration: 'none', color: 'white' }}
-              >
-                Spielplan
-              </Link>
-            </Text>
-            <Text>
-              <Link
-                to="/News"
-                style={{ textDecoration: 'none', color: 'white' }}
-              >
-                News
-              </Link>
-            </Text>
-            <IconContainer>
-              <IconButton>
-                <Search size={20} />
-              </IconButton>
-              <IconButton>
-                <PersonCircle size={20} />
-              </IconButton>
-            </IconContainer>
-          </Bar>
-          {!isLoggedIn ? (
-            <Switch>
-              <Route path="/">
-                <Login />
-              </Route>
-            </Switch>
-          ) : (
-            <Switch>
-              <Route path="/Team">
-                <Team />
-              </Route>
-              <Route path="/Tabelle">
-                <Tabelle />
-              </Route>
-              <Route path="/Spielplan">
-                <Spielplan />
-              </Route>
-              <Route path="/">
-                <Homepage />
-              </Route>
-            </Switch>
-          )}
-        </div>
-      </Router>
+      <UserProvider>
+        <GlobalStyle />
+        <Router>
+          <div className="App">
+            <Bar>
+              <Logo>
+                <i className="fas fa-user-ninja" />
+              </Logo>
+              <Headline>
+                <Link
+                  to="/Home"
+                  style={{ textDecoration: 'none', color: 'white' }}
+                >
+                  BadBoys
+                </Link>
+              </Headline>
+              <Text>
+                <Link
+                  to="/Team"
+                  style={{ textDecoration: 'none', color: 'white' }}
+                >
+                  Team
+                </Link>
+              </Text>
+              <Text>
+                <Link
+                  to="/Tabelle"
+                  style={{ textDecoration: 'none', color: 'white' }}
+                >
+                  Tabelle
+                </Link>
+              </Text>
+              <Text>
+                <Link
+                  to="/Spielplan"
+                  style={{ textDecoration: 'none', color: 'white' }}
+                >
+                  Spielplan
+                </Link>
+              </Text>
+              <Text>
+                <Link
+                  to="/News"
+                  style={{ textDecoration: 'none', color: 'white' }}
+                >
+                  News
+                </Link>
+              </Text>
+              <IconContainer>
+                <IconButton>
+                  <Search size={20} />
+                </IconButton>
+                <IconButton>
+                  <PersonCircle size={20} />
+                </IconButton>
+              </IconContainer>
+            </Bar>
+            <Content />
+          </div>
+        </Router>
+      </UserProvider>
     </ThemeProvider>
   );
 };

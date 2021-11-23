@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import fire from '../../fire.js';
+import { useUser } from '../hooks';
+
 const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const { handleLogin } = useUser();
 
   const handleSubmit = e => {
     e.preventDefault();
-    fire
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .catch(error => {
-        console.error('Incorrect username or password');
-      });
+    handleLogin(email, password);
   };
   return (
     <div>

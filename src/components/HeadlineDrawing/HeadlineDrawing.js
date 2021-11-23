@@ -1,5 +1,4 @@
 import React from 'react';
-import Foto from '../../assets/img/soccer.jpg';
 import styled from 'styled-components';
 import FSC from '../../assets/img/Frohnauer_SC.gif';
 
@@ -62,13 +61,18 @@ const HeadlineDrawing = ({ size }) => {
     <Container size={size}>
       <SoccerBall />
       <TextBubbleWhite>
-        <img src={FSC} style={{ width: '9rem', height: '9rem' }}></img>
+        <img
+          src={FSC}
+          style={{ width: '9rem', height: '9rem' }}
+          alt="Logo of fsc"
+        />
       </TextBubbleWhite>
       <TextBubbleBlack>
         <img
           src={FSC}
           style={{ width: '12rem', height: '12rem', filter: 'invert(1)' }}
-        ></img>
+          alt="Logo of fsc"
+        />
       </TextBubbleBlack>
     </Container>
   );
