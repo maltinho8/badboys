@@ -40,15 +40,22 @@ const StyledBurger = styled.div`
 
 const Burger = () => {
   const [open, setOpen] = useState(false)
-  
+  {/* state = Zustand, [Status, Funktion, um den Status zu manipulieren] */}
+  {/* useState - definiert den Grundzustand vom Status */}
   return (
     <>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      {/* Übergabe des Status - Funktion onClick, setOpen manipuliert den Status: 
+      ! - nur bei boolean, bedeutet das Gegenteil vom definierten Grundzustand */}
         <div />
         <div />
         <div />
       </StyledBurger>
-      <RightNav open={open}/>
+      {open && <RightNav closeMenu={() => setOpen (false)}/> } 
+      {/* if open => render die RightNavBar, durch das && gekennzeichnet */}
+      {/* gleichzeitig Übergabe einer Methode, die das Menu wieder schließt - false (=geschlossen) */}
+      
+      
     </>
   )
 };

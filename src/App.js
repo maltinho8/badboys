@@ -5,13 +5,10 @@ import NavBar from './components/NavigationBar/NavBar/navbar';
 
 const App = () => {
   return (
-    
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <NavBar />
     </ThemeProvider>
-   
-
   );
 };
 

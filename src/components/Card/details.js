@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 
+
 const DetailsContainer = styled.div`
     width: 100%;
     height: 100%;
@@ -32,8 +33,7 @@ const SpaceHorizontalContainer = styled.div`
     align-items: center;
     
   `;
-
-const FuPaButton = styled.button`
+  const Button = styled.button`
   padding: 5px 12px;
   background-color: #fbbe01;
   color: #000;
@@ -71,8 +71,14 @@ const Details = () => {
       <br />
       <SpaceHorizontalContainer>
         <SmallText>Status: Legende</SmallText>
-        <FuPaButton><a href="https://www.fupa.net/player/paul-conradt-845302" style={{ target: '_blank', textDecoration: 'none', color: '#fff' }} >Profil</a></FuPaButton>
-
+        <a href="https://www.fupa.net/player/paul-conradt-845302" target="_blank">
+          <Button>Profil</Button>
+        </a>
+        
+          
+          
+          
+          
 
 
       </SpaceHorizontalContainer>
