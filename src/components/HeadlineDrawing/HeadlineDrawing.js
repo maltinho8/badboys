@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import FSC from '../../assets/img/Frohnauer_SC.gif';
+import FSC from '../../assets/img/TCC.png';
 
 const Container = styled.div`
   position: relative;
@@ -22,8 +22,8 @@ const SoccerBall = styled.img`
 
 const TextBubbleWhite = styled.div`
   position: absolute;
-  top: 3rem;
-  left: 1rem;
+  top: 8rem;
+  right: 4rem;
   width: 8rem;
   height: 8rem;
   padding: 0.5rem;
@@ -36,6 +36,7 @@ const TextBubbleWhite = styled.div`
   color: ${({theme}) => theme.palette.text.light};
   font-weight: 700;
   font-size: 1.2rem;
+  opacity: 0.7;
 `;
 
 const TextBubbleBlack = styled.div`
@@ -63,14 +64,14 @@ const TextBubbleBlack = styled.div`
 
 const HeadlineDrawing = ({size}) => {
   return (
-    <Container size={size}>
-      
+    <TextBubbleWhite>
+   
+    <img src = {FSC} alt = "FSC" style = {{width: '12rem' , height: '12rem', filter: 'invert(1)'}} ></img>
     
-      <TextBubbleBlack>
-      <img src = {FSC} alt = "FSC" style = {{width: '12rem' , height: '12rem', filter: 'invert(1)'}} ></img>
-      </TextBubbleBlack>
-    </Container>
-  );
+    </TextBubbleWhite>
+  )
+    
+  
 };
 
 export default HeadlineDrawing;

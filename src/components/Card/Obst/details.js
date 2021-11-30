@@ -12,7 +12,7 @@ const DetailsContainer = styled.div`
     `;
 
 const MediumText = styled.span`
-    font-size: 18px;
+    font-size: 14px;
     color: #fff;
     font-weight: 800;
     text-transform: uppercase;
@@ -35,7 +35,8 @@ const SpaceHorizontalContainer = styled.div`
   `;
   const Button = styled.button`
   padding: 5px 12px;
-  background-color: #fbbe01;
+  background-color: white;
+  border: 3px solid black;
   color: #000;
   text-transform: uppercase;
   font-size: 12px;
@@ -48,7 +49,7 @@ const SpaceHorizontalContainer = styled.div`
   &:hover {
     background-color: transparent;
     color: #fff;
-    border: 3px solid #fbbe01;
+    border: 3px solid white;
   }
 `;
 
@@ -56,23 +57,28 @@ const SpaceHorizontalContainer = styled.div`
 const Details = () => {
   return (
     <DetailsContainer>
-      <SmallText>Saison 2021/2022</SmallText>
+      <SmallText>Unternehmen</SmallText>
       <SpaceHorizontalContainer>
-        <MediumText>Frohnauer SC II.</MediumText>
-        <MediumText>ZOM</MediumText>
+        <MediumText>THE CLIMATE CHOICE</MediumText>
+        
       </SpaceHorizontalContainer>
       <br />
 
       <SpaceHorizontalContainer>
-        <SmallText>im Verein seit:</SmallText>
-        <SmallText>2018</SmallText>
+        <SmallText>Position:</SmallText>
+        <SmallText>Head of Sustainability</SmallText>
       </SpaceHorizontalContainer>
+      
 
       <br />
+      <SmallText>Lara ist äußerst engagiert wenn es um die Umwelt geht.. Blablablablalalalalalalala
+      
+      </SmallText>
+      <br />
       <SpaceHorizontalContainer>
-        <SmallText>Status: Legende</SmallText>
-        <a href="https://www.fupa.net/player/paul-conradt-845302" target="_blank">
-          <Button>Profil</Button>
+        
+        <a href="https://www.fupa.net/player/paul-conradt-845302" target="_blank" rel="noreferrer">
+          <Button>LinkedIn</Button>
         </a>
         
           

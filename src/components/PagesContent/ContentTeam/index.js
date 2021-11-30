@@ -1,7 +1,9 @@
 import './index.css';
 import React from 'react';
 import styled from 'styled-components';
-import Card from '../../Card/index';
+import Card from '../../Card/Tarani/index';
+import CardObst from '../../Card/Obst/index';
+
 
 
 const Container = styled.div`
@@ -70,48 +72,24 @@ const ContentTeam = () => {
   return (
     <Container>
       <Headline>
-        Team
+        Speaker*innen
       </Headline>
       <Text>
-        Auf dieser Seite werden die Spieler der zweiten Mannschaft des Frohnauer SC vorgestellt.
+        Auf dieser Seite werden die Speaker*innen des Climate Transformation Summit 2022 vorgestellt.
       </Text>
 
       < br />
       < br />
-      <ButtonContainer>
-      <a href="https://www.fupa.net/player/paul-conradt-845302" target="_blank">
-          <Button>Tor</Button>
-        </a>
-        <a href="https://www.fupa.net/player/paul-conradt-845302" target="_blank">
-          <Button>Abwehr</Button>
-        </a>
-        <a href="https://www.fupa.net/player/paul-conradt-845302" target="_blank">
-          <Button>Mittelfeld</Button>
-        </a>
-        <a href="https://www.fupa.net/player/paul-conradt-845302" target="_blank">
-          <Button>Sturm</Button>
-        </a>
       
-      </ButtonContainer>
-      < br />
-      < br />
 
       <SpaceHorizontalContainer>
         <div className = "one"><Card/></div>
-        <div className = "two"><Card/></div>
+        <div className = "two"><CardObst/></div>
         <div className = "three"><Card/></div>
       </SpaceHorizontalContainer>
       < br />
       < br />
-      <SpaceHorizontalContainer>
-        <div className = "one"><Card/></div>
-        <div className = "two"><Card/></div>
-        <div className = "three"><Card/></div>
-      </SpaceHorizontalContainer>
       
-
-      
-  
     </Container>
     
   );

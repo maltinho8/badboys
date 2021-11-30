@@ -127,15 +127,16 @@ const Logo = styled.div`
           <SuperContainer>
 
           
-          <LogoContainer>
-          <Logo><Link to="/Home" style={{ textDecoration: 'none', color: 'white' }}><i className="fas fa-user-ninja"></i></Link></Logo>
-            <Headline><Link to="/Home" style={{ textDecoration: 'none', color: 'white' }}>BadBoys</Link></Headline>
+          <LogoContainer> 
+          <Logo><Link to="/Home" style={{ textDecoration: 'none', color: 'white' }}><i className="fas fa-globe"></i></Link></Logo>
+            <Headline><Link to="/Home" style={{ textDecoration: 'none', color: 'white' }}>CTS 2022</Link></Headline>
           </LogoContainer>
 
           <TextContainer>
-            <Text to="/Team" style={{ textDecoration: 'none', color: 'white' }}>Team</Text>
-            <Text to="/Tabelle" style={{ textDecoration: 'none', color: 'white' }}>Tabelle</Text>
-            <Text to="/Spielplan" style={{ textDecoration: 'none', color: 'white' }}>Spielplan</Text>
+            <Text to="/Team" style={{ textDecoration: 'none', color: 'white' }}>Speaker*innen</Text>
+            <Text to="/Tabelle" style={{ textDecoration: 'none', color: 'white' }}>Programm</Text>
+            <Text to="/Spielplan" style={{ textDecoration: 'none', color: 'white' }}>Workshops</Text>
+            <Text to="/Spielplan" style={{ textDecoration: 'none', color: 'white' }}>Aussteller*innen</Text>
             </TextContainer>
             </SuperContainer>
             

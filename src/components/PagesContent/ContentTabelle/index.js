@@ -26,7 +26,7 @@ const ContentTabelle = () => {
   return (
     <Container>
       <Headline>
-        Tabelle
+        Programm
       </Headline>
       <Text>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -34,13 +34,9 @@ const ContentTabelle = () => {
       <br />
       <br />
       <Text>
-        Tabelle der Saison 2021/2022
+        Programm des CTS 2022
       </Text>
-      <br />
-      <Table>
-      <div id="widget1"></div>
-	    <ScriptTag type="text/javascript">new fussballdeWidgetAPI().showWidget('widget1', '02G3PUCQA8000000VUM1DNOPVS9NRI52');</ScriptTag>
-      </Table>
+      
 
       
     </Container>

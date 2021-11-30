@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import Soccer from '../../assets/img/soccer-ball.png';
+import LogoTCC from '../../../assets/img/TCC.png';
 import Details from './details';
 
 const CardContainer = styled.div`
@@ -10,10 +10,11 @@ const CardContainer = styled.div`
   flex-direction: column;
   border-radius: 25px;
   box-shadow: 0 2px 7px 1px rgba(31, 31, 31, 0.2);
-  background-color: #1d1f21;
+  background-color: #71c77e;
   color: #fff;
   position: relative;
   cursor: grab;
+  opacity: 0.6;
 `;
 
 const CircleWrapper = styled.div`
@@ -33,7 +34,7 @@ const Circle = styled.div`
   top: -4.2em;
   right: -10em;
   z-index: 5;
-  background-color: #fbbe01;
+  background-color: #f26380;
   border-radius: 50%;
 `;
 
@@ -45,13 +46,13 @@ const TopContainer = styled.div`
   position: relative;
   align-items: center;
   justify-content: flex-end;
-  padding: 1em 15px;
+  
 `;
 
 const BottomContainer = styled.div`
   display: flex;
   flex: 0.8;
-  padding: 0 1em;
+  padding: 0 0.5em;
 `;
 
 const ProfilText = styled.h2`
@@ -85,7 +86,7 @@ const Logo = styled.div`
   }
 `;
 
-const Card = (props) => {
+const CardObst = (props) => {
   return (
     <CardContainer>
       <TopContainer>
@@ -94,10 +95,10 @@ const Card = (props) => {
         </CircleWrapper>
         <LogoWrapper>
           <Logo>
-            <img src={Soccer} alt = "Soccer" />
+            <img src={LogoTCC} alt = "Soccer" />
           </Logo>
         </LogoWrapper>
-        <ProfilText>Paul Conradt</ProfilText>
+        <ProfilText>Lara Obst</ProfilText>
       </TopContainer>
       <BottomContainer><Details /></BottomContainer>
     </CardContainer>
@@ -107,4 +108,4 @@ const Card = (props) => {
   );
 }
 
-export default Card;
+export default CardObst;
