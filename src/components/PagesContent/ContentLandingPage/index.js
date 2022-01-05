@@ -6,7 +6,7 @@ const Container = styled.div`
   color: ${({theme}) => theme.palette.text.light};
 `;
 
-const Headline = styled.h2`
+const Headline = styled.h3`
   font-size: 5rem;
   line-height: 1;
   margin-bottom: 3rem;
@@ -20,7 +20,7 @@ const ContentLandingPage = () => {
   return (
     <Container>
       <Headline>
-        FSC II.
+        CLIMATE TRANSFORMATION Summit 2022
       </Headline>
       <Text>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.

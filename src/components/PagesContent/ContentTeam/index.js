@@ -1,7 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+<<<<<<< HEAD
 import CustomImageList from '../../Carousel/Carousel';
 import ContentDefense from './ContentDefense';
+=======
+import Card from '../../Card/Tarani/index';
+import CardObst from '../../Card/Obst/index';
+
+>>>>>>> 63060fb455f7cb75cca13c028fa88c71a1c58b34
 
 
 const Container = styled.div`
@@ -51,14 +57,29 @@ const ContentTeam = () => {
   return (
     <Container>
       <Headline>
-        Team
+        Speaker*innen
       </Headline>
       <Text>
-        Auf dieser Seite werden die Spieler der zweiten Mannschaft des Frohnauer SC vorgestellt.
+        Auf dieser Seite werden die Speaker*innen des Climate Transformation Summit 2022 vorgestellt.
       </Text>
+<<<<<<< HEAD
       < br />
       < br />
       <ContentDefense/>
+=======
+
+      < br />
+      < br />
+      
+
+      <SpaceHorizontalContainer>
+        <div className = "one"><Card/></div>
+        <div className = "two"><CardObst/></div>
+        <div className = "three"><Card/></div>
+      </SpaceHorizontalContainer>
+      < br />
+      < br />
+>>>>>>> 63060fb455f7cb75cca13c028fa88c71a1c58b34
       
     </Container>
     

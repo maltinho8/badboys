@@ -26,7 +26,30 @@ const Homepage = () => {
           <ContentLandingPage />
         </ContentContainer>
 
+      <div className="HomepageBody">
+      <ContentContainer>
+          <ContentLandingPage />
+        </ContentContainer>
+        </div>
+
+        <div className="HomepageBody1">
+      <ContentContainer>
+          <ContentLandingPage />
+        </ContentContainer>
+        </div>
+
+        <div className="HomepageBody2">
+      <ContentContainer>
+          <ContentLandingPage />
+        </ContentContainer>
+        </div>
+
+
+
     </div>
+
+
+    
   );
 }
 

@@ -6,8 +6,12 @@ export const GlobalStyle = createGlobalStyle`
  
   body {
     font-family: 'Nunito', sans-serif;
+<<<<<<< HEAD
     
     
+=======
+    background: #02217d;
+>>>>>>> 63060fb455f7cb75cca13c028fa88c71a1c58b34
   }
   
   html {
