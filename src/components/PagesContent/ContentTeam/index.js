@@ -32,20 +32,6 @@ const SpaceHorizontalContainer = styled.div`
     
   `; 
 
-  const ButtonContainer = styled.div`
-    display:flex;
-    width: 60%;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    @media (max-width: 900px) {
-      flex-wrap: wrap;
-      align-items: center;
-      display:flex;
-      margin-bottom: 50px;
-    }
-    
-  `; 
-
 const ContentTeam = () => {
   return (
     <Container>

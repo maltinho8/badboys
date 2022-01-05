@@ -17,10 +17,6 @@ const Text = styled.div`
   font-size: 1.2rem;
 `;
 
-const Table = styled.div`
-  padding: 1rem;
-  color: ${({theme}) => theme.palette.text.light};
-`;
 
 const ContentTabelle = () => {
   return (

@@ -15,10 +15,6 @@ const Container = styled.div`
   opacity: 0.2;
 `;
 
-const SoccerBall = styled.img`
-  width: 70%;
-  height: 70%;
-`;
 
 const TextBubbleWhite = styled.div`
   position: absolute;

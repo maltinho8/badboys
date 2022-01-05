@@ -46,10 +46,8 @@ width: 100%;
 }
 `
 
-
+/* Nutzung der Methode closeMenu durch Übergabe in rightnav.js  */
 const Content = ({closeMenu}) => {
-    {/* Nutzung der Methode closeMenu durch Übergabe in rightnav.js  */}
-    
     
     return(
 
