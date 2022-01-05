@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import CustomImageList from '../../Carousel/Carousel';
-import ContentDefense from './ContentDefense';
+import Card from '../../Card/Index';
+
+import GoalCard from '../../Card/Goal/Index';
 
 
 const Container = styled.div`
@@ -58,8 +59,24 @@ const ContentTeam = () => {
       </Text>
       < br />
       < br />
-      <ContentDefense/>
+      <ButtonContainer>
+     
       
+      </ButtonContainer>
+      < br />
+      < br />
+      <SpaceHorizontalContainer>
+        <div><Card/></div>
+        <div><GoalCard/></div>
+        <div><Card/></div>
+      </SpaceHorizontalContainer>
+      < br />
+      < br />
+      <SpaceHorizontalContainer>
+        <div><Card/></div>
+        <div><Card/></div>
+        <div><Card/></div>
+      </SpaceHorizontalContainer>
     </Container>
     
   );

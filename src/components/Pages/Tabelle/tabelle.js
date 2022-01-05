@@ -1,7 +1,6 @@
 import React from 'react';
-import styled ,{ ThemeProvider }  from 'styled-components';
-import theme, { GlobalStyle } from '../../../Theme';
-import ContentTabelle from '../../PagesContent/ContentTabelle/index';
+import styled from 'styled-components';
+import ContentTabelle from '../../PagesContent/ContentTabelle/Index';
 
 const ContentContainer = styled.div`
   width: 50%;
@@ -10,14 +9,9 @@ const ContentContainer = styled.div`
 
 const Tabelle = () => {
   return (
-    <div className="Tabelle">
-      <ThemeProvider theme={theme}>
-        <GlobalStyle/>
         <ContentContainer>
           <ContentTabelle/>
         </ContentContainer>
-      </ThemeProvider>
-    </div>
   );
 }
 

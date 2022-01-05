@@ -1,8 +1,7 @@
 
 import React from 'react';
-import styled ,{ ThemeProvider }  from 'styled-components';
-import theme, { GlobalStyle } from '../../../Theme';
-import ContentSpielplan from '../../PagesContent/ContentSpielplan/index';
+import styled from 'styled-components';
+import ContentSpielplan from '../../PagesContent/ContentSpielplan/Index';
 
 const ContentContainer = styled.div`
   width: 50%;
@@ -11,14 +10,11 @@ const ContentContainer = styled.div`
 
 const Spielplan = () => {
   return (
-    <div className="Spielplan">
-      <ThemeProvider theme={theme}>
-        <GlobalStyle/>
+    
         <ContentContainer>
           <ContentSpielplan/>
         </ContentContainer>
-      </ThemeProvider>
-    </div>
+     
   );
 }
 

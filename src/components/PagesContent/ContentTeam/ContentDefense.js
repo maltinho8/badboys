@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import CustomImageList from '../../Carousel/Carousel';
-import ContentDefense from './ContentDefense';
-
+import CardTest from '../../Card/CardTest';
 
 const Container = styled.div`
   padding: 1rem;
@@ -33,21 +31,10 @@ const SpaceHorizontalContainer = styled.div`
     
   `; 
 
-  const ButtonContainer = styled.div`
-    display:flex;
-    width: 60%;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    @media (max-width: 900px) {
-      flex-wrap: wrap;
-      align-items: center;
-      display:flex;
-      margin-bottom: 50px;
-    }
-    
-  `; 
+const ContentDefense = () => {
 
-const ContentTeam = () => {
+  
+
   return (
     <Container>
       <Headline>
@@ -58,11 +45,14 @@ const ContentTeam = () => {
       </Text>
       < br />
       < br />
-      <ContentDefense/>
+      <SpaceHorizontalContainer>
+        <div><CardTest/></div>
+      
+      </SpaceHorizontalContainer>
       
     </Container>
     
   );
 };
 
-export default ContentTeam;
+export default ContentDefense;

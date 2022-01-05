@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import fire from '../../fire.js';
 import styled from "styled-components";
 import FSC from '../../assets/img/Frohnauer_SC.gif';
+import {useHistory} from "react-router-dom";
+
 
 const FuPaButton = styled.button`
   padding: 5px 12px;
@@ -84,14 +86,18 @@ width: 100%;
 `;
 
 
-{/* Nutzung von Hooks in React: useState */}
+/* Nutzung von Hooks in React: useState & useHistory */
+
 const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
+  const history = useHistory();
+
   const handleSubmit = e => {
     e.preventDefault();
-    fire.auth().signInWithEmailAndPassword(email, password).catch(() => alert("Falsches Passwort! Versuchen Sie es bitte erneut."))
+    fire.auth().signInWithEmailAndPassword(email, password).catch(() => alert("Falsches Passwort! Versuchen Sie es bitte erneut."));
+    history.push("/");
   };
 
   const handleSignOut = () => {fire.auth().signOut()}
@@ -115,11 +121,14 @@ const Login = () => {
         />
         <br />
         <br />
-        <FuPaButton type="submit">Sign in</FuPaButton>
+        <FuPaButton type="submit">
+        
+          Sign in</FuPaButton>
         <br />
         <br />
-        <FuPaButton onClick={handleSignOut}>sign out</FuPaButton> 
-       
+        <FuPaButton onClick={handleSignOut}> Sign out</FuPaButton> 
+      
+      
       </form>
 
       

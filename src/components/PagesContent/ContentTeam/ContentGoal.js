@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import CustomImageList from '../../Carousel/Carousel';
-import ContentDefense from './ContentDefense';
+
+import GoalCard from '../../Card/Goal/Index';
 
 
 const Container = styled.div`
@@ -33,20 +33,6 @@ const SpaceHorizontalContainer = styled.div`
     
   `; 
 
-  const ButtonContainer = styled.div`
-    display:flex;
-    width: 60%;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    @media (max-width: 900px) {
-      flex-wrap: wrap;
-      align-items: center;
-      display:flex;
-      margin-bottom: 50px;
-    }
-    
-  `; 
-
 const ContentTeam = () => {
   return (
     <Container>
@@ -58,8 +44,11 @@ const ContentTeam = () => {
       </Text>
       < br />
       < br />
-      <ContentDefense/>
-      
+      <SpaceHorizontalContainer>
+        <div><GoalCard/></div>
+      </SpaceHorizontalContainer>
+      < br />
+      < br />
     </Container>
     
   );

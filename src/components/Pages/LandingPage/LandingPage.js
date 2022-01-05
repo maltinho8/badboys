@@ -1,9 +1,8 @@
 import './LandingPage.css';
 import React from 'react';
-import { HeadlineDrawing } from "../../HeadlineDrawing/index";
-import styled, { ThemeProvider } from 'styled-components';
-import theme, { GlobalStyle } from '../../../Theme';
-import ContentLandingPage from "../../PagesContent/ContentLandingPage";
+import { HeadlineDrawing } from "../../HeadlineDrawing/Index";
+import styled from 'styled-components';
+import ContentLandingPage from "../../PagesContent/ContentLandingPage/Index";
 
 const BallContainer = styled.div`
   position: absolute;
@@ -18,16 +17,14 @@ const ContentContainer = styled.div`
 
 const Homepage = () => {
   return (
-    <div className="Homepage">
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
+    <div>
+      
         <BallContainer>
           <HeadlineDrawing size={500} />
         </BallContainer>
         <ContentContainer>
           <ContentLandingPage />
         </ContentContainer>
-      </ThemeProvider>
 
     </div>
   );

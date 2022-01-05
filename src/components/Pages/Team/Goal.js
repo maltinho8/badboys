@@ -1,18 +1,18 @@
 import React from 'react';
 import styled  from 'styled-components';
-import ContentTeam from '../../PagesContent/ContentTeam/Index';
+import ContentGoal from '../../PagesContent/ContentTeam/ContentGoal';
 
 const ContentContainer = styled.div`
   width: 85%;
   margin: 2rem 0 0 4rem;
 `;
 
-const Team = () => {
+const Goal = () => {
   return (
         <ContentContainer>
-          <ContentTeam/>
+          <ContentGoal/>
         </ContentContainer>
   );
 }
 
-export default Team;
+export default Goal;

@@ -1,4 +1,10 @@
 // fire.js
+// Datenbank Konfiguration - Nutzung: Firebase
+// Integration erfolgt in login.js
+
+// Aktuell: nur Login mit einem manuell vorher registrierten Nutzer
+// malte.raeuchle@gmx.de & 123456
+
 import firebase from 'firebase';
 
 const firebaseConfig = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG);

@@ -7,7 +7,7 @@ const ContentContainer = styled.div`
   margin: 2rem 0 0 4rem;
 `;
 
-const Team = () => {
+const Attack = () => {
   return (
         <ContentContainer>
           <ContentTeam/>
@@ -15,4 +15,4 @@ const Team = () => {
   );
 }
 
-export default Team;
+export default Attack;

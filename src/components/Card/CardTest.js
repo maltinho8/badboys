@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import Soccer from '../../assets/img/soccer-ball.png';
-import Details from './details';
+import CardDetails from './CardDetails';
+import Deets from './Deets';
 
 const CardContainer = styled.div`
   width: 285px;
@@ -28,12 +29,16 @@ const CircleWrapper = styled.div`
 
 const Circle = styled.div`
   position: absolute;
-  width: 320px;
-  height: 320px;
+  
   top: -4.2em;
   right: -10em;
   z-index: 5;
-  background-color: #fbbe01;
+  
+  background-color: white;
+  width: 320px;
+  height: 320px;
+    
+
   border-radius: 50%;
 `;
 
@@ -85,7 +90,33 @@ const Logo = styled.div`
   }
 `;
 
-const Card = (props) => {
+const CardTest = (props) => {
+
+  const profiles = [
+    {
+      id: 'e1',
+      name: 'Simon Globig',
+      saison: '2021/2022',
+      verein: 'Frohnauer SC II',
+      position: 'GK',
+      jahr: 'lalala',
+    },
+    { id: 'e2',
+    name: 'Xaver Globig',
+    saison: '2021/2022',
+    verein: 'Frohnauer SC II',
+    position: 'ZOM',
+    jahr: 'lalala',
+  },
+    {
+      id: 'e3',
+      name: 'Justin Globig',
+      saison: '2021/2022',
+      verein: 'Frohnauer SC II',
+      position: 'ZOM',
+      jahr: 'lalala',
+    },
+  ];
   return (
     <CardContainer>
       <TopContainer>
@@ -97,9 +128,9 @@ const Card = (props) => {
             <img src={Soccer} alt = "Soccer" />
           </Logo>
         </LogoWrapper>
-        <ProfilText>Paul Conradt</ProfilText>
+        <ProfilText>{props.name}</ProfilText>
       </TopContainer>
-      <BottomContainer><Details /></BottomContainer>
+      <BottomContainer><Deets info = {profiles}/></BottomContainer>
     </CardContainer>
 
 
@@ -107,4 +138,4 @@ const Card = (props) => {
   );
 }
 
-export default Card;
+export default CardTest;

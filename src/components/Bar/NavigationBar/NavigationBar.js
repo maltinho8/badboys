@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import { Search } from '@styled-icons/bootstrap/Search';
 import { PersonCircle } from '@styled-icons/bootstrap/PersonCircle';
-import Burger from '../Burger/burger';
+import Burger from '../Burger/Burger';
 import fire from '../../../fire';
 
 import {
@@ -13,11 +13,10 @@ import {
   } from "react-router-dom";
 
 import Homepage from '../../Pages/LandingPage/LandingPage';
-import Spielplan from '../../Pages/Spielplan/spielplan';
-import Tabelle from '../../Pages/Tabelle/tabelle';
-import Team from '../../Pages/Team/team';
-import Login from '../../Auth/login';
-import { HandbagFillDimensions } from '@styled-icons/bootstrap/HandbagFill';
+import Spielplan from '../../Pages/Spielplan/Spielplan';
+import Tabelle from '../../Pages/Tabelle/Tabelle';
+import Team from '../../Pages/Team/Team';
+import Login from '../../Authentification/Login';
 
 
   const LogoContainer = styled.div`
@@ -115,10 +114,6 @@ const Logo = styled.div`
 
     fire.auth().onAuthStateChanged((user) => {return user ? setIsLoggedIn(true) : setIsLoggedIn (false) })
 
-    const handleSignOut = () => {fire.auth().signOut()}
-
-
-
     return (
         <Router>
         <div className="NavBar">
@@ -150,12 +145,6 @@ const Logo = styled.div`
                 
               </IconButton>
             </IconContainer>
-
-           
-
-
-            
-            
             </Bar>
             
             {isLoggedIn ? (
@@ -182,6 +171,8 @@ const Logo = styled.div`
               </Route>
             </Switch>
             </div>
+
+            
             ) : (
               <Switch>
               

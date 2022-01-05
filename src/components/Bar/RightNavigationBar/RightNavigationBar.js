@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Content from '../NavBar/content';
+import Content from './Content';
 
 const Ul = styled.div`
   @media (max-width: 900px) {
@@ -18,7 +18,7 @@ const Ul = styled.div`
 `;
 
 const RightNav = ({closeMenu}) => {
-  {/* Nutzung der Methode closeMenu durch Übergabe in burger.js  */}
+  /* Nutzung der Methode closeMenu durch Übergabe in burger.js  */
   return (
     <Ul>
       < Content closeMenu={closeMenu}/>   

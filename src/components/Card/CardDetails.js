@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import './Deets';
 
 
 const DetailsContainer = styled.div`
@@ -53,38 +54,31 @@ const SpaceHorizontalContainer = styled.div`
 `;
 
 
-const Details = () => {
+const CardDetails = (props) => {
   return (
     <DetailsContainer>
-      <SmallText>Saison 2021/2022</SmallText>
+      <SmallText>{props.saison}</SmallText>
       <SpaceHorizontalContainer>
-        <MediumText>Frohnauer SC II.</MediumText>
-        <MediumText>ZOM</MediumText>
+        <MediumText>{props.verein}</MediumText>
+        <MediumText>{props.position}</MediumText>
       </SpaceHorizontalContainer>
       <br />
 
       <SpaceHorizontalContainer>
         <SmallText>im Verein seit:</SmallText>
-        <SmallText>2018</SmallText>
+        <SmallText>{props.jahr}</SmallText>
       </SpaceHorizontalContainer>
 
       <br />
       <SpaceHorizontalContainer>
         <SmallText>Status: Legende</SmallText>
-        <a href="https://www.fupa.net/player/paul-conradt-845302" target="_blank">
+        <a href="https://www.fupa.net/player/paul-conradt-845302" target="_blank" rel="noreferrer">
           <Button>Profil</Button>
         </a>
-        
-          
-          
-          
-          
-
-
       </SpaceHorizontalContainer>
     </DetailsContainer>
 
   );
 }
 
-export default Details;
+export default CardDetails;
