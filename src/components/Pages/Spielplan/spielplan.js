@@ -1,7 +1,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import ContentSpielplan from '../../PagesContent/ContentSpielplan/Index';
+import ContentSpielplan from '../../PagesContent/ContentSpielplan/index';
 
 const ContentContainer = styled.div`
   width: 50%;

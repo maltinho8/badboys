@@ -1,6 +1,6 @@
 import React from 'react';
 import styled  from 'styled-components';
-import ContentTeam from '../../PagesContent/ContentTeam/Index';
+import ContentTeam from '../../PagesContent/ContentTeam/index';
 
 const ContentContainer = styled.div`
   width: 85%;

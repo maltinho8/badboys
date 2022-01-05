@@ -2,7 +2,7 @@ import './LandingPage.css';
 import React from 'react';
 import { HeadlineDrawing } from "../../HeadlineDrawing/Index";
 import styled from 'styled-components';
-import ContentLandingPage from "../../PagesContent/ContentLandingPage/Index";
+import ContentLandingPage from '../../PagesContent/ContentLandingPage/index';
 
 const BallContainer = styled.div`
   position: absolute;

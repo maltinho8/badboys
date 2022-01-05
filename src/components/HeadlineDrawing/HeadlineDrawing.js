@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import FSC from '../../assets/img/TCC.png';
+import FSC from '../../assets/img/Frohnauer_SC.gif';
 
 const Container = styled.div`
   position: relative;

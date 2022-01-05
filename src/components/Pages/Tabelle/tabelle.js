@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ContentTabelle from '../../PagesContent/ContentTabelle/Index';
+import ContentTabelle from '../../PagesContent/ContentTabelle/index';
 
 const ContentContainer = styled.div`
   width: 50%;
