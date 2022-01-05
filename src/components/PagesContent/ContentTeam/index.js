@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
-import ContentDefense from './ContentDefense';
+import CardTest from '../../Card/CardTest';
 
 
 const Container = styled.div`
@@ -51,7 +50,7 @@ const ContentTeam = () => {
   return (
     <Container>
       <Headline>
-        Frohnauer SC II
+        Mannschaft Frohnauer SC II.
       </Headline>
       <Text>
         Blablablabla.
@@ -62,7 +61,7 @@ const ContentTeam = () => {
       
 
       <SpaceHorizontalContainer>
-       
+       <CardTest />
       </SpaceHorizontalContainer>
       < br />
       < br />

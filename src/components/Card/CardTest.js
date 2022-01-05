@@ -130,7 +130,7 @@ const CardTest = (props) => {
         </LogoWrapper>
         <ProfilText>{props.name}</ProfilText>
       </TopContainer>
-      <BottomContainer><Deets info = {profiles}/></BottomContainer>
+      <BottomContainer><CardDetails info = {profiles}/></BottomContainer>
     </CardContainer>
 
 

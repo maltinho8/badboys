@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import FSC from '../../assets/img/Frohnauer_SC.gif';
+import FSC from '../../assets/img/soccer-ball.png';
 
 const Container = styled.div`
   position: relative;
@@ -36,7 +36,12 @@ const TextBubbleWhite = styled.div`
   color: ${({theme}) => theme.palette.text.light};
   font-weight: 700;
   font-size: 1.2rem;
-  opacity: 0.7;
+  opacity: 0.5;
+
+  @media screen and (max-width: 900px) {
+    display:none;
+    transition: ease all .3s;
+  }
 `;
 
 const TextBubbleBlack = styled.div`
@@ -66,7 +71,7 @@ const HeadlineDrawing = ({size}) => {
   return (
     <TextBubbleWhite>
    
-    <img src = {FSC} alt = "FSC" style = {{width: '12rem' , height: '12rem', filter: 'invert(1)'}} ></img>
+    <img src = {FSC} alt = "FSC" style = {{width: '12rem' , height: '12rem'}} ></img>
     
     </TextBubbleWhite>
   )

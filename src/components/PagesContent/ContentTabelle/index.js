@@ -26,7 +26,7 @@ const ContentTabelle = () => {
   return (
     <Container>
       <Headline>
-        Programm
+        Tabelle
       </Headline>
       <Text>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -34,7 +34,7 @@ const ContentTabelle = () => {
       <br />
       <br />
       <Text>
-        Programm des CTS 2022
+        Aktuelle Tabelle
       </Text>
       
 
