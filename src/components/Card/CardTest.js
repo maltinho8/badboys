@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import Soccer from '../../assets/img/soccer-ball.png';
+import Soccer from '../../assets/img/Frohnauer_SC.gif';
 import CardDetails from './CardDetails';
 import Deets from './Deets';
 
@@ -50,13 +50,13 @@ const TopContainer = styled.div`
   position: relative;
   align-items: center;
   justify-content: flex-end;
-  padding: 1em 15px;
+  padding: 1em 10px;
 `;
 
 const BottomContainer = styled.div`
   display: flex;
   flex: 0.8;
-  padding: 0 1em;
+  padding: 0 2em;
 `;
 
 const ProfilText = styled.h2`
@@ -90,33 +90,59 @@ const Logo = styled.div`
   }
 `;
 
-const CardTest = (props) => {
+const DetailsContainer = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 6px 0 6px;
+    line-height: 1.4;
+    `;
 
-  const profiles = [
-    {
-      id: 'e1',
-      name: 'Simon Globig',
-      saison: '2021/2022',
-      verein: 'Frohnauer SC II',
-      position: 'GK',
-      jahr: 'lalala',
-    },
-    { id: 'e2',
-    name: 'Xaver Globig',
-    saison: '2021/2022',
-    verein: 'Frohnauer SC II',
-    position: 'ZOM',
-    jahr: 'lalala',
-  },
-    {
-      id: 'e3',
-      name: 'Justin Globig',
-      saison: '2021/2022',
-      verein: 'Frohnauer SC II',
-      position: 'ZOM',
-      jahr: 'lalala',
-    },
-  ];
+const MediumText = styled.span`
+    font-size: 18px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+  `;
+
+const SmallText = styled.span`
+    font-size: 11px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+  `;
+
+
+const SpaceHorizontalContainer = styled.div`
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+  `;
+  const Button = styled.button`
+  padding: 5px 12px;
+  background-color: #fbbe01;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all 290ms ease-in-out;
+  border-radius: 8px;
+  &:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fbbe01;
+  }
+`;
+const CardTest = (props) => {
+  
+  
+
   return (
     <CardContainer>
       <TopContainer>
@@ -125,12 +151,39 @@ const CardTest = (props) => {
         </CircleWrapper>
         <LogoWrapper>
           <Logo>
-            <img src={Soccer} alt = "Soccer" />
+            <img src={Soccer} alt = "Soccer"/>
           </Logo>
         </LogoWrapper>
         <ProfilText>{props.name}</ProfilText>
       </TopContainer>
-      <BottomContainer><CardDetails info = {profiles}/></BottomContainer>
+
+
+      <BottomContainer>
+      <DetailsContainer>
+      <SmallText>{props.saison}</SmallText>
+      <SpaceHorizontalContainer>
+        <MediumText>{props.verein}</MediumText>
+        <MediumText>{props.position}</MediumText>
+      </SpaceHorizontalContainer>
+      <br />
+
+      <SpaceHorizontalContainer>
+        <SmallText>im Verein seit:</SmallText>
+        <SmallText>{props.jahr}</SmallText>
+      </SpaceHorizontalContainer>
+
+      <br />
+      <SpaceHorizontalContainer>
+        <SmallText>{props.status}</SmallText>
+        <a href="https://www.fupa.net/player/paul-conradt-845302" target="_blank" rel="noreferrer">
+          <Button>Profil</Button>
+        </a>
+      </SpaceHorizontalContainer>
+    </DetailsContainer>
+
+
+
+      </BottomContainer>
     </CardContainer>
 
 

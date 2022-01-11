@@ -57,6 +57,7 @@ const SpaceHorizontalContainer = styled.div`
 const CardDetails = (props) => {
   return (
     <DetailsContainer>
+      
       <SmallText>{props.saison}</SmallText>
       <SpaceHorizontalContainer>
         <MediumText>{props.verein}</MediumText>
@@ -71,7 +72,7 @@ const CardDetails = (props) => {
 
       <br />
       <SpaceHorizontalContainer>
-        <SmallText>Status: Legende</SmallText>
+        <SmallText>{props.status}</SmallText>
         <a href="https://www.fupa.net/player/paul-conradt-845302" target="_blank" rel="noreferrer">
           <Button>Profil</Button>
         </a>

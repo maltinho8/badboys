@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import CardTest from '../../Card/CardTest';
 
+import Deets from '../../Card/Deets';
+
 
 const Container = styled.div`
   padding: 1rem;
@@ -33,6 +35,32 @@ const SpaceHorizontalContainer = styled.div`
   `; 
 
 const ContentTeam = () => {
+  const profiles = [
+    {
+      id: 'e1',
+      name: 'Simon Globig',
+      saison: '2021/2023',
+      verein: 'Frohnauer SC II',
+      position: 'GK',
+      jahr: '2018',
+      status: 'Status: Rookie',
+    },
+    { id: 'e2',
+    name: 'Xaver Globig',
+    saison: '2021/2022',
+    verein: 'Frohnauer SC II',
+    position: 'ZOM',
+    jahr: 'lalala',
+  },
+    {
+      id: 'e3',
+      name: 'Justin Globig',
+      saison: '2021/2022',
+      verein: 'Frohnauer SC II',
+      position: 'ZOM',
+      jahr: '2018',
+    },
+  ];
   return (
     <Container>
       <Headline>
@@ -41,17 +69,11 @@ const ContentTeam = () => {
       <Text>
         Blablablabla.
       </Text>
+      <Deets info={profiles}/>
 
       < br />
       < br />
-      
-
-      <SpaceHorizontalContainer>
-       <CardTest />
-      </SpaceHorizontalContainer>
-      < br />
-      < br />
-      
+     
     </Container>
     
   );
