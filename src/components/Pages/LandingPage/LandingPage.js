@@ -3,6 +3,7 @@ import React from 'react';
 import { HeadlineDrawing } from "../../HeadlineDrawing/Index";
 import styled from 'styled-components';
 import ContentLandingPage from '../../PagesContent/ContentLandingPage/index';
+import CircleChart from '../../HeadlineDrawing/CircleChart';
 
 const BallContainer = styled.div`
   position: absolute;
@@ -18,11 +19,9 @@ const ContentContainer = styled.div`
 const Homepage = () => {
   return (
     <div>
-        <BallContainer>
-          <HeadlineDrawing size={500} />
-        </BallContainer>
+       
         <ContentContainer>
-          <ContentLandingPage />
+          <ContentLandingPage />         
         </ContentContainer>
     </div>
 

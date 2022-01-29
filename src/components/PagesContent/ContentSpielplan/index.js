@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Helmet} from 'react-helmet';
 
 const Container = styled.div`
   padding: 1rem;
@@ -25,6 +26,21 @@ const ContentSpielplan = () => {
       <Text>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
       </Text>  
+      <br />
+      <br />
+      <Text>
+        
+      </Text>
+      <div id="widget2"></div>
+      <Helmet>
+
+      
+      <script type="text/javascript">
+		new fussballdeWidgetAPI().showWidget('widget2', '02H3FRGU24000000VUM1DNOPVSR4O07R');
+	</script>
+
+      </Helmet>
+
     </Container>
   );
 };

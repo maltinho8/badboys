@@ -105,6 +105,7 @@ const Logo = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid orange;
     
   `;
 
@@ -136,9 +137,7 @@ const Logo = styled.div`
             </SuperContainer>
             
             <IconContainer>
-              <IconButton>
-                <Search size={20} />
-              </IconButton>
+              
               <IconButton>
                 <Link to ="/Login" style={{ textDecoration: 'none', color: 'white' }}>
                 <PersonCircle size={20}/>

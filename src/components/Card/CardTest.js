@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
-import Soccer from '../../assets/img/Frohnauer_SC.gif';
-import CardDetails from './CardDetails';
-import Deets from './Deets';
+import Soccer from '../../assets/img/fsc.png';
+import Background from '../../assets/img/soccer-ball.png';
+import Avatar from '@mui/material/Avatar';
 
 const CardContainer = styled.div`
   width: 285px;
-  height: 500px;
+  height: 420px;
   display: flex;
   flex-direction: column;
   border-radius: 25px;
@@ -15,6 +15,7 @@ const CardContainer = styled.div`
   color: #fff;
   position: relative;
   cursor: grab;
+  
 `;
 
 const CircleWrapper = styled.div`
@@ -33,12 +34,9 @@ const Circle = styled.div`
   top: -4.2em;
   right: -10em;
   z-index: 5;
-  
   background-color: white;
-  width: 320px;
-  height: 320px;
-    
-
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
 `;
 
@@ -62,8 +60,8 @@ const BottomContainer = styled.div`
 const ProfilText = styled.h2`
   color: #fff;
   margin: 0;
-  z-index: 10;
-  font-size: 40px;
+  z-index: 8;
+  font-size: 26px;
   font-weight: 700;
 
 `;
@@ -79,7 +77,7 @@ const LogoWrapper = styled.div`
 
 const Logo = styled.div`
   width: auto;
-  height: 100px;
+  height: 10px;
   z-index: 99;
   user-select: none;
 
@@ -100,7 +98,7 @@ const DetailsContainer = styled.div`
     `;
 
 const MediumText = styled.span`
-    font-size: 18px;
+    font-size: 15px;
     color: #fff;
     font-weight: 800;
     text-transform: uppercase;
@@ -140,18 +138,15 @@ const SpaceHorizontalContainer = styled.div`
   }
 `;
 const CardTest = (props) => {
-  
-  
-
   return (
     <CardContainer>
       <TopContainer>
         <CircleWrapper>
-          <Circle />
+          <Circle></Circle>
         </CircleWrapper>
         <LogoWrapper>
           <Logo>
-            <img src={Soccer} alt = "Soccer"/>
+          <Avatar sx={{width: 65, height: 65}}>{props.avatar}</Avatar>
           </Logo>
         </LogoWrapper>
         <ProfilText>{props.name}</ProfilText>
@@ -175,14 +170,9 @@ const CardTest = (props) => {
       <br />
       <SpaceHorizontalContainer>
         <SmallText>{props.status}</SmallText>
-        <a href="https://www.fupa.net/player/paul-conradt-845302" target="_blank" rel="noreferrer">
-          <Button>Profil</Button>
-        </a>
+        <Avatar alt="test" src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/37271050_1922897397766864_4363209722128498688_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeECo2XWY1scC4f5r4_rkF8s0QWJBceNokXRBYkFx42iRaq-OqUxzgqEmPmeWx_r9CbATClG8v-gNk6LV0IKTPlg&_nc_ohc=RxBYIfcRsisAX87cWMk&_nc_ht=scontent-ber1-1.xx&oh=00_AT9Yl4XYodStCYX-7BysOuUI12iJVocP7-hllAoz73X_EQ&oe=621BE260"/>
       </SpaceHorizontalContainer>
     </DetailsContainer>
-
-
-
       </BottomContainer>
     </CardContainer>
 

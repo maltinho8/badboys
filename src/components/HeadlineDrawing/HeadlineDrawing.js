@@ -1,78 +1,73 @@
 import React from 'react';
 import styled from 'styled-components';
-import FSC from '../../assets/img/soccer-ball.png';
+import Chart from "react-apexcharts";
 
 const Container = styled.div`
-  position: relative;
-  height: 100px;
-  width: 100px;
+position: absolute;
+top: 28rem;
+
   border-radius: 50%;
-  background: ${({theme}) => `linear-gradient(${theme.palette.primary.main}, ${theme.palette.secondary.main})`};
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 13px 13px rgba(0,0,0,0.53);
-  opacity: 0.2;
-`;
-
-
-const TextBubbleWhite = styled.div`
-  position: absolute;
-  top: 8rem;
-  right: 4rem;
-  width: 8rem;
-  height: 8rem;
-  padding: 0.5rem;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: ${({theme}) => theme.palette.text.light};
-  font-weight: 700;
-  font-size: 1.2rem;
-  opacity: 0.5;
-
-  @media screen and (max-width: 900px) {
-    display:none;
-    transition: ease all .3s;
-  }
-`;
-
-const TextBubbleBlack = styled.div`
-  position: absolute;
-  bottom: -10rem;
-  right: 5rem;
-  width: 10rem;
-  height: 10rem;
-  padding: 1rem;
-  border-radius: 50%;
-  background-color: rgba(0,0,0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: ${({theme}) => theme.palette.text.light};
-  font-weight: 700;
-  font-size: 1.2rem;
-  @media screen and (max-width: 900px) {
-    opacity: 0;
-    transition: ease all .5s;
-  }
-`;
-
-
-const HeadlineDrawing = ({size}) => {
-  return (
-    <TextBubbleWhite>
-   
-    <img src = {FSC} alt = "FSC" style = {{width: '12rem' , height: '12rem'}} ></img>
-    
-    </TextBubbleWhite>
-  )
-    
   
-};
+  
+`;
 
-export default HeadlineDrawing;
+
+
+class RadialChart extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+    
+      series: [
+        {
+          name: "BadBoys",
+          data: [100, 100, 70, 60, 90, 20]
+        },
+    
+      ],
+      options: {
+        chart: {
+          height: 350,
+          type: 'radar',
+          toolbar: {
+            show: false
+          }
+        },
+        xaxis: {
+          categories: ['Attraktivität', 'Teamgeist', 'Power', 'Spielwitz', 'Wille', 'Ausdauer']
+        },
+        responsive: [{
+          breakpoint: 1000,
+          options: {},
+      }]
+      },
+    
+    
+    };
+  }
+
+
+
+  render() {
+    return (
+      
+
+<Container>
+            <Chart
+              options={this.state.options}
+              series={this.state.series}
+              type="radar"
+              width="700"
+            />
+        </Container>
+
+
+    );
+  }
+}
+export default RadialChart;
+

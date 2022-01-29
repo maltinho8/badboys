@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ScriptTag from 'react-script-tag';
+import {Helmet} from 'react-helmet';
 
 const Container = styled.div`
   padding: 1rem;
@@ -30,11 +30,23 @@ const ContentTabelle = () => {
       <br />
       <br />
       <Text>
-        Aktuelle Tabelle
+        
       </Text>
       
+      <div id="widget1"></div>
+      <Helmet>
 
       
+	<script type="text/javascript">
+		new fussballdeWidgetAPI().showWidget('widget1', '02H25P4LU8000000VUM1DNPIVV2T1IAH');
+	</script>
+
+      </Helmet>
+
+      <br />
+      <br />
+      <br />
+      <br />
     </Container>
   );
 };

@@ -5,11 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./assets/img/test.jpg');
+  background-image: url('./assets/img/wallpaper.jpg');
   background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.8;
     
   
 }

@@ -5,7 +5,7 @@ import Content from './Content';
 const Ul = styled.div`
   @media (max-width: 900px) {
     flex-flow: column nowrap;
-    background-color: #1E2426;
+    background: black;
     position: fixed;
     top: 0;
     right: 0;
