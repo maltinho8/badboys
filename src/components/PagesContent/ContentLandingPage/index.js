@@ -1,21 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from '@mui/material/Button';
-import {Link} from "react-router-dom";
-import Grid from "@material-ui/core/Grid";
 import { HeadlineDrawing } from "../../HeadlineDrawing/Index";
-import CircleChart from '../../HeadlineDrawing/CircleChart';
+import TimeLine from "../../Timeline/Timeline";
+import Header from '../../PagesContent/ContentLandingPage/Header';
+import Pics from '../../Pics/Pics';
 
 const Container = styled.div`
   width: 100%;
-  display:flex;
-`;
 
-const Headline = styled.h3`
-  font-size: 5rem;
-  line-height: 1;
-  margin-bottom: 3rem;
-  color: white;
+  
 `;
 
 const HeadlineSmall = styled.h4`
@@ -23,7 +16,28 @@ const HeadlineSmall = styled.h4`
   line-height: 1;
   margin-bottom: 3rem;
   color: white;
-  
+`;
+
+const HeadlineSmall1 = styled.h4`
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 3rem;
+  color: white;
+  @media (max-width: 900px) { 
+    text-align: center; 
+  }
+
+`;
+
+const HeadlineSmall2 = styled.h4`
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 3rem;
+  color: white;
+  @media (max-width: 900px) { 
+    text-align: center; 
+  }
+
 `;
 
 const Text = styled.div`
@@ -31,76 +45,112 @@ const Text = styled.div`
   color: white;
 `;
 
-const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: start;
+
+
+const HeaderContainer = styled.div`
+ 
+text-align: center;
 `;
 
-const HeadlineContainer = styled.div`
- 
+const ContentContainer = styled.div`
+ width:50%;
+ padding: 20px;
+ justify-content: space-between;
+ @media (max-width: 900px) { 
+  margin: 0 auto; 
+}
 `;
+
+const ContentContainer2 = styled.div`
+ width:50%;
+ 
+ @media (max-width: 900px) {  
+  margin: 0 auto; 
+}
+`;
+
+const ContentContainer3 = styled.div`
+ width:80%;
+ padding: 20px;
+ @media (max-width: 900px) {  
+  margin: 0 auto;
+}
+`;
+
+  const HeadlineContainer = styled.div`
+  position: absolute;
+  top: 30rem;
+  right:-5rem;
+  border-radius: 50%;
+  
+  @media screen and (max-width: 900px) {
+    opacity: 0.5;
+    position: relative;
+  top: -3rem;
+  right:8rem;
+  border-radius: 50%;
+  }
+    
+  `;
+
+  const ImageContainer = styled.div`
+  width: 100%;
+`;
+
+
+
 
 const ContentLandingPage = () => {
   return (
 
-    <Grid container spacing={2} >
-      <Grid item lg={12} >
-      <Headline>
-        Bad Boys
-      </Headline>
-      <Text>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-      </Text>
-      <br />
-      
-      <ButtonContainer>
-      <Link to="/Team" style={{ textDecoration: 'none' }}>
-      <Button variant="outlined" href="#outlined-buttons">
-              Mannschaft
-      </Button></Link>&nbsp;&nbsp;
-      <Link to="/Tabelle" style={{ textDecoration: 'none' }}>
-      <Button variant="outlined" href="#outlined-buttons">
-              Tabelle
-      </Button>
-      </Link>
-      </ButtonContainer>
-      </Grid>
-      
-      <br />
-      <br />
-      <br />
-      <Grid item lg={9}>
-        
-      <HeadlineSmall>
-Lorem ipsum dolor sit amet.
-</HeadlineSmall>
+    
+       <Container>
+          <HeaderContainer>
+         <Header/>
+       </HeaderContainer>
+       
+      <ContentContainer>
+      <HeadlineSmall1>
+      Chemie in der Mannschaft
+      </HeadlineSmall1>
       <Text>
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
       </Text>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       
-      </Grid>
-      <Grid item lg={3}>
-      
+      <HeadlineContainer>
       <HeadlineDrawing/>
-      
-      </Grid>
-      <Grid item xl={12} >
-        
+      </HeadlineContainer>
+     
+      </ContentContainer>
+
+      <ContentContainer2>  
       <HeadlineSmall>
-Erfolge seit der Gründung:
-</HeadlineSmall>
+      Erfolge seit der Gründung:
+      </HeadlineSmall>
       <Text>
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
       </Text>
-      
-      </Grid>
-
-      <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
-      <CircleChart/>
-      </Grid>
-      
-      </Grid>
-      
+      <br />
+      <br />
+      <TimeLine />
+      </ContentContainer2>
+      <ContentContainer3>
+      <HeadlineSmall2>
+      Aus der Galerie
+      </HeadlineSmall2>
+      <Text>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+      </Text>
+      <ImageContainer>
+          <Pics/>
+      </ImageContainer>
+      </ContentContainer3>
+      </Container>
 
   );
 };

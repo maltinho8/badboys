@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import { Search } from '@styled-icons/bootstrap/Search';
 import { PersonCircle } from '@styled-icons/bootstrap/PersonCircle';
 import Burger from '../Burger/Burger';
 import fire from '../../../fire';
@@ -34,6 +33,7 @@ const SuperContainer = styled.div`
   display:flex;
   align-items: center;
   height: 100%;
+  width: 100vw!important;
   
 `;
 
@@ -65,8 +65,12 @@ const Logo = styled.div`
     color: ${({ theme }) => theme.palette.text.light};
     font-size: 1rem;
     margin-left: 10rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
+      a:hover {
+        color: orange;
+      
+    };
     @media screen and (max-width: 900px) {
       display:none;
       transition: ease all .5s;
@@ -95,18 +99,26 @@ const Logo = styled.div`
       transition: ease all .5s;
     }
   `;
-  
-  
 
   const Bar = styled.div`
     height: 4rem;
-    width: 100%;
+   
     box-shadow: 6px 6px 4px -1px rgba(0,0,0,0.3);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid darkorange;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+
     
+    @media (max-width: 900px) {
+      
+    display:none;
+    }
   `;
 
   
@@ -116,8 +128,10 @@ const Logo = styled.div`
     fire.auth().onAuthStateChanged((user) => {return user ? setIsLoggedIn(true) : setIsLoggedIn (false) })
 
     return (
+
+        
         <Router>
-        <div className="NavBar">
+        
           
         <Bar>
           <SuperContainer>
@@ -191,7 +205,7 @@ const Logo = styled.div`
           
           
 
-        </div>
+       
       
       </Router>
     );

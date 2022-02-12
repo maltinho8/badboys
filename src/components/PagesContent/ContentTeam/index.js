@@ -1,48 +1,35 @@
 import React from 'react';
-import styled from 'styled-components';
-import CardTest from '../../Card/CardTest';
-
 import Deets from '../../Card/Deets';
-
 import Grid from "@material-ui/core/Grid";
-
-
-
-
-const Headline = styled.h2`
-  font-size: 5rem;
-  line-height: 1;
-  margin-bottom: 3rem;
-  color: white;
-`;
-
-const Text = styled.div`
-  font-size: 1.2rem;
-  color: white;
-`;
-
-
+import SG from '../../../assets/img/ProfileImages/globig.jpg';
+import CH from '../../../assets/img/ProfileImages/claudius.jpg';
+import XB from '../../../assets/img/ProfileImages/xaver.jpg';
+import JM from '../../../assets/img/ProfileImages/justin.jpg';
+import JH from '../../../assets/img/ProfileImages/jakob.jpg';
+import ES from '../../../assets/img/ProfileImages/emre.jpg';
+import ML from '../../../assets/img/ProfileImages/matti.jpg';
+import PC from '../../../assets/img/ProfileImages/paul.jpg';
+import MS from '../../../assets/img/ProfileImages/moritz.jpg';
 
 const ContentTeam = () => {
   const profiles = [
     {
-      id: '1',
       name: 'Simon Globig',
       saison: '2022/2023',
       verein: 'Frohnauer SC II',
       position: 'TW',
       jahr: '2017',
       status: 'Status: Rookie',
-      avatar: 'SG',
+      avatar: <img alt="ch" src={SG} />,
     },
-    { id: '2',
+    { 
     name: 'Xaver Bunzel',
     saison: '2022/2023',
     verein: 'Frohnauer SC II',
     position: 'IV',
     jahr: '2009',
     status: 'Status: Twistolero',
-    avatar: 'XB',
+    avatar: <img alt="ch" src={XB} />,
   },
     {
       id: '3',
@@ -52,7 +39,7 @@ const ContentTeam = () => {
       position: 'IV',
       jahr: '2004',
       status: 'Status: Aggressor',
-      avatar: 'CH',
+      avatar: <img alt="ch" src={CH} />,
     },
 
     {
@@ -74,7 +61,7 @@ const ContentTeam = () => {
       position: 'RV',
       jahr: '2013',
       status: 'Status: Drahtig',
-      avatar: 'JM',
+      avatar: <img alt="jm" src={JM} />,
     },
 
     {
@@ -107,6 +94,7 @@ const ContentTeam = () => {
       position: 'ZDM',
       jahr: '2002',
       status: 'Status: Champion',
+      avatar: 'MR',
     },
 
     {
@@ -117,6 +105,7 @@ const ContentTeam = () => {
       position: 'ZDM',
       jahr: '2021',
       status: 'Status: Stabil',
+      avatar: 'MM',
     },
 
     {
@@ -127,6 +116,7 @@ const ContentTeam = () => {
       position: 'ZDM',
       jahr: '2021',
       status: 'Status: ?',
+      avatar: <img alt="jh" src={JH} />,
     },
 
     {
@@ -136,17 +126,20 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'ZDM',
       jahr: '2005',
-      status: 'Status: International',
+      status: 'Status: Köln',
+      avatar: 'YB',
     },
 
     {
       id: '12',
-      name: 'Younes Badi',
+      name: 'Emre Sahin',
       saison: '2022/2023',
       verein: 'Frohnauer SC II',
       position: 'ZDM',
       jahr: '2005',
       status: 'Status: ?',
+      avatar: <img alt="es" src={ES} />,
+
     },
 
     {
@@ -157,6 +150,7 @@ const ContentTeam = () => {
       position: 'RF/LF',
       jahr: '2005',
       status: 'Status: ?',
+      avatar: <img alt="ml" src={ML} />,
     },
 
     {
@@ -167,6 +161,7 @@ const ContentTeam = () => {
       position: 'RF/LF',
       jahr: '2010',
       status: 'Status: ?',
+      avatar: 'SK',
     },
 
     {
@@ -177,6 +172,7 @@ const ContentTeam = () => {
       position: 'RF/LF',
       jahr: '2010',
       status: 'Status: ?',
+      avatar: 'MW',
     },
 
     {
@@ -187,6 +183,7 @@ const ContentTeam = () => {
       position: 'RF/LF',
       jahr: '2010',
       status: 'Status: ?',
+      avatar: 'JS',
     },
 
     {
@@ -197,6 +194,7 @@ const ContentTeam = () => {
       position: 'ZOM',
       jahr: '2010',
       status: 'Status: ?',
+      avatar: 'LK',
     },
 
     {
@@ -207,6 +205,7 @@ const ContentTeam = () => {
       position: 'ZOM',
       jahr: '2010',
       status: 'Status: ?',
+      avatar: 'JL',
     },
 
     {
@@ -214,9 +213,10 @@ const ContentTeam = () => {
       name: 'Victorio Herz',
       saison: '2022/2023',
       verein: 'Frohnauer SC II',
-      position: 'ZOM/RF',
+      position: 'ZOM',
       jahr: '2010',
       status: 'Status: ?',
+      avatar: 'VH',
     },
 
     {
@@ -224,9 +224,10 @@ const ContentTeam = () => {
       name: 'Paul Conradt',
       saison: '2022/2023',
       verein: 'Frohnauer SC II',
-      position: 'ZOM/ST',
+      position: 'ST',
       jahr: '2010',
       status: 'Status: ?',
+      avatar: <img alt="pc" src={PC} />,
     },
   {
     id: 'e21',
@@ -246,25 +247,16 @@ const ContentTeam = () => {
     position: 'ST',
     jahr: '2010',
     status: 'Status: ?',
+    avatar: <img alt="ms" src={MS} />,
   },
 
   ];
   return (
 
-    <Grid container spacing={2}>
-      <Grid item lg={12}>
-    
-      <Headline>
-        Mannschaft Frohnauer SC II.
-      </Headline>
-      <Text>
-        Kader der aktuellen BadBoys für die Saison 2021/2022
-      </Text>
-      <br />
+    <Grid container>
+
       
-      </Grid>
-      
-      <Grid item lg={12}>
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         
       <Deets info={profiles}/> 
       

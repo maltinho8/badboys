@@ -9,30 +9,13 @@ const HorizontalContainer = styled.div`
     
   `; 
 
-const First = styled.div`
+const Break = styled.div`
     float:left;
     margin-right: 50px;
-    margin-bottom: 25px;
-    margin-auto;
+    margin-bottom: 65px;
+    margin:0 auto;
   `; 
-  const Second = styled.div`
-    float:left;
-    margin-right: 50px;
-    margin-bottom: 25px;
-    margin-auto;
-  `; 
-  const Third = styled.div`
-    float:left;
-    margin-right: 50px;
-    margin-bottom: 25px;
-    margin-auto;
-  `; 
-  const Fourth = styled.div`
-    float:left;
-    margin-right: 50px;
-    margin-bottom: 25px;
-    margin-auto;
-  `; 
+
 
 
 const Deets = (props) => {
@@ -40,7 +23,7 @@ const Deets = (props) => {
         <div>
       
       <HorizontalContainer>
-      <First>
+      <Break>
       <CardTest
       saison = {props.info[0].saison} 
       verein = {props.info[0].verein} 
@@ -49,11 +32,12 @@ const Deets = (props) => {
       status={props.info[0].status}
       name={props.info[0].name}
       jahr={props.info[0].jahr}
-      avatar={props.info[0].avatar}>
+      avatar={props.info[0].avatar}
+      link={props.info[0].link}>
       </CardTest>
-      </First>
+      </Break>
       
-      <Second>
+      <Break>
       <CardTest
       saison = {props.info[1].saison} 
       verein = {props.info[1].verein} 
@@ -61,10 +45,11 @@ const Deets = (props) => {
       legende={props.info[1].legende}
       status={props.info[1].status}
       name={props.info[1].name}
-      jahr={props.info[1].jahr}>
+      jahr={props.info[1].jahr}
+      avatar={props.info[1].avatar}>
       </CardTest>
-      </Second>
-      <Third>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[2].saison} 
       verein = {props.info[2].verein} 
@@ -72,10 +57,11 @@ const Deets = (props) => {
       legende={props.info[2].legende}
       status={props.info[2].status}
       name={props.info[2].name}
-      jahr={props.info[2].jahr}>
+      jahr={props.info[2].jahr}
+      avatar={props.info[2].avatar}>
       </CardTest>
-      </Third>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[3].saison} 
       verein = {props.info[3].verein} 
@@ -83,10 +69,11 @@ const Deets = (props) => {
       legende={props.info[3].legende}
       status={props.info[3].status}
       name={props.info[3].name}
-      jahr={props.info[3].jahr}>
+      jahr={props.info[3].jahr}
+      avatar={props.info[3].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[4].saison} 
       verein = {props.info[4].verein} 
@@ -94,10 +81,11 @@ const Deets = (props) => {
       legende={props.info[4].legende}
       status={props.info[4].status}
       name={props.info[4].name}
-      jahr={props.info[4].jahr}>
+      jahr={props.info[4].jahr}
+      avatar={props.info[4].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[5].saison} 
       verein = {props.info[5].verein} 
@@ -105,10 +93,11 @@ const Deets = (props) => {
       legende={props.info[5].legende}
       status={props.info[5].status}
       name={props.info[5].name}
-      jahr={props.info[5].jahr}>
+      jahr={props.info[5].jahr}
+      avatar={props.info[5].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[6].saison} 
       verein = {props.info[6].verein} 
@@ -116,10 +105,11 @@ const Deets = (props) => {
       legende={props.info[6].legende}
       status={props.info[6].status}
       name={props.info[6].name}
-      jahr={props.info[6].jahr}>
+      jahr={props.info[6].jahr}
+      avatar={props.info[6].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[7].saison} 
       verein = {props.info[7].verein} 
@@ -127,10 +117,11 @@ const Deets = (props) => {
       legende={props.info[7].legende}
       status={props.info[7].status}
       name={props.info[7].name}
-      jahr={props.info[7].jahr}>
+      jahr={props.info[7].jahr}
+      avatar={props.info[7].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[8].saison} 
       verein = {props.info[8].verein} 
@@ -138,10 +129,11 @@ const Deets = (props) => {
       legende={props.info[8].legende}
       status={props.info[8].status}
       name={props.info[8].name}
-      jahr={props.info[8].jahr}>
+      jahr={props.info[8].jahr}
+      avatar={props.info[8].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[9].saison} 
       verein = {props.info[9].verein} 
@@ -149,10 +141,11 @@ const Deets = (props) => {
       legende={props.info[9].legende}
       status={props.info[9].status}
       name={props.info[9].name}
-      jahr={props.info[9].jahr}>
+      jahr={props.info[9].jahr}
+      avatar={props.info[9].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[10].saison} 
       verein = {props.info[10].verein} 
@@ -160,10 +153,11 @@ const Deets = (props) => {
       legende={props.info[10].legende}
       status={props.info[10].status}
       name={props.info[10].name}
-      jahr={props.info[10].jahr}>
+      jahr={props.info[10].jahr}
+      avatar={props.info[10].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[11].saison} 
       verein = {props.info[11].verein} 
@@ -171,10 +165,11 @@ const Deets = (props) => {
       legende={props.info[11].legende}
       status={props.info[11].status}
       name={props.info[11].name}
-      jahr={props.info[11].jahr}>
+      jahr={props.info[11].jahr}
+      avatar={props.info[11].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[12].saison} 
       verein = {props.info[12].verein} 
@@ -182,10 +177,11 @@ const Deets = (props) => {
       legende={props.info[12].legende}
       status={props.info[12].status}
       name={props.info[12].name}
-      jahr={props.info[12].jahr}>
+      jahr={props.info[12].jahr}
+      avatar={props.info[12].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[13].saison} 
       verein = {props.info[13].verein} 
@@ -193,10 +189,11 @@ const Deets = (props) => {
       legende={props.info[13].legende}
       status={props.info[13].status}
       name={props.info[13].name}
-      jahr={props.info[13].jahr}>
+      jahr={props.info[13].jahr}
+      avatar={props.info[13].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[14].saison} 
       verein = {props.info[14].verein} 
@@ -204,10 +201,11 @@ const Deets = (props) => {
       legende={props.info[14].legende}
       status={props.info[14].status}
       name={props.info[14].name}
-      jahr={props.info[14].jahr}>
+      jahr={props.info[14].jahr}
+      avatar={props.info[14].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[15].saison} 
       verein = {props.info[15].verein} 
@@ -215,10 +213,11 @@ const Deets = (props) => {
       legende={props.info[15].legende}
       status={props.info[15].status}
       name={props.info[15].name}
-      jahr={props.info[15].jahr}>
+      jahr={props.info[15].jahr}
+      avatar={props.info[15].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[16].saison} 
       verein = {props.info[16].verein} 
@@ -226,10 +225,11 @@ const Deets = (props) => {
       legende={props.info[16].legende}
       status={props.info[16].status}
       name={props.info[16].name}
-      jahr={props.info[16].jahr}>
+      jahr={props.info[16].jahr}
+      avatar={props.info[16].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[17].saison} 
       verein = {props.info[17].verein} 
@@ -237,10 +237,11 @@ const Deets = (props) => {
       legende={props.info[17].legende}
       status={props.info[17].status}
       name={props.info[17].name}
-      jahr={props.info[17].jahr}>
+      jahr={props.info[17].jahr}
+      avatar={props.info[17].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[18].saison} 
       verein = {props.info[18].verein} 
@@ -248,10 +249,11 @@ const Deets = (props) => {
       legende={props.info[18].legende}
       status={props.info[18].status}
       name={props.info[18].name}
-      jahr={props.info[18].jahr}>
+      jahr={props.info[18].jahr}
+      avatar={props.info[18].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[19].saison} 
       verein = {props.info[19].verein} 
@@ -259,10 +261,11 @@ const Deets = (props) => {
       legende={props.info[19].legende}
       status={props.info[19].status}
       name={props.info[19].name}
-      jahr={props.info[19].jahr}>
+      jahr={props.info[19].jahr}
+      avatar={props.info[19].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[20].saison} 
       verein = {props.info[20].verein} 
@@ -270,10 +273,11 @@ const Deets = (props) => {
       legende={props.info[20].legende}
       status={props.info[20].status}
       name={props.info[20].name}
-      jahr={props.info[20].jahr}>
+      jahr={props.info[20].jahr}
+      avatar={props.info[20].avatar}>
       </CardTest>
-      </Fourth>
-      <Fourth>
+      </Break>
+      <Break>
       <CardTest
       saison = {props.info[21].saison} 
       verein = {props.info[21].verein} 
@@ -281,9 +285,10 @@ const Deets = (props) => {
       legende={props.info[21].legende}
       status={props.info[21].status}
       name={props.info[21].name}
-      jahr={props.info[21].jahr}>
+      jahr={props.info[21].jahr}
+      avatar={props.info[21].avatar}>
       </CardTest>
-      </Fourth>
+      </Break>
      
       </HorizontalContainer>
       

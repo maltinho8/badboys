@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
-import Soccer from '../../assets/img/fsc.png';
-import Background from '../../assets/img/soccer-ball.png';
 import Avatar from '@mui/material/Avatar';
+import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
+import {Link} from "react-router-dom";
 
 const CardContainer = styled.div`
-  width: 285px;
-  height: 420px;
+  width: 255px;
+  height: 410px;
   display: flex;
   flex-direction: column;
   border-radius: 25px;
@@ -14,7 +14,9 @@ const CardContainer = styled.div`
   background-color: #1d1f21;
   color: #fff;
   position: relative;
-  cursor: grab;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  
   
 `;
 
@@ -33,8 +35,8 @@ const Circle = styled.div`
   
   top: -4.2em;
   right: -10em;
-  z-index: 5;
-  background-color: white;
+  z-index: 0;
+  background-color: orange;
   width: 280px;
   height: 280px;
   border-radius: 50%;
@@ -48,7 +50,7 @@ const TopContainer = styled.div`
   position: relative;
   align-items: center;
   justify-content: flex-end;
-  padding: 1em 10px;
+  padding: -1em 10px;
 `;
 
 const BottomContainer = styled.div`
@@ -60,7 +62,7 @@ const BottomContainer = styled.div`
 const ProfilText = styled.h2`
   color: #fff;
   margin: 0;
-  z-index: 8;
+  z-index: 0;
   font-size: 26px;
   font-weight: 700;
 
@@ -77,8 +79,8 @@ const LogoWrapper = styled.div`
 
 const Logo = styled.div`
   width: auto;
-  height: 10px;
-  z-index: 99;
+  height: 35px;
+  z-index: 0;
   user-select: none;
 
   img {
@@ -117,26 +119,16 @@ const SpaceHorizontalContainer = styled.div`
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    
+    margin-bottom: -3px;
   `;
-  const Button = styled.button`
-  padding: 5px 12px;
-  background-color: #fbbe01;
-  color: #000;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  border: 2px solid transparent;
-  outline: none;
-  cursor: pointer;
-  transition: all 290ms ease-in-out;
-  border-radius: 8px;
-  &:hover {
-    background-color: transparent;
-    color: #fff;
-    border: 3px solid #fbbe01;
-  }
+
+  const AvatarContainer = styled.div`
+  display:flex;
+  width: 100%;
+  margin-bottom: 170px;
+  margin-left: 20px;
 `;
+
 const CardTest = (props) => {
   return (
     <CardContainer>
@@ -144,9 +136,12 @@ const CardTest = (props) => {
         <CircleWrapper>
           <Circle></Circle>
         </CircleWrapper>
+        <AvatarContainer>
+        <Avatar sx={{width: 25, height: 25}} alt="test" style={{ paddingBottom: '5px' }} src="https://tmssl.akamaized.net/images/wappen/head/7785.png?lm=1457014527"/>
+        </AvatarContainer>
         <LogoWrapper>
           <Logo>
-          <Avatar sx={{width: 65, height: 65}}>{props.avatar}</Avatar>
+          <Avatar sx={{width: 90, height: 90}}>{props.avatar}</Avatar>
           </Logo>
         </LogoWrapper>
         <ProfilText>{props.name}</ProfilText>
@@ -170,7 +165,7 @@ const CardTest = (props) => {
       <br />
       <SpaceHorizontalContainer>
         <SmallText>{props.status}</SmallText>
-        <Avatar alt="test" src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/37271050_1922897397766864_4363209722128498688_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeECo2XWY1scC4f5r4_rkF8s0QWJBceNokXRBYkFx42iRaq-OqUxzgqEmPmeWx_r9CbATClG8v-gNk6LV0IKTPlg&_nc_ohc=RxBYIfcRsisAX87cWMk&_nc_ht=scontent-ber1-1.xx&oh=00_AT9Yl4XYodStCYX-7BysOuUI12iJVocP7-hllAoz73X_EQ&oe=621BE260"/>
+        <AccountCircleRoundedIcon><Link to={props.link}></Link></AccountCircleRoundedIcon>
       </SpaceHorizontalContainer>
     </DetailsContainer>
       </BottomContainer>

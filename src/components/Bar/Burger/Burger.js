@@ -39,12 +39,14 @@ const StyledBurger = styled.div`
 `;
 
 const Burger = () => {
+  
   const [open, setOpen] = useState(false)
-  {/* state = Zustand, [Status, Funktion, um den Status zu manipulieren] */}
-  {/* useState - definiert den Grundzustand vom Status */}
+  
   return (
     <>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      {/* state = Zustand, [Status, Funktion, um den Status zu manipulieren] */}
+      {/* useState - definiert den Grundzustand vom Status */}
       {/* Übergabe des Status - Funktion onClick, setOpen manipuliert den Status: 
       ! - nur bei boolean, bedeutet das Gegenteil vom definierten Grundzustand */}
         <div />

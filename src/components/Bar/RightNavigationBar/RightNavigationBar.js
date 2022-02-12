@@ -4,6 +4,7 @@ import Content from './Content';
 
 const Ul = styled.div`
   @media (max-width: 900px) {
+    width: 100vw!important;
     flex-flow: column nowrap;
     background: black;
     position: fixed;
