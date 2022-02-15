@@ -23,8 +23,9 @@ const HeadlineSmall1 = styled.h4`
   line-height: 1;
   margin-bottom: 3rem;
   color: white;
-  @media (max-width: 900px) { 
+  @media (max-width: 768px) { 
     text-align: center; 
+    display:none;
   }
 
 `;
@@ -34,7 +35,7 @@ const HeadlineSmall2 = styled.h4`
   line-height: 1;
   margin-bottom: 3rem;
   color: white;
-  @media (max-width: 900px) { 
+  @media (max-width: 768px) { 
     text-align: center; 
   }
 
@@ -43,6 +44,14 @@ const HeadlineSmall2 = styled.h4`
 const Text = styled.div`
   font-size: 1.2rem;
   color: white;
+`;
+
+const Text1 = styled.div`
+  font-size: 1.2rem;
+  color: white;
+  @media (max-width: 768px) { 
+    display:none; 
+  }
 `;
 
 
@@ -56,7 +65,7 @@ const ContentContainer = styled.div`
  width:50%;
  padding: 20px;
  justify-content: space-between;
- @media (max-width: 900px) { 
+ @media (max-width: 768px) { 
   margin: 0 auto; 
 }
 `;
@@ -64,7 +73,7 @@ const ContentContainer = styled.div`
 const ContentContainer2 = styled.div`
  width:50%;
  
- @media (max-width: 900px) {  
+ @media (max-width: 768px) {  
   margin: 0 auto; 
 }
 `;
@@ -72,7 +81,7 @@ const ContentContainer2 = styled.div`
 const ContentContainer3 = styled.div`
  width:80%;
  padding: 20px;
- @media (max-width: 900px) {  
+ @media (max-width: 768px) {  
   margin: 0 auto;
 }
 `;
@@ -82,13 +91,12 @@ const ContentContainer3 = styled.div`
   top: 30rem;
   right:-5rem;
   border-radius: 50%;
+  z-index: 10;
   
-  @media screen and (max-width: 900px) {
-    opacity: 0.5;
-    position: relative;
-  top: -3rem;
-  right:8rem;
-  border-radius: 50%;
+  @media screen and (max-width: 768px) {
+    top: 32rem;
+    margin-bottom: 30px;
+   
   }
     
   `;
@@ -113,9 +121,9 @@ const ContentLandingPage = () => {
       <HeadlineSmall1>
       Chemie in der Mannschaft
       </HeadlineSmall1>
-      <Text>
+      <Text1>
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-      </Text>
+      </Text1>
       <br />
       <br />
       <br />

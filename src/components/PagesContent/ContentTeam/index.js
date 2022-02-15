@@ -1,5 +1,5 @@
 import React from 'react';
-import Deets from '../../Card/Deets';
+import Deets from '../../Card/CardFrameContent';
 import Grid from "@material-ui/core/Grid";
 import SG from '../../../assets/img/ProfileImages/globig.jpg';
 import CH from '../../../assets/img/ProfileImages/claudius.jpg';
@@ -21,6 +21,7 @@ const ContentTeam = () => {
       jahr: '2017',
       status: 'Status: Rookie',
       avatar: <img alt="ch" src={SG} />,
+      link: 'https://www.fupa.net/player/simon-globig-1444663',
     },
     { 
     name: 'Xaver Bunzel',
@@ -30,6 +31,7 @@ const ContentTeam = () => {
     jahr: '2009',
     status: 'Status: Twistolero',
     avatar: <img alt="ch" src={XB} />,
+    link: 'https://www.fupa.net/player/xaver-bunzel-lingens-1119657',
   },
     {
       id: '3',
@@ -40,6 +42,7 @@ const ContentTeam = () => {
       jahr: '2004',
       status: 'Status: Aggressor',
       avatar: <img alt="ch" src={CH} />,
+      link: 'https://www.fupa.net/player/claudius-haensler-1665429',
     },
 
     {
@@ -51,6 +54,7 @@ const ContentTeam = () => {
       jahr: '2020',
       status: 'Status: Veteran',
       avatar: 'JR',
+      link: 'https://www.fupa.net/player/josip-ramljak-778146',
     },
 
     {
@@ -62,6 +66,7 @@ const ContentTeam = () => {
       jahr: '2013',
       status: 'Status: Drahtig',
       avatar: <img alt="jm" src={JM} />,
+      link: 'https://www.fupa.net/player/justin-mohs-845294',
     },
 
     {
@@ -73,6 +78,7 @@ const ContentTeam = () => {
       jahr: '2017',
       status: 'Status: Lübars',
       avatar: 'FD',
+      link: 'https://www.fupa.net/player/frederik-dunkel-1074708',
     },
 
     {
@@ -84,6 +90,7 @@ const ContentTeam = () => {
       jahr: '2017',
       status: 'Status: Lübars',
       avatar: 'BS',
+      link: 'https://www.fupa.net/player/sebastian-schneider-1141554',
     },
 
     {
@@ -95,6 +102,7 @@ const ContentTeam = () => {
       jahr: '2002',
       status: 'Status: Champion',
       avatar: 'MR',
+      link: 'https://www.fupa.net/player/malte-raeuchle-845287',
     },
 
     {
@@ -106,6 +114,7 @@ const ContentTeam = () => {
       jahr: '2021',
       status: 'Status: Stabil',
       avatar: 'MM',
+      link: 'https://www.fupa.net/player/marlon-merten-1764941',
     },
 
     {
@@ -117,6 +126,7 @@ const ContentTeam = () => {
       jahr: '2021',
       status: 'Status: ?',
       avatar: <img alt="jh" src={JH} />,
+      link: 'https://www.fupa.net/player/jakob-von-holst-1119752',
     },
 
     {
@@ -128,6 +138,7 @@ const ContentTeam = () => {
       jahr: '2005',
       status: 'Status: Köln',
       avatar: 'YB',
+      link: 'https://www.fupa.net/player/younes-badi-1754044',
     },
 
     {
@@ -139,6 +150,7 @@ const ContentTeam = () => {
       jahr: '2005',
       status: 'Status: ?',
       avatar: <img alt="es" src={ES} />,
+      link: 'https://www.fupa.net/player/veli-sahin-1311615',
 
     },
 
@@ -151,6 +163,7 @@ const ContentTeam = () => {
       jahr: '2005',
       status: 'Status: ?',
       avatar: <img alt="ml" src={ML} />,
+      link: 'https://www.fupa.net/player/matti-liebermann-1754451',
     },
 
     {
@@ -162,6 +175,7 @@ const ContentTeam = () => {
       jahr: '2010',
       status: 'Status: ?',
       avatar: 'SK',
+      link: 'https://www.fupa.net/player/steven-kassburg-1371361',
     },
 
     {
@@ -173,6 +187,7 @@ const ContentTeam = () => {
       jahr: '2010',
       status: 'Status: ?',
       avatar: 'MW',
+      link: 'https://www.fupa.net/player/maximilian-wilk-1371358',
     },
 
     {
@@ -184,6 +199,7 @@ const ContentTeam = () => {
       jahr: '2010',
       status: 'Status: ?',
       avatar: 'JS',
+      link: 'https://www.fupa.net/player/joao-dias-dos-santos-1764232',
     },
 
     {
@@ -195,6 +211,7 @@ const ContentTeam = () => {
       jahr: '2010',
       status: 'Status: ?',
       avatar: 'LK',
+      link: 'https://www.fupa.net/player/luca-kluge-1413395',
     },
 
     {
@@ -206,6 +223,7 @@ const ContentTeam = () => {
       jahr: '2010',
       status: 'Status: ?',
       avatar: 'JL',
+      link: 'https://www.fupa.net/player/justus-lemgau-1933698',
     },
 
     {
@@ -217,6 +235,7 @@ const ContentTeam = () => {
       jahr: '2010',
       status: 'Status: ?',
       avatar: 'VH',
+      link: 'https://www.fupa.net/player/victorio-herz-846512',
     },
 
     {
@@ -228,6 +247,7 @@ const ContentTeam = () => {
       jahr: '2010',
       status: 'Status: ?',
       avatar: <img alt="pc" src={PC} />,
+      link: 'https://www.fupa.net/player/paul-conradt-845302',
     },
   {
     id: 'e21',
@@ -237,6 +257,7 @@ const ContentTeam = () => {
     position: 'ST',
     jahr: '2010',
     status: 'Status: ?',
+    link: 'https://www.fupa.net/player/philipp-renke-1006370',
   },
 
   {
@@ -248,6 +269,7 @@ const ContentTeam = () => {
     jahr: '2010',
     status: 'Status: ?',
     avatar: <img alt="ms" src={MS} />,
+    link: 'https://www.fupa.net/player/moritz-stoll-845270',
   },
 
   ];

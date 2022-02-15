@@ -97,7 +97,7 @@ const Login = () => {
   const handleSubmit = e => {
     e.preventDefault();
     fire.auth().signInWithEmailAndPassword(email, password).catch(() => alert("Falsches Passwort! Versuchen Sie es bitte erneut."));
-    history.push("/");
+    history.push("/Homepage");
   };
 
   const handleSignOut = () => {fire.auth().signOut()}

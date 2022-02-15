@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Content from './Content';
+import Content from './RightNavigationBarContent';
 
 const Ul = styled.div`
   @media (max-width: 900px) {
@@ -15,6 +15,7 @@ const Ul = styled.div`
     display: flex;
     align-items: center;
     transition: transform 0.3s ease-in-out;
+    z-index: 20;
   }
 `;
 

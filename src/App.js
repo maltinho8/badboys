@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import theme, { GlobalStyle } from './Theme';
 import { ThemeProvider } from 'styled-components';
-import NavBar from './components/Bar/NavigationBar/NavigationBar';
-import Footer from './components/Footer/index';
+import Footer from './components/Footer/Index';
+import Routing from './components/Router/Router';
 
 const App = () => {
 
@@ -11,7 +11,7 @@ const App = () => {
    
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <NavBar />
+      <Routing />
       <Footer />
     </ThemeProvider>
     

@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import {Link} from "react-router-dom";
 
 const Container = styled.div`
-  width: 100%;
+  width: 70%;
   
   
 `;
@@ -52,12 +52,12 @@ const Header = () => {
    
        <Container>
          <Container1>
-      <Headline style={{textAlign: "center"}}>
+      <Headline>
         Bad Boys
       </Headline>
      
      
-      <Text style={{textAlign: "center"}}>
+      <Text>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
       </Text>
       </Container1>

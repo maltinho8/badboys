@@ -1,7 +1,14 @@
 import React from 'react';
 import Chart from "react-apexcharts";
+import styled from 'styled-components';
 
-class RadialChart extends React.Component {
+const ChartContainer = styled.div`
+  width: 70%;
+  margin: auto;
+  
+`;
+
+class HeadlineDrawing extends React.Component {
   constructor(props) {
     super(props);
 
@@ -45,18 +52,19 @@ class RadialChart extends React.Component {
     return (
       
 
-
+            <ChartContainer>
             <Chart
               options={this.state.options}
               series={this.state.series}
               type="radar"
               width="700"
             />
+            </ChartContainer>
         
 
 
     );
   }
 }
-export default RadialChart;
+export default HeadlineDrawing;
 

@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Avatar from '@mui/material/Avatar';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import {Link} from "react-router-dom";
+import IconButton from '@mui/material/IconButton';
+import { orange } from '@mui/material/colors';
 
 const CardContainer = styled.div`
   width: 255px;
@@ -113,13 +115,21 @@ const SmallText = styled.span`
     text-transform: uppercase;
   `;
 
+  const SmallText1 = styled.span`
+  font-size: 11px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: -8px;
+`;
+
 
 const SpaceHorizontalContainer = styled.div`
     display:flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: -3px;
+    margin-bottom: -8px;
   `;
 
   const AvatarContainer = styled.div`
@@ -165,7 +175,11 @@ const CardTest = (props) => {
       <br />
       <SpaceHorizontalContainer>
         <SmallText>{props.status}</SmallText>
-        <AccountCircleRoundedIcon><Link to={props.link}></Link></AccountCircleRoundedIcon>
+        <SmallText1>
+        <IconButton href={props.link} target="_blank" rel="noopener noreferrer">
+        <AccountCircleRoundedIcon sx={{ color: orange[500], right: 20 }}/>
+        </IconButton>
+        </SmallText1>
       </SpaceHorizontalContainer>
     </DetailsContainer>
       </BottomContainer>

@@ -1,5 +1,5 @@
 import React from "react";
-import './index.css';
+import './Index.css';
 import styled from 'styled-components';
 
 const Text = styled.div`

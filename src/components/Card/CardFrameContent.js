@@ -1,5 +1,5 @@
-import CardTest from './CardTest';
-import '../PagesContent/ContentTeam/index';
+import CardTest from './CardFrame';
+import '../PagesContent/ContentTeam/Index';
 import styled from 'styled-components';
 
 const HorizontalContainer = styled.div`
@@ -46,7 +46,8 @@ const Deets = (props) => {
       status={props.info[1].status}
       name={props.info[1].name}
       jahr={props.info[1].jahr}
-      avatar={props.info[1].avatar}>
+      avatar={props.info[1].avatar}
+      link={props.info[1].link}>
       </CardTest>
       </Break>
       <Break>
@@ -58,7 +59,8 @@ const Deets = (props) => {
       status={props.info[2].status}
       name={props.info[2].name}
       jahr={props.info[2].jahr}
-      avatar={props.info[2].avatar}>
+      avatar={props.info[2].avatar}
+      link={props.info[3].link}>
       </CardTest>
       </Break>
       <Break>
@@ -70,7 +72,8 @@ const Deets = (props) => {
       status={props.info[3].status}
       name={props.info[3].name}
       jahr={props.info[3].jahr}
-      avatar={props.info[3].avatar}>
+      avatar={props.info[3].avatar}
+      link={props.info[3].link}>
       </CardTest>
       </Break>
       <Break>
@@ -82,7 +85,8 @@ const Deets = (props) => {
       status={props.info[4].status}
       name={props.info[4].name}
       jahr={props.info[4].jahr}
-      avatar={props.info[4].avatar}>
+      avatar={props.info[4].avatar}
+      link={props.info[4].link}>
       </CardTest>
       </Break>
       <Break>
@@ -94,7 +98,8 @@ const Deets = (props) => {
       status={props.info[5].status}
       name={props.info[5].name}
       jahr={props.info[5].jahr}
-      avatar={props.info[5].avatar}>
+      avatar={props.info[5].avatar}
+      link={props.info[5].link}>
       </CardTest>
       </Break>
       <Break>
@@ -106,7 +111,8 @@ const Deets = (props) => {
       status={props.info[6].status}
       name={props.info[6].name}
       jahr={props.info[6].jahr}
-      avatar={props.info[6].avatar}>
+      avatar={props.info[6].avatar}
+      link={props.info[6].link}>
       </CardTest>
       </Break>
       <Break>
@@ -118,7 +124,8 @@ const Deets = (props) => {
       status={props.info[7].status}
       name={props.info[7].name}
       jahr={props.info[7].jahr}
-      avatar={props.info[7].avatar}>
+      avatar={props.info[7].avatar}
+      link={props.info[7].link}>
       </CardTest>
       </Break>
       <Break>
@@ -130,7 +137,8 @@ const Deets = (props) => {
       status={props.info[8].status}
       name={props.info[8].name}
       jahr={props.info[8].jahr}
-      avatar={props.info[8].avatar}>
+      avatar={props.info[8].avatar}
+      link={props.info[8].link}>
       </CardTest>
       </Break>
       <Break>
@@ -142,7 +150,8 @@ const Deets = (props) => {
       status={props.info[9].status}
       name={props.info[9].name}
       jahr={props.info[9].jahr}
-      avatar={props.info[9].avatar}>
+      avatar={props.info[9].avatar}
+      link={props.info[9].link}>
       </CardTest>
       </Break>
       <Break>
@@ -154,7 +163,8 @@ const Deets = (props) => {
       status={props.info[10].status}
       name={props.info[10].name}
       jahr={props.info[10].jahr}
-      avatar={props.info[10].avatar}>
+      avatar={props.info[10].avatar}
+      link={props.info[10].link}>
       </CardTest>
       </Break>
       <Break>
@@ -166,7 +176,8 @@ const Deets = (props) => {
       status={props.info[11].status}
       name={props.info[11].name}
       jahr={props.info[11].jahr}
-      avatar={props.info[11].avatar}>
+      avatar={props.info[11].avatar}
+      link={props.info[11].link}>
       </CardTest>
       </Break>
       <Break>
@@ -178,7 +189,8 @@ const Deets = (props) => {
       status={props.info[12].status}
       name={props.info[12].name}
       jahr={props.info[12].jahr}
-      avatar={props.info[12].avatar}>
+      avatar={props.info[12].avatar}
+      link={props.info[12].link}>
       </CardTest>
       </Break>
       <Break>
@@ -190,7 +202,8 @@ const Deets = (props) => {
       status={props.info[13].status}
       name={props.info[13].name}
       jahr={props.info[13].jahr}
-      avatar={props.info[13].avatar}>
+      avatar={props.info[13].avatar}
+      link={props.info[13].link}>
       </CardTest>
       </Break>
       <Break>
@@ -202,7 +215,8 @@ const Deets = (props) => {
       status={props.info[14].status}
       name={props.info[14].name}
       jahr={props.info[14].jahr}
-      avatar={props.info[14].avatar}>
+      avatar={props.info[14].avatar}
+      link={props.info[14].link}>
       </CardTest>
       </Break>
       <Break>
@@ -214,7 +228,8 @@ const Deets = (props) => {
       status={props.info[15].status}
       name={props.info[15].name}
       jahr={props.info[15].jahr}
-      avatar={props.info[15].avatar}>
+      avatar={props.info[15].avatar}
+      link={props.info[15].link}>
       </CardTest>
       </Break>
       <Break>
@@ -226,7 +241,8 @@ const Deets = (props) => {
       status={props.info[16].status}
       name={props.info[16].name}
       jahr={props.info[16].jahr}
-      avatar={props.info[16].avatar}>
+      avatar={props.info[16].avatar}
+      link={props.info[16].link}>
       </CardTest>
       </Break>
       <Break>
@@ -238,7 +254,8 @@ const Deets = (props) => {
       status={props.info[17].status}
       name={props.info[17].name}
       jahr={props.info[17].jahr}
-      avatar={props.info[17].avatar}>
+      avatar={props.info[17].avatar}
+      link={props.info[17].link}>
       </CardTest>
       </Break>
       <Break>
@@ -250,7 +267,8 @@ const Deets = (props) => {
       status={props.info[18].status}
       name={props.info[18].name}
       jahr={props.info[18].jahr}
-      avatar={props.info[18].avatar}>
+      avatar={props.info[18].avatar}
+      link={props.info[18].link}>
       </CardTest>
       </Break>
       <Break>
@@ -262,7 +280,8 @@ const Deets = (props) => {
       status={props.info[19].status}
       name={props.info[19].name}
       jahr={props.info[19].jahr}
-      avatar={props.info[19].avatar}>
+      avatar={props.info[19].avatar}
+      link={props.info[19].link}>
       </CardTest>
       </Break>
       <Break>
@@ -274,7 +293,8 @@ const Deets = (props) => {
       status={props.info[20].status}
       name={props.info[20].name}
       jahr={props.info[20].jahr}
-      avatar={props.info[20].avatar}>
+      avatar={props.info[20].avatar}
+      link={props.info[20].link}>
       </CardTest>
       </Break>
       <Break>
@@ -286,7 +306,8 @@ const Deets = (props) => {
       status={props.info[21].status}
       name={props.info[21].name}
       jahr={props.info[21].jahr}
-      avatar={props.info[21].avatar}>
+      avatar={props.info[21].avatar}
+      link={props.info[21].link}>
       </CardTest>
       </Break>
      

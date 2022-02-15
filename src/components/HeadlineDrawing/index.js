@@ -1,3 +1,3 @@
-import HeadlineDrawing from './HeadlineDrawing';
+import HeadlineDrawing from './ContentHeadlineDrawing';
 
 export { HeadlineDrawing };
