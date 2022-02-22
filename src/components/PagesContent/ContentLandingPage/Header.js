@@ -4,21 +4,22 @@ import Button from '@mui/material/Button';
 import {Link} from "react-router-dom";
 
 const Container = styled.div`
-  width: 70%;
+width: 100%;
+margin: 0 auto;
+
   
   
 `;
 
 const Container1 = styled.div`
-  width: 100vwimportant!;
-  margin: auto;
-  align-text: center;
+
+ 
   
 `;
 
 const Container2 = styled.div`
   width: 100vwimportant!;
-  margin: auto;
+  
   
 `;
 
@@ -27,6 +28,7 @@ const Headline = styled.h3`
   line-height: 1;
   margin-bottom: 3rem;
   color: white;
+  
   
   
 `;
@@ -39,8 +41,9 @@ const Text = styled.div`
 `;
 
 const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
+ display: flex;
+  
+
 `;
 
 
@@ -58,12 +61,12 @@ const Header = () => {
      
      
       <Text>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        Spätestens seit dem furiosen Reeperbahn-Auftritt 2019 erlangten die BadBoys überregionale Bekanntheit. Dem Durchmarsch von der Kreisliga C in die Kreisliga A soll nun auch der Schritt in den bezahlten Profifussball folgen. 
       </Text>
-      </Container1>
+      
       <br />
-      <Container2>
-      <ButtonContainer>
+      
+      
       <Link to="/Team" style={{ textDecoration: 'none' }}>
       <Button variant="outlined" href="#outlined-buttons" style={{ color: 'orange' }}>
               Mannschaft
@@ -74,8 +77,8 @@ const Header = () => {
       </Button>
       </Link>
       
-      </ButtonContainer>
-      </Container2>
+      
+      </Container1>
       
       </Container>
       

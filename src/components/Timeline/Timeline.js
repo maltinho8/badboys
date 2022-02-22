@@ -10,74 +10,150 @@ import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import Typography from '@mui/material/Typography';
 import styled from 'styled-components';
+import Paper from '@mui/material/Paper';
+import { makeStyles } from '@mui/styles';
+import Seperator from './Seperator';
 
 const Container = styled.div`
-width: 80%; 
+width: 100%; 
+@media (max-width: 768px) { 
+  margin: 0 auto; 
+ }
 `;
 
-const TimeLine = () => {
+const useStyles = makeStyles({
+  timeline: {
+    transform: "rotate(90deg)"
+  },
+  timelineContentContainer: {
+    textAlign: "left"
+  },
+  timelineContent: {
+    display: "inline-block",
+    transform: "rotate(-90deg)",
+    textAlign: "center",
+    minWidth: 50,
     
+  },
+ 
+  timelineIcon: {
+    transform: "rotate(-90deg)"
+  }
+});
+
+const TimeLine = () => {
+  const classes = useStyles();
   return (
     <Container>
-    <Timeline >
+    <Timeline className={classes.timeline} align="alternate">
       <TimelineItem>
-        <TimelineOppositeContent
+        <TimelineOppositeContent 
           sx={{ m: 'auto 0' }}
-          align="right"
           variant="body2"
           color="white"
         >
-          2018
+          2022
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="success" variant="outlined">
-            <SportsSoccerIcon style={{fill: "white"}}/>
+            <SportsSoccerIcon className={classes.timelineIcon} style={{fill: "white"}} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ m: 'auto 0' }} color="white">
-          <Typography>Aufstieg in die Kreisliga B</Typography>
+        <TimelineContent sx={{ m: 'auto 0' }} color="white" >
+        
+            <Typography className={classes.timelineContent}>Berliner Pokalhalbfinale</Typography>
+          
         </TimelineContent>
       </TimelineItem>
+      <Seperator />
+      <Seperator />
+      
+
+     
+
+
       <TimelineItem>
-        <TimelineOppositeContent
+        <TimelineOppositeContent className={classes.timelineOppositeContent}
           sx={{ m: 'auto 0' }}
           align="right"
           variant="body2"
           color="white"
         >
-          2018
+          2019
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="success" variant="outlined">
-            <EmojiEventsIcon style={{fill: "white"}}/>
+            <SportsSoccerIcon className={classes.timelineIcon} style={{fill: "white"}}/>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ m: 'auto 0' }} color="white">
-          <Typography>Halbfinaleinzug Berliner Pokal</Typography>
+          <Typography className={classes.timelineContent}>BangouraCup Hamburg </Typography>
         </TimelineContent>
       </TimelineItem>
+      <Seperator />
+      <Seperator />
       <TimelineItem>
-        <TimelineOppositeContent
+        <TimelineOppositeContent className={classes.timelineOppositeContent}
           sx={{ m: 'auto 0' }}
           align="right"
           variant="body2"
           color="white"
         >
-          2018
+          2019
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot style={{fill: "white"}} >
-            <SportsSoccerIcon/>
+          <TimelineDot color="success" variant="outlined">
+            <EmojiEventsIcon className={classes.timelineIcon} style={{fill: "white"}}/>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ m: 'auto 0' }} color="white">
-          <Typography>Aufstieg in die Kreisliga A</Typography>
+          <Typography>Berliner Pokalhalbfinale</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent className={classes.timelineOppositeContent}
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          color="white"
+        >
+          2019
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="success" variant="outlined">
+            <EmojiEventsIcon className={classes.timelineIcon} style={{fill: "white"}}/>
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ m: 'auto 0' }} color="white">
+          <Typography>Bangoura Cup Hamburg 1. Platz</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent className={classes.timelineOppositeContent}
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          color="white"
+        >
+          2022
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="success" variant="outlined">
+            <EmojiEventsIcon className={classes.timelineIcon}style={{fill: "white"}}/>
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ m: 'auto 0' }} color="white">
+          <Typography>Berliner Pokalhalbfinale</Typography>
         </TimelineContent>
       </TimelineItem>
       

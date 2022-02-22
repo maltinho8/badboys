@@ -11,6 +11,10 @@ import Logo from '../../../assets/img/logo_small.png';
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
+  
+
+  
+  
 `;
 
 const NavLink = styled(Link)`
@@ -55,11 +59,11 @@ const NavBtn = styled.nav`
 
 const NavBtnLink = styled(Link)`
   border-radius: 4px;
-  background: #256ce1;
+  
   padding: 10px 22px;
-  color: #fff;
+  color: orange;
   outline: none;
-  border: none;
+  border: 1px solid #256ce1;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -67,8 +71,9 @@ const NavBtnLink = styled(Link)`
   margin-left: 24px;
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    border: 1px solid lightblue;
+    opacity: 0.8;
+    color: orange;
   }
 `;
   
@@ -92,7 +97,7 @@ const NavBtnLink = styled(Link)`
           <NavLink to='/Spielplan' activeStyle>
             Spielplan
           </NavLink>
-          <NavLink to='/Spielplan' activeStyle>
+          <NavLink to='/News' activeStyle>
             News
           </NavLink>
           {/* Second Nav */}

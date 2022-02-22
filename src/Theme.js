@@ -49,7 +49,7 @@ const theme = {
       light: '#ffffff',
     }
   },
-  borderRadius: '8px',
+  
   fonts: ["sans-serif", "Roboto"],
   fontSizes: {
     small: "1em",

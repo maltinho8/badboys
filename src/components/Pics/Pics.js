@@ -24,6 +24,14 @@ const itemData = [
     img: 'https://am3pap004files.storage.live.com/y4m71WeNzYMG0V_zsjHwQD0Cm8Q07B8wt3b22XwhZzXkXFQ2SvEzlRK0OZAelYUcDyz4ujg_9XMh3IDDHavrEUSCgLWd-Jr8YlmUX3QX_rYuTHedePSjA6I1OOGMczBrpHyRexMHtJXkvWE5Wm3FnwVqEtU7qIxdWHbkMJBl3NFbPCBujJGxFAw_DHEu5ghvy18pvZOdjU2ZpBeuOL2STmdRw/P1070949%20%282%29.JPG?psid=1&width=1150&height=769',
     title: 'Hats',
   },
+  {
+    img: 'https://am3pap004files.storage.live.com/y4m71WeNzYMG0V_zsjHwQD0Cm8Q07B8wt3b22XwhZzXkXFQ2SvEzlRK0OZAelYUcDyz4ujg_9XMh3IDDHavrEUSCgLWd-Jr8YlmUX3QX_rYuTHedePSjA6I1OOGMczBrpHyRexMHtJXkvWE5Wm3FnwVqEtU7qIxdWHbkMJBl3NFbPCBujJGxFAw_DHEu5ghvy18pvZOdjU2ZpBeuOL2STmdRw/P1070949%20%282%29.JPG?psid=1&width=1150&height=769',
+    title: 'Lol',
+  },
+  {
+    img: 'https://am3pap004files.storage.live.com/y4m71WeNzYMG0V_zsjHwQD0Cm8Q07B8wt3b22XwhZzXkXFQ2SvEzlRK0OZAelYUcDyz4ujg_9XMh3IDDHavrEUSCgLWd-Jr8YlmUX3QX_rYuTHedePSjA6I1OOGMczBrpHyRexMHtJXkvWE5Wm3FnwVqEtU7qIxdWHbkMJBl3NFbPCBujJGxFAw_DHEu5ghvy18pvZOdjU2ZpBeuOL2STmdRw/P1070949%20%282%29.JPG?psid=1&width=1150&height=769',
+    title: 'Test',
+  },
 
 ];
 
@@ -40,7 +48,7 @@ const Pics = () => {
   return (
     <Container>
    
-    <ImageList sx={{ width: 900, height: 450 }} cols={5} rowHeight={164}>
+    <ImageList sx={{ width: 1200, height: 450 }} cols={7} rowHeight={164}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img

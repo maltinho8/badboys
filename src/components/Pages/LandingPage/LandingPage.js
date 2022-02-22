@@ -4,8 +4,9 @@ import styled from 'styled-components';
 import ContentLandingPage from '../../PagesContent/ContentLandingPage/index';
 
 const ContentContainer = styled.div`
-  width: 100%;
-  margin: 2rem 0 0 4rem;
+  width: 100vwimportant!;
+  margin: 0 auto;
+  
 `;
 
 

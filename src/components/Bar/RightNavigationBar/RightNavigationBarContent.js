@@ -58,7 +58,7 @@ const Content = ({closeMenu}) => {
         <Text onClick={closeMenu} to="/Team" style={{ textDecoration: 'none', color: 'white' }}>Team</Text>
         <Text onClick={closeMenu} to="/Tabelle" style={{ textDecoration: 'none', color: 'white' }}>Tabelle</Text>
         <Text onClick={closeMenu} to="/Spielplan" style={{ textDecoration: 'none', color: 'white' }}>Spielplan</Text>
-        <Text onClick={closeMenu} to="/Spielplan" style={{ textDecoration: 'none', color: 'white' }}>News</Text>
+        <Text onClick={closeMenu} to="/News" style={{ textDecoration: 'none', color: 'white' }}>News</Text>
         </Container>
 
 

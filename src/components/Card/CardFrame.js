@@ -8,7 +8,7 @@ import { orange } from '@mui/material/colors';
 
 const CardContainer = styled.div`
   width: 255px;
-  height: 410px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   border-radius: 25px;
@@ -18,6 +18,9 @@ const CardContainer = styled.div`
   position: relative;
   margin-right: 20px;
   margin-bottom: 30px;
+  @media (max-width: 300px) { 
+    margin-left: 20px; 
+   }
   
   
 `;

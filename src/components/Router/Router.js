@@ -5,6 +5,7 @@ import fire from '../../fire';
 import Homepage from '../Pages/LandingPage/LandingPage';
 import Spielplan from '../Pages/Spielplan/Spielplan';
 import Tabelle from '../Pages/Tabelle/Tabelle';
+import News from '../Pages/News/News';
 import Team from '../Pages/Team/Team';
 import Login from '../Authentification/Login'
 
@@ -23,6 +24,7 @@ const Routing = () => {
         <Route path='/Team' component={Team} />
         <Route path='/Tabelle' component={Tabelle} />
         <Route path='/Spielplan' component={Spielplan} />
+        <Route path='/News' component={News} />
         <Route path='/Login' component={Login} />
       </Switch>
 
