@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { HeadlineDrawing } from "../../HeadlineDrawing/Index";
 import TimeLine from "../../TimeLine2/TimeLine2";
-import Header from '../../PagesContent/ContentLandingPage/Header';
+import Header from './Header';
 import Pics from '../../Pics/Pics';
 import Emre from '../../../assets/img/ProfileImages/emre.jpg';
 
@@ -24,9 +24,14 @@ const HeadlineSmall2 = styled.h4`
 
 `;
 
-const Text = styled.div`
+const Text = styled.p`
   font-size: 1.2rem;
   color: white;
+  @media screen and (max-width: 768px) {
+    font-size: 0.5rem;
+    
+   
+  }
 `;
 
 
@@ -37,10 +42,12 @@ text-align: center;
 
 const ContentContainer2 = styled.div`
 
-margin-left: 2rem;
+margin-left: 3rem;
+margin-right: 3rem;
+
 @media screen and (max-width: 768px) {
-  margin-left: 1rem;
-  margin-right: auto;
+  margin-left: 3rem;
+  margin-right: 3rem;
   display: block;
  
 }
@@ -84,6 +91,7 @@ margin-left: 2rem;
 const Wrapper = styled.div`
 
 display: flex;
+background-color: white;
 @media screen and (max-width: 768px) {
   flex-direction: column;
  
@@ -91,7 +99,9 @@ display: flex;
 `;
 
 const TimeLineContainer = styled.div`
-width: 100%;
+
+margin-left: 3rem;
+margin-right: 3rem;
 
 
 `;

@@ -33,10 +33,10 @@ const ContentNews = () => {
   return (
     <Container>
       <Headline>
-        Hall of Fame
+        News
       </Headline>
       <Text>
-     
+     Blablahfggdfg gf erg zer uzfudfguer ezruerg zeewur werzeuw wuzeg wuegr.
         
       </Text>  
       
@@ -46,9 +46,7 @@ const ContentNews = () => {
       <BlogContainer>
       < MusicCardDemo />
       </BlogContainer>
-      <BlogContainer>
-      < MusicCardDemo />
-      </BlogContainer>
+      
       </BlogWrapper>
       
       </Container>

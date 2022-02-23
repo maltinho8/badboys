@@ -12,7 +12,8 @@ margin: 0 auto;
 `;
 
 const Container1 = styled.div`
-
+  margin-left: 3rem;
+  margin-right: 3rem;
  
   
 `;

@@ -5,7 +5,6 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import './TimeLine2.css';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-import { purple } from '@mui/material/colors';
 
 
 const steps = [
@@ -21,12 +20,12 @@ export default function Timeline2() {
   return (
     <Box sx={{ width: '100%' }}>
         
-      <Stepper  alternativeLabel={true} orientation="horizontal">
+      <Stepper alternativeLabel={true} orientation="horizontal">
         {steps.map((label) => (
           <Step key={label}>
             <StepLabel 
              icon={<EmojiEventsIcon/>}
-             style={{color: purple}}
+             style={{color: "gold"}}
              >{label}</StepLabel>
           </Step>
         ))}

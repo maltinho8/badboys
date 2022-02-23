@@ -51,6 +51,7 @@ export const MusicCardDemo = React.memo(function MusicCard() {
               Mannschaft
       </Button></Link>
     </Card>
+    
   );
 });
 export default MusicCardDemo
