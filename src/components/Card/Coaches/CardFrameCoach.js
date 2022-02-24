@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 import Avatar from '@mui/material/Avatar';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
-import {Link} from "react-router-dom";
 import IconButton from '@mui/material/IconButton';
 import { orange } from '@mui/material/colors';
 
@@ -41,7 +40,7 @@ const Circle = styled.div`
   top: -4.2em;
   right: -10em;
   z-index: 0;
-  background-color: orange;
+  background-color: white;
   width: 280px;
   height: 280px;
   border-radius: 50%;
@@ -142,7 +141,7 @@ const SpaceHorizontalContainer = styled.div`
   margin-left: 20px;
 `;
 
-const CardTest = (props) => {
+const CardFrameCoach = (props) => {
   return (
     <CardContainer>
       <TopContainer>
@@ -193,4 +192,4 @@ const CardTest = (props) => {
   );
 }
 
-export default CardTest;
+export default CardFrameCoach;

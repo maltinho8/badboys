@@ -1,7 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
 import './FootballField.css';
-import Button from '@mui/material/Button';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import Paul from '../../assets/img/ProfileImages/paul.jpg';

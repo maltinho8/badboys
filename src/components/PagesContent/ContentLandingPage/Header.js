@@ -18,12 +18,6 @@ const Container1 = styled.div`
   
 `;
 
-const Container2 = styled.div`
-  width: 100vwimportant!;
-  
-  
-`;
-
 const Headline = styled.h3`
   font-size: 5rem;
   line-height: 1;
@@ -40,13 +34,6 @@ const Text = styled.div`
   font-size: 1.2rem;
   color: white;
 `;
-
-const ButtonContainer = styled.div`
- display: flex;
-  
-
-`;
-
 
 
 const Header = () => {

@@ -1,5 +1,6 @@
-import React from 'react';
-import Deets from '../../Card/CardFrameContent';
+import Deets from '../../Card/Players/CardFramePlayerContent';
+import styled  from 'styled-components';
+import DeetsCoach from '../../Card/Coaches/CardFrameCoachContent';
 import Grid from "@material-ui/core/Grid";
 import SG from '../../../assets/img/ProfileImages/globig.jpg';
 import CH from '../../../assets/img/ProfileImages/claudius.jpg';
@@ -11,7 +12,36 @@ import ML from '../../../assets/img/ProfileImages/matti.jpg';
 import PC from '../../../assets/img/ProfileImages/paul.jpg';
 import MS from '../../../assets/img/ProfileImages/moritz.jpg';
 
+const Text = styled.div`
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 20px;
+`;
+
 const ContentTeam = () => {
+  const profilesCoach = [
+    {
+      name: 'Uwe Großmann',
+      saison: '2022/2023',
+      verein: 'Frohnauer SC II',
+      position: 'TR',
+      jahr: '2017',
+      status: 'Taktikfuchs',
+      avatar: 'UG',
+      link: 'https://www.fupa.net/player/simon-globig-1444663',
+    },
+    { 
+    name: 'Sascha Sievert',
+    saison: '2022/2023',
+    verein: 'Frohnauer SC II',
+    position: 'TR',
+    jahr: '2009',
+    status: 'Tabata-Großmeister',
+    avatar: 'FD',
+    link: 'https://www.fupa.net/player/xaver-bunzel-lingens-1119657',
+  },
+  ]
+
   const profiles = [
     {
       name: 'Simon Globig',
@@ -276,15 +306,14 @@ const ContentTeam = () => {
   return (
 
     <Grid container>
-
-      
-      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-        
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}> 
       <Deets info={profiles}/> 
-      
+      </Grid>
+      <Text>Trainerteam</Text>
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>  
+      <DeetsCoach info={profilesCoach}/>
       </Grid>
       </Grid>
- 
   );
 };
 

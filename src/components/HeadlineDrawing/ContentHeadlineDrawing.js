@@ -1,6 +1,5 @@
 import React from 'react';
 import Chart from "react-apexcharts";
-import styled from 'styled-components';
 
 class RadialChart extends React.Component {
   constructor(props) {
@@ -16,6 +15,22 @@ class RadialChart extends React.Component {
     
       ],
       options: {
+        fill: {
+          colors: ['orange'],
+          opacity: 0.1
+        },
+        stroke: {
+          show: true,
+          width: 3.5,
+          colors: ['orange'],
+          dashArray: 0
+        },
+        markers: {
+          size: 5,
+          hover: {
+            size: 10
+          }
+        },
         chart: {
           height: 350,
           type: 'radar',
@@ -33,6 +48,9 @@ class RadialChart extends React.Component {
         xaxis: {
           categories: ['Attraktivität', 'Teamgeist', 'Power', 'Spielwitz', 'Wille', 'Ausdauer']
         },
+        yaxis: {
+          show: false
+        }
         
       },
     

@@ -3,8 +3,14 @@ import Box from '@mui/material/Box';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
-import './TimeLine2.css';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import { styled } from "@material-ui/styles";
+
+const StyledStepLabel = styled(StepLabel)({
+  "& .MuiStepLabel-label": {
+    color: "white"
+  }
+});
 
 
 const steps = [
@@ -13,7 +19,6 @@ const steps = [
   '2019 - Aufstieg in die Kreisliga A',
   '2019 - Einzug ins Berliner Pokalhalbfinale',
   '2019 - Bangoura Cup Hamburg',
-  '2022 - Einzug ins Berliner Pokalhalbfinale',
 ];
 
 export default function Timeline2() {
@@ -23,10 +28,10 @@ export default function Timeline2() {
       <Stepper alternativeLabel={true} orientation="horizontal">
         {steps.map((label) => (
           <Step key={label}>
-            <StepLabel 
+            <StyledStepLabel 
              icon={<EmojiEventsIcon/>}
              style={{color: "gold"}}
-             >{label}</StepLabel>
+             >{label}</StyledStepLabel>
           </Step>
         ))}
       </Stepper>

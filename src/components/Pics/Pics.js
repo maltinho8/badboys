@@ -25,11 +25,11 @@ const itemData = [
     title: 'Hats',
   },
   {
-    img: 'https://am3pap004files.storage.live.com/y4m71WeNzYMG0V_zsjHwQD0Cm8Q07B8wt3b22XwhZzXkXFQ2SvEzlRK0OZAelYUcDyz4ujg_9XMh3IDDHavrEUSCgLWd-Jr8YlmUX3QX_rYuTHedePSjA6I1OOGMczBrpHyRexMHtJXkvWE5Wm3FnwVqEtU7qIxdWHbkMJBl3NFbPCBujJGxFAw_DHEu5ghvy18pvZOdjU2ZpBeuOL2STmdRw/P1070949%20%282%29.JPG?psid=1&width=1150&height=769',
+    img: 'https://image.fupa.net/news/H8WUqGI8RA1z/1440x960.webp',
     title: 'Lol',
   },
   {
-    img: 'https://am3pap004files.storage.live.com/y4m71WeNzYMG0V_zsjHwQD0Cm8Q07B8wt3b22XwhZzXkXFQ2SvEzlRK0OZAelYUcDyz4ujg_9XMh3IDDHavrEUSCgLWd-Jr8YlmUX3QX_rYuTHedePSjA6I1OOGMczBrpHyRexMHtJXkvWE5Wm3FnwVqEtU7qIxdWHbkMJBl3NFbPCBujJGxFAw_DHEu5ghvy18pvZOdjU2ZpBeuOL2STmdRw/P1070949%20%282%29.JPG?psid=1&width=1150&height=769',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yvoktf3Fzk-lYvpodVYQVKvN7XcBu8sgqg&usqp=CAU',
     title: 'Test',
   },
 

@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
-import Field from '../../FootballField/Index';
 import MusicCardDemo from '../../Blog/Index';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import './Index.css';
+import Bild from '../../../assets/img/reeperbahn.jpg';
 
 const Container = styled.div`
   padding: 1rem;
@@ -30,6 +33,9 @@ const Text = styled.div`
 `;
 
 const ContentNews = () => {
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
   return (
     <Container>
       <Headline>
@@ -48,6 +54,14 @@ const ContentNews = () => {
       </BlogContainer>
       
       </BlogWrapper>
+
+      <div className="grids">
+        <div className="boxes">1</div>
+        <div className="boxes">2</div>
+        <div data-aos="fade-right" className="boxes"><img src={Bild} alt="test" width="500"></img></div>
+        <div data-aos="flip-right" className="boxes">4</div>
+        <div className="boxes">5</div>
+      </div>
       
       </Container>
     

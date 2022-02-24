@@ -4,7 +4,6 @@ import { HeadlineDrawing } from "../../HeadlineDrawing/Index";
 import TimeLine from "../../TimeLine2/TimeLine2";
 import Header from './Header';
 import Pics from '../../Pics/Pics';
-import Emre from '../../../assets/img/ProfileImages/emre.jpg';
 
 const Container = styled.div`
   width: 100%;
@@ -28,7 +27,8 @@ const Text = styled.p`
   font-size: 1.2rem;
   color: white;
   @media screen and (max-width: 768px) {
-    font-size: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
     
    
   }
@@ -45,34 +45,18 @@ const ContentContainer2 = styled.div`
 margin-left: 3rem;
 margin-right: 3rem;
 
+
 @media screen and (max-width: 768px) {
   margin-left: 3rem;
   margin-right: 3rem;
   display: block;
  
 }
-
-`;
-
-const ContentContainer3 = styled.div`
-width: 70%;
-margin-left: 2rem;
-@media screen and (max-width: 768px) {
-  order: 2;
-  margin-left: 1rem;
-  margin-right: auto;
-  display: block;
- 
-}
-
-
 `;
 
   const HeadlineContainer = styled.div`
-
-  
-  
-  margin-left: 2rem;
+  position: relative;
+  left: 50px;
 @media screen and (max-width: 768px) {
   order: 2;
   margin-left: 1rem;
@@ -91,7 +75,7 @@ margin-left: 2rem;
 const Wrapper = styled.div`
 
 display: flex;
-background-color: white;
+
 @media screen and (max-width: 768px) {
   flex-direction: column;
  
@@ -100,8 +84,7 @@ background-color: white;
 
 const TimeLineContainer = styled.div`
 
-margin-left: 3rem;
-margin-right: 3rem;
+
 
 
 `;

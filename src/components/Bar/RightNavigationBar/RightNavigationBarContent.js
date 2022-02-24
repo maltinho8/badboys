@@ -54,7 +54,7 @@ const Content = ({closeMenu}) => {
         <Container>
           <br/>
         {/* durch onClick - closeMenu wird genutzt, um beim Klicken des Links das Menü zu schließen  */}
-        <Logo><Link onClick={closeMenu} to="/Home" style={{ textDecoration: 'none', color: 'orange' }}><i className="fas fa-user-ninja"></i></Link></Logo>
+        <Logo><Link onClick={closeMenu} to="/Homepage" style={{ textDecoration: 'none', color: 'orange' }}><i className="fas fa-user-ninja"></i></Link></Logo>
         <Text onClick={closeMenu} to="/Team" style={{ textDecoration: 'none', color: 'white' }}>Team</Text>
         <Text onClick={closeMenu} to="/Tabelle" style={{ textDecoration: 'none', color: 'white' }}>Tabelle</Text>
         <Text onClick={closeMenu} to="/Spielplan" style={{ textDecoration: 'none', color: 'white' }}>Spielplan</Text>

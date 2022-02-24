@@ -7,11 +7,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/118657807_3442834425773146_5322172505327115756_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=e3f864&_nc_ohc=624syiSCQMYAX8dDyCt&_nc_ht=scontent-ber1-1.xx&oh=00_AT-6XbiWSJF3pLazTdZwKo5WdQYroj-pSVgDZu_5d0dW-g&oe=623B22FB");
-  background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  
+    
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size:cover;
+
     opacity: 0.9;
     
   

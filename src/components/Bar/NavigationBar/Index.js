@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Burger from '../Burger/Index';
 import {NavLink as Link} from "react-router-dom";
-import Logo from '../../../assets/img/logo_small.png';
 
  const Nav = styled.nav`
   background: #000;
@@ -84,24 +83,23 @@ const NavBtnLink = styled(Link)`
       <Nav>
         <NavLink to='/Homepage'>
           
-        <i class="fas fa-user-ninja fa-xl"></i>
+        <i className="fas fa-user-ninja fa-xl"></i>
         </NavLink>
         <Burger />
         <NavMenu>
-          <NavLink to='/Team' activeStyle>
+          <NavLink to='/Team'>
             Team
           </NavLink>
-          <NavLink to='/Tabelle' activeStyle>
+          <NavLink to='/Tabelle'>
             Tabelle
           </NavLink>
-          <NavLink to='/Spielplan' activeStyle>
+          <NavLink to='/Spielplan'>
             Spielplan
           </NavLink>
-          <NavLink to='/News' activeStyle>
+          <NavLink to='/News'>
             News
           </NavLink>
-          {/* Second Nav */}
-          {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+         
         </NavMenu>
         <NavBtn>
           <NavBtnLink to='/Login'>Konto</NavBtnLink>

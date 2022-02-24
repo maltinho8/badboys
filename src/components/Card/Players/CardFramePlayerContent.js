@@ -1,5 +1,5 @@
-import CardTest from './CardFrame';
-import '../PagesContent/ContentTeam/Index';
+import CardTest from './CardFramePlayer';
+import '../../PagesContent/ContentTeam/Index';
 import styled from 'styled-components';
 
 const HorizontalContainer = styled.div`
