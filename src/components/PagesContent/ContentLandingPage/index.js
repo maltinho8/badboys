@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import { HeadlineDrawing } from "../../HeadlineDrawing/Index";
 import TimeLine from "../../TimeLine2/TimeLine2";
 import Header from './Header';
 import Pics from '../../Pics/Pics';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import Bild from '../../../assets/img/reeperbahn.jpg';
 
 const Container = styled.div`
   width: 100%;
@@ -15,7 +18,7 @@ const Container = styled.div`
 const HeadlineSmall2 = styled.h4`
   font-size: 2.5rem;
   line-height: 1;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   color: white;
   @media (max-width: 768px) { 
     text-align: center; 
@@ -26,6 +29,7 @@ const HeadlineSmall2 = styled.h4`
 const Text = styled.p`
   font-size: 1.2rem;
   color: white;
+  margin: 10px;
   @media screen and (max-width: 768px) {
     font-size: 1rem;
     text-align: center;
@@ -61,7 +65,7 @@ margin-right: 3rem;
   order: 2;
   margin-left: 1rem;
   margin-right: auto;
-  display: block;
+  display: none;
  
 }
 
@@ -83,9 +87,37 @@ display: flex;
 `;
 
 const TimeLineContainer = styled.div`
+`;
+
+const Grids = styled.div`
+    max-width:100%;
+    margin-left: 2rem;
+    @media screen and (max-width: 768px) {
+      max-width: 80%;
+      margin: auto;
+     
+    }
+`;
+
+const Boxes = styled.div`
 
 
+border: 1px solid orange;
+overflow: hidden;
 
+box-shadow: 0px 12px 18px -6px rgba (0,0,0,0.3);
+border-radius: 10px 10px 10px 10px;
+object-fit: contain;
+`;
+
+const BoxesImage = styled.div`
+
+padding: 10px;
+
+overflow: hidden;
+width: 510px;
+box-shadow: 0px 12px 18px -6px rgba (0,0,0,0.3);
+border-radius: 10px 10px 10px 10px;
 
 `;
 
@@ -93,6 +125,9 @@ const TimeLineContainer = styled.div`
 
 
 const ContentLandingPage = () => {
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
   return (
 
     
@@ -108,12 +143,14 @@ const ContentLandingPage = () => {
       <HeadlineSmall2>
       Teamchemie
       </HeadlineSmall2>
+      <Boxes>
       <Text>
       Bei den BadBoys zählen vor allem Teamgeist und Wille. Die Komponente Attraktivität wird direkt 
       im ersten Probetraining, sowie im ersten Training jedes neuen Jahres, regelmäßigen Kontrollen unterzogen.
       Die Problematik rund um das Thema Ausdauer wird durch den Athletikstab um dessen Leiter Sascha Sievert
       mithilfe engagierter Tabata-Einheiten proaktiv angegangen. 
       </Text>
+      </Boxes>
       </ContentContainer2>
       
       <br />
@@ -129,6 +166,7 @@ const ContentLandingPage = () => {
       <HeadlineSmall2>
       Erfolge
       </HeadlineSmall2>
+      <Boxes data-aos="fade-left">
       <Text>
       Neben den direkten Aufstiegen in die Spielklassen B und A und dem Einzug ins Pokalhalbfinale, wo man sich nur denkbar knapp einem Landesligisten aus
       dem Spandauer Speckgürtel geschlagen geben musste, fand der eigentliche Coup im Norden der Bundesrepublik statt.
@@ -137,10 +175,11 @@ const ContentLandingPage = () => {
       
 
       </Text>
+      </Boxes>
       </ContentContainer2>
       
-      <br />
-      <br />
+      
+      
       
       </Wrapper>
       <br />
@@ -150,13 +189,14 @@ const ContentLandingPage = () => {
       <TimeLine />
       </TimeLineContainer>
       <br />
-      
+      <br />
       
       <Wrapper>
       <ContentContainer2>  
       <HeadlineSmall2>
       Galerie
       </HeadlineSmall2>
+      <Boxes data-aos="fade-left">
       <Text>
       Neben den direkten Aufstiegen in die Spielklassen B und A und dem Einzug ins Pokalhalbfinale, wo man sich nur denkbar knapp einem Landesligisten aus
       dem Spandauer Speckgürtel geschlagen geben musste, fand der eigentliche Coup im Norden der Bundesrepublik statt.
@@ -165,6 +205,8 @@ const ContentLandingPage = () => {
       
 
       </Text>
+      </Boxes>
+      
       </ContentContainer2>
       </Wrapper>
       <ImageContainer>

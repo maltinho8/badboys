@@ -31,13 +31,13 @@ const Routing = () => {
       ) : (
         <Switch>
         
-       
-           <Route path="/Login">
-          <Login />
-        </Route>
         <Route path="/Homepage">
           <Homepage />
         </Route>
+           <Route path="/Login">
+          <Login />
+        </Route>
+        
         
         </Switch>
       )}
