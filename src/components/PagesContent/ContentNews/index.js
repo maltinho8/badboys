@@ -1,10 +1,8 @@
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
-import MusicCardDemo from '../../Blog/index';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './Index.css';
-import Bild from '../../../assets/img/reeperbahn.jpg';
 
 const Container = styled.div`
   padding: 1rem;
@@ -43,16 +41,15 @@ const ContentNews = () => {
       </Headline>
       <Text>
      Blablahfggdfg gf erg zer uzfudfguer ezruerg zeewur werzeuw wuzeg wuegr.
-        
-      </Text>  
-      
+
+      </Text>
+
       <br />
       <br />
       <BlogWrapper>
       <BlogContainer>
-      < MusicCardDemo />
       </BlogContainer>
-      
+
       </BlogWrapper>
 
       <div className="grids">
@@ -62,13 +59,13 @@ const ContentNews = () => {
         <div data-aos="flip-right" className="boxes">4</div>
         <div className="boxes">5</div>
       </div>
-      
-      </Container>
-    
-      
-     
 
-    
+      </Container>
+
+
+
+
+
   );
 };
 

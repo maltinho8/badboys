@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Burger from '../Burger/index';
+import Burger from "../Burger";
 import {NavLink as Link} from "react-router-dom";
 
  const Nav = styled.nav`
@@ -10,10 +10,6 @@ import {NavLink as Link} from "react-router-dom";
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
-  
-
-  
-  
 `;
 
 const NavLink = styled(Link)`
@@ -75,14 +71,14 @@ const NavBtnLink = styled(Link)`
     color: orange;
   }
 `;
-  
+
   const NavBar = () => {
 
-    return (        
+    return (
         <>
       <Nav>
         <NavLink to='/Homepage'>
-          
+
         <i className="fas fa-user-ninja fa-xl"></i>
         </NavLink>
         <Burger />
@@ -102,16 +98,16 @@ const NavBtnLink = styled(Link)`
           <NavLink to='/HallOfFame'>
             Hall of Fame
           </NavLink>
-         
+
         </NavMenu>
         <NavBtn>
           <NavBtnLink to='/Login'>Konto</NavBtnLink>
         </NavBtn>
       </Nav>
-      
+
     </>
 
     );
   };
-  
+
   export default NavBar;

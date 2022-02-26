@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ContentHallOfFame from '../../PagesContent/ContentHallOfFame/index';
-
+import ContentHallOfFame from "../../PagesContent/ContentHallOfFame";
 
 const StyledBody = styled.div`
   background-color: black;
@@ -30,7 +29,7 @@ const HallOfFame = () => {
           <ContentHallOfFame/>
         </ContentContainer>
         </StyledBody>
-     
+
   );
 }
 
