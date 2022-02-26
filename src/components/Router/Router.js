@@ -7,7 +7,8 @@ import Spielplan from '../Pages/Spielplan/Spielplan';
 import Tabelle from '../Pages/Tabelle/Tabelle';
 import News from '../Pages/News/News';
 import Team from '../Pages/Team/Team';
-import Login from '../Authentification/Login'
+import Login from '../Authentification/Login';
+import HallOfFame from '../Pages/HallOfFame/HallOfFame';
 
 const Routing = () => {
     const [isLoggedIn, setIsLoggedIn] = useState (false)
@@ -25,6 +26,7 @@ const Routing = () => {
         <Route path='/Tabelle' component={Tabelle} />
         <Route path='/Spielplan' component={Spielplan} />
         <Route path='/News' component={News} />
+        <Route path='/HallOfFame' component={HallOfFame} />
         <Route path='/Login' component={Login} />
       </Switch>
 

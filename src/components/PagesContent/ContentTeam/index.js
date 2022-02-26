@@ -307,11 +307,11 @@ const ContentTeam = () => {
 
     <Grid container>
       <Grid item xs={12} sm={12} md={12} lg={12} xl={12}> 
-      <Deets info={profiles}/> 
+      <Deets players={profiles}/> 
       </Grid>
       <Text>Trainerteam</Text>
       <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>  
-      <DeetsCoach info={profilesCoach}/>
+      <DeetsCoach coaches={profilesCoach}/>
       </Grid>
       </Grid>
   );

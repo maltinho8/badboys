@@ -7,11 +7,25 @@ import Pics from '../../Pics/Pics';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Bild from '../../../assets/img/reeperbahn.jpg';
+import Button from '@mui/material/Button';
+import {Link} from "react-router-dom";
 
 const Container = styled.div`
   width: 100%;
 
   
+`;
+
+const HeadlineSmall = styled.h4`
+  font-size: 6rem;
+  line-height: 1;
+  margin-bottom: 3rem;
+  color: white;
+  margin-top: 9rem;
+  @media (max-width: 768px) { 
+    text-align: center; 
+  }
+
 `;
 
 
@@ -26,6 +40,20 @@ const HeadlineSmall2 = styled.h4`
 
 `;
 
+const TextHeader = styled.p`
+  font-size: 0.9rem;
+  color: white;
+  margin: 10px;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    text-align: center;
+    
+   
+  }
+`;
+
+
+
 const Text = styled.p`
   font-size: 1.2rem;
   color: white;
@@ -38,16 +66,34 @@ const Text = styled.p`
   }
 `;
 
+const TextVertical = styled.div`
+  font-size: 1.2rem;
+  color: white;
+  transform: rotate(-90deg);
+  margin-right: 58rem;
+  margin-bottom: 5rem;
+`;
+
 
 const HeaderContainer = styled.div`
  
 text-align: center;
+
 `;
+
+const ButtonContainer = styled.div`
+ 
+margin-left: 50.6rem;
+margin-top: 1rem;
+
+`;
+
+
 
 const ContentContainer2 = styled.div`
 
-margin-left: 3rem;
-margin-right: 3rem;
+margin-left: 5rem;
+margin-right: 5rem;
 
 
 @media screen and (max-width: 768px) {
@@ -110,15 +156,17 @@ border-radius: 10px 10px 10px 10px;
 object-fit: contain;
 `;
 
-const BoxesImage = styled.div`
+const BoxesHeader = styled.div`
 
-padding: 10px;
 
+margin-top: 5rem;
+margin-left: 50rem;
+margin-right: 2rem;
+width: 30%;
 overflow: hidden;
-width: 510px;
 box-shadow: 0px 12px 18px -6px rgba (0,0,0,0.3);
 border-radius: 10px 10px 10px 10px;
-
+object-fit: contain;
 `;
 
 
@@ -132,9 +180,34 @@ const ContentLandingPage = () => {
 
     
        <Container>
-          <HeaderContainer>
-         <Header/>
-       </HeaderContainer>
+         <Wrapper>
+         <ContentContainer2>  
+      
+      <BoxesHeader>
+      <TextHeader>
+      Spätestens seit dem furiosen Reeperbahn-Auftritt 2019 erlangten die BadBoys internationale Bekanntheit. Dem
+      Durchmarsch von der Kreisliga C in die Kreisliga A soll nun auch der Schritt in den bezahlten Profifussball folgen.
+      </TextHeader>
+      </BoxesHeader>
+      <ButtonContainer>
+      <Link to="/Team" style={{ textDecoration: 'none' }}>
+      <Button variant="outlined" href="#outlined-buttons" style={{ color: 'orange' }}>
+              Mannschaft
+      </Button></Link>&nbsp;&nbsp;
+      <Link to="/Tabelle" style={{ textDecoration: 'none' }}>
+      <Button variant="outlined" href="#outlined-buttons" style={{ color: 'orange' }}>
+              Tabelle
+      </Button>
+      </Link>
+      </ButtonContainer>
+      
+      </ContentContainer2>
+      </Wrapper>
+         <HeaderContainer>
+        <HeadlineSmall>
+      BADBOYS
+      </HeadlineSmall>
+      </HeaderContainer>
        
        <br />
       <br />

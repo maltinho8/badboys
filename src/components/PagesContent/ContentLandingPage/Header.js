@@ -23,6 +23,7 @@ const Headline = styled.h3`
   line-height: 1;
   margin-bottom: 3rem;
   color: white;
+  margin-top: 25rem;
   
   
   
@@ -33,6 +34,7 @@ const Headline = styled.h3`
 const Text = styled.div`
   font-size: 1.2rem;
   color: white;
+  width: 50%;
 `;
 
 
@@ -43,9 +45,7 @@ const Header = () => {
    
        <Container>
          <Container1>
-      <Headline>
-        Bad Boys
-      </Headline>
+      
      
      
       <Text>
@@ -64,6 +64,9 @@ const Header = () => {
               Tabelle
       </Button>
       </Link>
+      <Headline>
+        Bad Boys
+      </Headline>
       
       
       </Container1>
