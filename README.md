@@ -2,34 +2,11 @@
 
 # Workflow & Anmerkungen
 
-Lokal: Projekt im dev Ordner ablegen - Projekt über: 
-
 npx create-react-app badboys
 cd badboys
 npm start
 
 Projekt läuft über localhost:3000
-
-# Was hab ich genutzt?
-
-Use of props
-
-props (properties/Eigenschaften)
-
-props = arguments passed into React components
-
-props = how you pass data from one component to another component - as parameters
-
-BadBoys:
-
-Datei mit Variablen gefüllt (saison, verein, name) = Deets
-
-Props von Deets.js an CardTest.js geschickt
-
-in index.js von ContentTeam:
-Inhalt der Variablen festgelegt = heißen hier profiles
-& Anzeige der Karten über Deets info={profiles} (geht, weil CardTest(Konstrukt) in Deets importiert wurde)
-
 
 
 # Sonstiges

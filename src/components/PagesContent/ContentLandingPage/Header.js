@@ -61,7 +61,7 @@ const Header = () => {
       </Button></Link>&nbsp;&nbsp;
       <Link to="/Tabelle" style={{ textDecoration: 'none' }}>
       <Button variant="outlined" href="#outlined-buttons" style={{ color: 'orange' }}>
-              Tabelle
+              Tabelle1
       </Button>
       </Link>
       <Headline>
