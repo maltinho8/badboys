@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
-import { HeadlineDrawing } from "../../HeadlineDrawing/Index";
+import { HeadlineDrawing } from "../../HeadlineDrawing";
 import TimeLine from "../../TimeLine2/TimeLine2";
 import Header from './Header';
 import Pics from '../../Pics/Pics';

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ContentHallOfFame from '../../PagesContent/ContentHallOfFame/Index';
+import ContentHallOfFame from '../../PagesContent/ContentHallOfFame/index';
 
 
 const StyledBody = styled.div`

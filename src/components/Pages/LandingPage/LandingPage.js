@@ -1,7 +1,7 @@
 import './LandingPage.css';
 import React from 'react';
 import styled from 'styled-components';
-import ContentLandingPage from '../../PagesContent/ContentLandingPage/Index';
+import ContentLandingPage from '../../PagesContent/ContentLandingPage/index';
 
 const ContentContainer = styled.div`
   width: 100vwimportant!;

@@ -1,22 +1,12 @@
 import CardTest from './CardFramePlayer';
-import '../../PagesContent/ContentTeam/Index';
+import '../../PagesContent/ContentTeam';
 import styled from 'styled-components';
 
 const HorizontalContainer = styled.div`
     
     width: 100%;
-   
     display: flex;
   `; 
-
-const Break = styled.div`
-    float:left;
-    margin-right: 50px;
-    margin-bottom: 65px;
-    margin:0 auto;
-  `; 
-
-
 
   const DeetsPlayer = ({ players }) => {
     return (

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import theme, { GlobalStyle } from './Theme';
 import { ThemeProvider } from 'styled-components';
-import Footer from './components/Footer/Index';
+import Footer from './components/Footer/index';
 import Routing from './components/Router/Router';
 
 const App = () => {

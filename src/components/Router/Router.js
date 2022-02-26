@@ -1,6 +1,6 @@
 import React, {useState}  from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import NavigationBar from '../Bar/NavigationBar/Index';
+import NavigationBar from '../Bar/NavigationBar/index';
 import fire from '../../fire';
 import Homepage from '../Pages/LandingPage/LandingPage';
 import Spielplan from '../Pages/Spielplan/Spielplan';

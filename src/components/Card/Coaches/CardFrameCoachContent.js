@@ -1,5 +1,5 @@
 import CardFrameCoach from './CardFrameCoach';
-import '../../PagesContent/ContentTeam/Index';
+import '../../PagesContent/ContentTeam';
 import styled from 'styled-components';
 import {Fragment} from 'react';
 const HorizontalContainer = styled.div`

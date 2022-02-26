@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ContentNews from '../../PagesContent/ContentNews/Index';
+import ContentNews from '../../PagesContent/ContentNews/index';
 
 const ContentContainer = styled.div`
   width: 100%;
