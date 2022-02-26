@@ -1,12 +1,12 @@
 import React, {useState}  from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import NavigationBar from '../Bar/NavigationBar/index';
+import NavigationBar from '../Bar/NavigationBar';
 import fire from '../../fire';
 import Homepage from '../Pages/LandingPage/LandingPage';
-import Spielplan from '../Pages/Spielplan/Spielplan';
-import Tabelle from '../Pages/Tabelle/Tabelle';
+import Spielplan from '../Pages/Spielplan/Spielplan.js';
+import Tabelle from "../Pages/Tabelle/Tabelle.js";
 import News from '../Pages/News/News';
-import Team from '../Pages/Team/Team';
+import Team from '../Pages/Team/Team.js';
 import Login from '../Authentification/Login';
 import HallOfFame from '../Pages/HallOfFame/HallOfFame';
 
@@ -32,21 +32,21 @@ const Routing = () => {
 
       ) : (
         <Switch>
-        
+
         <Route path="/Homepage">
           <Homepage />
         </Route>
            <Route path="/Login">
           <Login />
         </Route>
-        
-        
+
+
         </Switch>
       )}
   </Router>
-   
-   
-    
+
+
+
   );
 };
 

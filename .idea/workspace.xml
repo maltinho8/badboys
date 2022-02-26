@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1e164a51-68a9-4c11-a5f4-5583f7b4a3bf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/badboys.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Bar/Burger/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Bar/Burger/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Bar/NavigationBar/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Bar/NavigationBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Bar/RightNavigationBar/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Bar/RightNavigationBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/HallOfFame/HallOfFame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/HallOfFame/HallOfFame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/News/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/News/News.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Spielplan/spielplan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Spielplan/Spielplan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Tabelle/tabelle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Tabelle/Tabelle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Team/team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Team/Team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PagesContent/ContentHallOfFame/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PagesContent/ContentHallOfFame/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PagesContent/ContentNews/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PagesContent/ContentNews/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Router/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Router/Router.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="205exSKrg8bAejM0lci3xP3fFog" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="13.0.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.lint:fix">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="lint:fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint:fix" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.lint:fix" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e164a51-68a9-4c11-a5f4-5583f7b4a3bf" name="Changes" comment="" />
+      <created>1635339126203</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635339126203</updated>
+      <workItem from="1635339130129" duration="1994000" />
+      <workItem from="1636557665936" duration="86000" />
+      <workItem from="1636557761639" duration="877000" />
+      <workItem from="1636559408804" duration="30000" />
+      <workItem from="1636559467011" duration="299000" />
+      <workItem from="1636559782123" duration="49000" />
+      <workItem from="1636559876854" duration="1444000" />
+      <workItem from="1636715909516" duration="1397000" />
+      <workItem from="1636717364745" duration="16553000" />
+      <workItem from="1637675776202" duration="1675000" />
+      <workItem from="1637936820008" duration="1682000" />
+      <workItem from="1638280005855" duration="1254000" />
+      <workItem from="1638521767534" duration="574000" />
+      <workItem from="1640173670230" duration="155000" />
+      <workItem from="1640251026278" duration="1973000" />
+      <workItem from="1641395184511" duration="1060000" />
+      <workItem from="1642161030228" duration="668000" />
+      <workItem from="1645874926383" duration="4280000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

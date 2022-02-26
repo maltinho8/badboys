@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ContentNews from '../../PagesContent/ContentNews/index';
+import ContentNews from "../../PagesContent/ContentNews";
 
 const ContentContainer = styled.div`
   width: 100%;
@@ -9,11 +9,11 @@ const ContentContainer = styled.div`
 
 const News = () => {
   return (
-    
+
         <ContentContainer>
           <ContentNews/>
         </ContentContainer>
-     
+
   );
 }
 
