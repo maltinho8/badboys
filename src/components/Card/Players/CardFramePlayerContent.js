@@ -6,6 +6,7 @@ const HorizontalContainer = styled.div`
     
     width: 100%;
     display: flex;
+    line-break: normal;
   `; 
 
   const DeetsPlayer = ({ players }) => {
