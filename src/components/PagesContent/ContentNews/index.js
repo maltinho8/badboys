@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import './Index.css';
+import './index.css';
 
 const Container = styled.div`
   padding: 1rem;
@@ -11,9 +11,10 @@ const Container = styled.div`
 `;
 
 const Headline = styled.h2`
-  font-size: 5rem;
-  line-height: 1;
-  margin-bottom: 3rem;
+font-size: 4rem;
+line-height: 1;
+margin-bottom: 2rem;
+color: white;
 `;
 
 const BlogWrapper = styled.div`

@@ -6,8 +6,10 @@ import IconButton from '@mui/material/IconButton';
 import { orange } from '@mui/material/colors';
 
 const CardContainer = styled.div`
-  width: 255px;
-  height: 400px;
+  min-width: 255px;
+  min-height: 400px;
+  max-width: 255px;
+  max-height: 400px;
   display: flex;
   flex-direction: column;
   border-radius: 25px;

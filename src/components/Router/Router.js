@@ -21,7 +21,7 @@ const Routing = () => {
     <NavigationBar />
     {isLoggedIn ? (
     <Switch>
-        <Route path='/Homepage' exact component={Homepage} />
+        <Route path='/Homepage' component={Homepage} />
         <Route path='/Team' component={Team} />
         <Route path='/Tabelle' component={Tabelle} />
         <Route path='/Spielplan' component={Spielplan} />
@@ -33,12 +33,13 @@ const Routing = () => {
       ) : (
         <Switch>
 
-        <Route path="/Homepage">
-          <Homepage />
-        </Route>
-           <Route path="/Login">
-          <Login />
-        </Route>
+        <Route path='/Homepage' component={Homepage} />
+        <Route path='/Team' component={Team} />
+        <Route path='/Tabelle' component={Tabelle} />
+        <Route path='/Spielplan' component={Spielplan} />
+        <Route path='/News' component={News} />
+        <Route path='/HallOfFame' component={HallOfFame} />
+        <Route path='/Login' component={Login} />
 
 
         </Switch>

@@ -1,22 +1,13 @@
 import CardFrameCoach from './CardFrameCoach';
 import '../../PagesContent/ContentTeam';
 import styled from 'styled-components';
-import {Fragment} from 'react';
+
 const HorizontalContainer = styled.div`
-    
-    width: 100%;
-    display: flex;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
     
   `; 
-
-const Break = styled.div`
-    float:left;
-    margin-right: 50px;
-    margin-bottom: 65px;
-    margin:0 auto;
-  `; 
-
-
 
   const DeetsCoach = ({ coaches }) => {
     return (

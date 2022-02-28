@@ -48,7 +48,7 @@ const Pics = () => {
   return (
     <Container>
    
-    <ImageList sx={{ width: 1200, height: 450 }} cols={7} rowHeight={164}>
+    <ImageList sx={{ width: 1200}} cols={7} rowHeight={164}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img

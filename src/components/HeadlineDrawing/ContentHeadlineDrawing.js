@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Chart from "react-apexcharts";
+const { innerWidth: width } = window;
 
 const RadialChart = () =>{
   const [series, setSeries] = useState( [
@@ -49,12 +50,13 @@ const RadialChart = () =>{
   );
 
   return (
-    <Chart
-      options={options}
-      series={series}
-      type="radar"
-      width="700"
-    />
+      <Chart
+        options={options}
+        series={series}
+        type="radar"
+        width={width >= 768 ? 700 : 520}
+      />
+
   );
 }
 export default RadialChart;

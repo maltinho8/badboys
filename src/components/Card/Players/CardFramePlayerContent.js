@@ -6,7 +6,12 @@ const HorizontalContainer = styled.div`
     
     width: 100%;
     display: flex;
-    line-break: normal;
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-content: center;
+    }
+  
   `; 
 
   const DeetsPlayer = ({ players }) => {

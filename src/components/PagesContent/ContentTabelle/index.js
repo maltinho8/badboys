@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Helmet} from 'react-helmet';
-import './Index.css';
+import './index.css';
 
 const Container = styled.div`
   padding: 1rem;
@@ -32,9 +32,6 @@ const ContentTabelle = () => {
       </Text>
       <br />
       <br />
-      <Text>
-        
-      </Text>
       
       <div id="widget1"></div>
       <Helmet>

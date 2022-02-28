@@ -12,10 +12,36 @@ import ML from '../../../assets/img/ProfileImages/matti.jpg';
 import PC from '../../../assets/img/ProfileImages/paul.jpg';
 import MS from '../../../assets/img/ProfileImages/moritz.jpg';
 
+const Container = styled.div`
+  padding: 1rem;
+  color: ${({theme}) => theme.palette.text.light};
+  @media screen and (max-width: 768px) {
+    
+    
+  }
+  
+`;
+
+const PlayerContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+`;
+
+const Headline = styled.h2`
+font-size: 4rem;
+line-height: 1;
+margin-bottom: 2rem;
+color: white;
+
+`;
+
 const Text = styled.div`
   font-size: 1.2rem;
-  color: white;
-  margin-bottom: 20px;
+ 
 `;
 
 const ContentTeam = () => {
@@ -305,15 +331,26 @@ const ContentTeam = () => {
   ];
   return (
 
-    <Grid container>
-      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}> 
-      <Deets players={profiles}/> 
-      </Grid>
-      <Text>Trainerteam</Text>
-      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>  
-      <DeetsCoach coaches={profilesCoach}/>
-      </Grid>
-      </Grid>
+  
+
+<Container>
+<Headline>
+  Mannschaft
+</Headline>
+<Text>
+ Der Spielplan der Saison 2021/2022 der Kreisliga A Staffel 1.
+</Text>  
+<br />
+<br />
+<PlayerContainer>
+<Deets players={profiles}/> 
+</PlayerContainer>
+<br />
+<Text>Trainerteam</Text>
+<br />
+<DeetsCoach coaches={profilesCoach}/>
+
+</Container>
   );
 };
 
