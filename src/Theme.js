@@ -2,11 +2,11 @@ import {  createGlobalStyle } from "styled-components";
 
 
 export const GlobalStyle = createGlobalStyle`
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
  
   body {
-    font-family: 'Nunito', sans-serif;
     
+    font-family: 'Bungee', cursive;
     
   }
   
@@ -15,7 +15,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5 {
-    font-weight: 700;
+    font-weight: 400;
+    
+    
   }
 
   h1 {
@@ -24,8 +26,16 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     margin-bottom: 8px;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
   }
 `;
 
@@ -50,12 +60,7 @@ const theme = {
     }
   },
   
-  fonts: ["sans-serif", "Roboto"],
-  fontSizes: {
-    small: "1em",
-    medium: "2em",
-    large: "3em"
-  }
+  
 };
 
 export default theme;

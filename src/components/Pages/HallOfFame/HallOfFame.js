@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ContentHallOfFame from "../../PagesContent/ContentHallOfFame";
 
 const StyledBody = styled.div`
-  background-color: black;
+  
   background-size: cover;
   top: 0;
   left: 0;

@@ -67,7 +67,7 @@ const ProfilText = styled.h2`
   color: #fff;
   margin: 0;
   z-index: 0;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 700;
 
 `;

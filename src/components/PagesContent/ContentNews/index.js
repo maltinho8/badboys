@@ -54,11 +54,9 @@ const ContentNews = () => {
       </BlogWrapper>
 
       <div className="grids">
-        <div className="boxes">1</div>
-        <div className="boxes">2</div>
+        
         <div data-aos="fade-right" className="boxes"><img src='https://images.unsplash.com/photo-1517137879134-48acfbe3be13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80' alt="test" width="500"></img></div>
-        <div data-aos="flip-right" className="boxes">4</div>
-        <div className="boxes">5</div>
+       
       </div>
 
       </Container>

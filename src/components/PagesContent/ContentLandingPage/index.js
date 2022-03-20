@@ -2,11 +2,11 @@ import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import { HeadlineDrawing } from "../../HeadlineDrawing";
 import TimeLine from "../../TimeLine2/TimeLine2";
-import Pics from '../../Pics/Pics';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Button from '@mui/material/Button';
 import {Link} from "react-router-dom";
+import PropsNewsCard from './NewsCard/NewsCardContent';
 
 const Container = styled.div`
   width: 100%; 
@@ -15,13 +15,13 @@ const Container = styled.div`
 const Headline = styled.h4`
   font-size: 6rem;
   line-height: 1;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   color: white;
-  margin-top: 8rem;
+  margin-top: 2rem;
   
   @media (max-width: 768px) { 
     text-align: center; 
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 7rem;
   }
 `;
@@ -39,6 +39,22 @@ const HeadlineSmall = styled.h4`
 
 `;
 
+const VerticalHeadline = styled.h5`
+  
+  line-height: 1;
+  margin-bottom: 10rem;
+  color: white;
+  margin-top: -18rem;
+ 
+  margin-left: 15rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  
+  @media (max-width: 768px) { 
+    display:none;
+  }
+`;
+
 const TextHeader = styled.p`
   font-size: 1.0rem;
   color: white;
@@ -51,17 +67,21 @@ const TextHeader = styled.p`
 
 
 const Text = styled.p`
-  font-size: 0.9rem;
+  
   color: white;
   margin: 10px;
   @media screen and (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: center;
   }
 `;
 
 
 const HeaderContainer = styled.div`
+text-align: center;
+`;
+
+const VerticalContainer = styled.div`
 text-align: center;
 `;
 
@@ -100,9 +120,6 @@ display: flex;
 justify-content: center;
 `;
 
-const ImageContainer = styled.div`
-  width: 100%;
-`;
 
 const Wrapper = styled.div`
 
@@ -124,7 +141,8 @@ const Boxes = styled.div`
 
 border: 1px solid orange;
 overflow: hidden;
-
+width: 100%;
+margin: 0 auto;
 box-shadow: 0px 12px 18px -6px rgba (0,0,0,0.3);
 border-radius: 10px 10px 10px 10px;
 object-fit: contain;
@@ -143,7 +161,28 @@ background-color: black;
 opacity: 0.7;
 `;
 
+
+
 const ContentLandingPage = () => {
+
+  const newscards = [
+    {
+      title: 'vs. SV Union 06',
+      description: 'Am Wochenende ging es wieder hoch her auf der Poloritze im Norden von Berlin. Zu Gast war die Mannschaft von SV Union 06.'
+      
+    },
+    { 
+    title: 'vs. BSV 92',
+    description: 'Am Wochenende ging es wieder hoch her auf der Poloritze im Norden von Berlin. Zu Gast war die Mannschaft von BSV 92.'
+    
+  },
+  { 
+    title: 'Pokalhalbfinale',
+    description: 'Kommendes Wochenende ist es mal wieder so weit: Die BadBoys sind in ihrem Lieblingswettbewerb wieder im Halbfinale.'
+    
+  },
+  ]
+
   useEffect(() => {
     Aos.init({duration: 2000});
   }, []);
@@ -171,11 +210,17 @@ const ContentLandingPage = () => {
       </Link>
       </ButtonContainer>
       </HeadlineTextContainer>
+      <VerticalContainer>
+        <VerticalHeadline>
+      BADBOYS Saison 2021/2022
+      </VerticalHeadline>
+      </VerticalContainer>
          <HeaderContainer>
         <Headline>
-      BADBOYS
+      Frohnauer SC II.
       </Headline>
       </HeaderContainer>
+      
       <BackgroundSection1>
       <Wrapper>
       <ContentContainer>
@@ -197,6 +242,21 @@ const ContentLandingPage = () => {
       </HeadlineDrawingContainer>
       </Wrapper>
       </BackgroundSection1>
+      
+      <Wrapper>
+      <ContentContainer>
+      <HeadlineSmall>
+      Aktuelles
+      </HeadlineSmall>
+      <PropsNewsCard props={newscards}/> 
+      </ContentContainer>
+        
+      
+      
+      </Wrapper>
+      
+      <br />
+      <br />
 
       
       <Wrapper>
@@ -218,7 +278,11 @@ const ContentLandingPage = () => {
       <TimeLineContainer>
       <TimeLine />
       </TimeLineContainer>
-      
+      <br />
+      <br />
+
+
+      {/*
       <Wrapper>
       <ContentContainer>
       <HeadlineSmall>
@@ -239,6 +303,7 @@ const ContentLandingPage = () => {
       <ImageContainer>
           <Pics/>
       </ImageContainer>
+  */}
       
       </Container>
 
