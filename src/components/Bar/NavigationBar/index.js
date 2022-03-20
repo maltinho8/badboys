@@ -92,9 +92,6 @@ const NavBtnLink = styled(Link)`
           <NavLink to='/Spielplan'>
             Spielplan
           </NavLink>
-          <NavLink to='/News'>
-            News
-          </NavLink>
           <NavLink to='/HallOfFame'>
             Hall of Fame
           </NavLink>

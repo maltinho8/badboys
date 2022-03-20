@@ -13,15 +13,13 @@ width: 100%;
     
   `; 
 
-  const DeetsCoach = ({ coaches }) => {
+  const DetailsCoaches = ({ coaches }) => {
     return (
+
       <HorizontalContainer>
-        
           {coaches.map((coach) => {
             const { saison, verein, position, legende, status, name, jahr, avatar, link} = coach;
-            
             return (
-              
               <CardFrameCoach
                 saison={saison}
                 verein={verein}
@@ -33,7 +31,6 @@ width: 100%;
                 avatar={avatar}
                 link={link}
               />
-              
             )
           })}
           </HorizontalContainer>
@@ -41,4 +38,4 @@ width: 100%;
     )
 }
 
-export default DeetsCoach;
+export default DetailsCoaches;

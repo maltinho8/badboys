@@ -28,7 +28,7 @@ const ContentTabelle = () => {
         Tabelle
       </Headline>
       <Text>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+      Die Tabelle der Saison 2021/2022 der Kreisliga A Staffel 1.
       </Text>
       <br />
       <br />

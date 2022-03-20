@@ -1,7 +1,6 @@
-import Deets from '../../Card/Players/CardFramePlayerContent';
+import DetailsPlayers from '../../Card/Players/CardFramePlayerContent';
 import styled  from 'styled-components';
-import DeetsCoach from '../../Card/Coaches/CardFrameCoachContent';
-import Grid from "@material-ui/core/Grid";
+import DetailsCoaches from '../../Card/Coaches/CardFrameCoachContent';
 import SG from '../../../assets/img/ProfileImages/globig.jpg';
 import CH from '../../../assets/img/ProfileImages/claudius.jpg';
 import XB from '../../../assets/img/ProfileImages/xaver.jpg';
@@ -11,24 +10,19 @@ import ES from '../../../assets/img/ProfileImages/emre.jpg';
 import ML from '../../../assets/img/ProfileImages/matti.jpg';
 import PC from '../../../assets/img/ProfileImages/paul.jpg';
 import MS from '../../../assets/img/ProfileImages/moritz.jpg';
+import SS from '../../../assets/img/ProfileImages/sascha.jpg';
+import UG from '../../../assets/img/ProfileImages/uwe.jpg';
 
 const Container = styled.div`
   padding: 1rem;
   color: ${({theme}) => theme.palette.text.light};
-  @media screen and (max-width: 768px) {
-    
-    
-  }
-  
 `;
 
 const PlayerContainer = styled.div`
   @media screen and (max-width: 768px) {
     display: flex;
     justify-content: center;
-    
   }
-  
 `;
 
 const Headline = styled.h2`
@@ -36,16 +30,14 @@ font-size: 4rem;
 line-height: 1;
 margin-bottom: 2rem;
 color: white;
-
 `;
 
 const Text = styled.div`
   font-size: 1.2rem;
- 
 `;
 
 const ContentTeam = () => {
-  const profilesCoach = [
+  const profilesCoaches = [
     {
       name: 'Uwe Großmann',
       saison: '2022/2023',
@@ -53,8 +45,8 @@ const ContentTeam = () => {
       position: 'TR',
       jahr: '2017',
       status: 'Taktikfuchs',
-      avatar: 'UG',
-      link: 'https://www.fupa.net/player/simon-globig-1444663',
+      avatar: <img alt="ug" src={UG} />,
+      link: 'https://www.fupa.net/player/uwe-grossmann-508703',
     },
     { 
     name: 'Sascha Sievert',
@@ -63,12 +55,12 @@ const ContentTeam = () => {
     position: 'TR',
     jahr: '2009',
     status: 'Tabata-Großmeister',
-    avatar: 'FD',
-    link: 'https://www.fupa.net/player/xaver-bunzel-lingens-1119657',
+    avatar: <img alt="ss" src={SS} />,
+    link: 'https://www.fupa.net/player/sascha-sievert-587369',
   },
   ]
 
-  const profiles = [
+  const profilesPlayers = [
     {
       name: 'Simon Globig',
       saison: '2022/2023',
@@ -96,7 +88,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'IV',
       jahr: '2004',
-      status: 'Status: Aggressor',
+      status: 'Aggressor',
       avatar: <img alt="ch" src={CH} />,
       link: 'https://www.fupa.net/player/claudius-haensler-1665429',
     },
@@ -108,7 +100,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'IV',
       jahr: '2020',
-      status: 'Status: Veteran',
+      status: 'Kroatischer Veteran',
       avatar: 'JR',
       link: 'https://www.fupa.net/player/josip-ramljak-778146',
     },
@@ -120,7 +112,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'RV',
       jahr: '2013',
-      status: 'Status: Drahtig',
+      status: 'Capitano',
       avatar: <img alt="jm" src={JM} />,
       link: 'https://www.fupa.net/player/justin-mohs-845294',
     },
@@ -132,7 +124,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'RV',
       jahr: '2017',
-      status: 'Status: Lübars',
+      status: 'Lübarser Jung',
       avatar: 'FD',
       link: 'https://www.fupa.net/player/frederik-dunkel-1074708',
     },
@@ -144,7 +136,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'RV',
       jahr: '2017',
-      status: 'Status: Lübars',
+      status: 'Schusswunder',
       avatar: 'BS',
       link: 'https://www.fupa.net/player/sebastian-schneider-1141554',
     },
@@ -156,7 +148,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'ZDM',
       jahr: '2002',
-      status: 'Status: Champion',
+      status: 'Sport-Invalide',
       avatar: 'MR',
       link: 'https://www.fupa.net/player/malte-raeuchle-845287',
     },
@@ -168,7 +160,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'ZDM',
       jahr: '2021',
-      status: 'Status: Stabil',
+      status: 'Breit wie hoch',
       avatar: 'MM',
       link: 'https://www.fupa.net/player/marlon-merten-1764941',
     },
@@ -180,7 +172,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'ZDM',
       jahr: '2021',
-      status: 'Status: ?',
+      status: 'Weißer Brasilianer',
       avatar: <img alt="jh" src={JH} />,
       link: 'https://www.fupa.net/player/jakob-von-holst-1119752',
     },
@@ -192,7 +184,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'ZDM',
       jahr: '2005',
-      status: 'Status: Köln',
+      status: 'Arbeitstier',
       avatar: 'YB',
       link: 'https://www.fupa.net/player/younes-badi-1754044',
     },
@@ -204,7 +196,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'ZDM',
       jahr: '2005',
-      status: 'Status: ?',
+      status: 'Sahin-Bomber',
       avatar: <img alt="es" src={ES} />,
       link: 'https://www.fupa.net/player/veli-sahin-1311615',
 
@@ -217,7 +209,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'RF',
       jahr: '2005',
-      status: 'Status: ?',
+      status: 'Fifa Pro',
       avatar: <img alt="ml" src={ML} />,
       link: 'https://www.fupa.net/player/matti-liebermann-1754451',
     },
@@ -229,7 +221,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'LF',
       jahr: '2010',
-      status: 'Status: ?',
+      status: 'Stevie',
       avatar: 'SK',
       link: 'https://www.fupa.net/player/steven-kassburg-1371361',
     },
@@ -241,7 +233,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'RF',
       jahr: '2010',
-      status: 'Status: ?',
+      status: 'Laufwunder',
       avatar: 'MW',
       link: 'https://www.fupa.net/player/maximilian-wilk-1371358',
     },
@@ -253,7 +245,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'RF',
       jahr: '2010',
-      status: 'Status: ?',
+      status: 'TikTok-Star',
       avatar: 'JS',
       link: 'https://www.fupa.net/player/joao-dias-dos-santos-1764232',
     },
@@ -265,7 +257,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'ZOM',
       jahr: '2010',
-      status: 'Status: ?',
+      status: 'Bella Ciao',
       avatar: 'LK',
       link: 'https://www.fupa.net/player/luca-kluge-1413395',
     },
@@ -277,7 +269,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'ZOM',
       jahr: '2010',
-      status: 'Status: ?',
+      status: 'Allergie: Passspiel',
       avatar: 'JL',
       link: 'https://www.fupa.net/player/justus-lemgau-1933698',
     },
@@ -289,7 +281,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'ZOM',
       jahr: '2010',
-      status: 'Status: ?',
+      status: 'Silent Killer',
       avatar: 'VH',
       link: 'https://www.fupa.net/player/victorio-herz-846512',
     },
@@ -301,7 +293,7 @@ const ContentTeam = () => {
       verein: 'Frohnauer SC II',
       position: 'ST',
       jahr: '2010',
-      status: 'Status: Kreisliga-Ronaldo',
+      status: ' Kreisliga-Ronaldo',
       avatar: <img alt="pc" src={PC} />,
       link: 'https://www.fupa.net/player/paul-conradt-845302',
     },
@@ -312,7 +304,7 @@ const ContentTeam = () => {
     verein: 'Frohnauer SC II',
     position: 'ST',
     jahr: '2010',
-    status: 'Status: ?',
+    status: 'Renke',
     link: 'https://www.fupa.net/player/philipp-renke-1006370',
   },
 
@@ -323,7 +315,7 @@ const ContentTeam = () => {
     verein: 'Frohnauer SC II',
     position: 'ST',
     jahr: '2010',
-    status: 'Status: ?',
+    status: 'Torjäger',
     avatar: <img alt="ms" src={MS} />,
     link: 'https://www.fupa.net/player/moritz-stoll-845270',
   },
@@ -331,24 +323,22 @@ const ContentTeam = () => {
   ];
   return (
 
-  
-
 <Container>
 <Headline>
-  Mannschaft
+  Team
 </Headline>
 <Text>
- Der Spielplan der Saison 2021/2022 der Kreisliga A Staffel 1.
+ Der aktuelle Kader der BadBoys der Saison 2021/2022 der Kreisliga A Staffel 1.
 </Text>  
 <br />
 <br />
 <PlayerContainer>
-<Deets players={profiles}/> 
+<DetailsPlayers players={profilesPlayers}/> 
 </PlayerContainer>
 <br />
 <Text>Trainerteam</Text>
 <br />
-<DeetsCoach coaches={profilesCoach}/>
+<DetailsCoaches coaches={profilesCoaches}/>
 
 </Container>
   );

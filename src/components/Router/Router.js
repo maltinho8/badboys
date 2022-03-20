@@ -5,7 +5,6 @@ import fire from '../../fire';
 import Homepage from '../Pages/LandingPage/LandingPage';
 import Spielplan from '../Pages/Spielplan/Spielplan.js';
 import Tabelle from "../Pages/Tabelle/Tabelle.js";
-import News from '../Pages/News/News';
 import Team from '../Pages/Team/Team.js';
 import Login from '../Authentification/Login';
 import HallOfFame from '../Pages/HallOfFame/HallOfFame';
@@ -25,7 +24,6 @@ const Routing = () => {
         <Route path='/Team' component={Team} />
         <Route path='/Tabelle' component={Tabelle} />
         <Route path='/Spielplan' component={Spielplan} />
-        <Route path='/News' component={News} />
         <Route path='/HallOfFame' component={HallOfFame} />
         <Route path='/Login' component={Login} />
       </Switch>
@@ -37,7 +35,6 @@ const Routing = () => {
         <Route path='/Team' component={Team} />
         <Route path='/Tabelle' component={Tabelle} />
         <Route path='/Spielplan' component={Spielplan} />
-        <Route path='/News' component={News} />
         <Route path='/HallOfFame' component={HallOfFame} />
         <Route path='/Login' component={Login} />
 

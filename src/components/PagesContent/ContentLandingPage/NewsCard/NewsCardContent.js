@@ -14,11 +14,11 @@ const HorizontalContainer = styled.div`
   
   `; 
 
-  const PropsNewsCard = ({ props }) => {
+  const DetailsNewsCard = ({ newscards }) => {
     return (
       <HorizontalContainer>
         
-          {props.map((newsContent) => {
+          {newscards.map((newsContent) => {
             const { title, description} = newsContent;
             
             return (
@@ -26,6 +26,7 @@ const HorizontalContainer = styled.div`
               <NewsCard
                 title = {title}
                 description = {description}
+                
               />
               
             )
@@ -35,4 +36,4 @@ const HorizontalContainer = styled.div`
     )
 }
 
-export default PropsNewsCard;
+export default DetailsNewsCard;

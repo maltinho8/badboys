@@ -27,6 +27,7 @@ const RadialChart = () =>{
         }
       },
       chart: {
+        
         height: 350,
         type: 'radar',
         toolbar: {

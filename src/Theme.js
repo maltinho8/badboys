@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
  
   body {
     
-    font-family: 'Bungee', cursive;
+    font-family: 'Roboto', sans-serif;
     
   }
   
@@ -14,14 +14,10 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 100%;
   }
 
-  h1, h2, h3, h4, h5 {
-    font-weight: 400;
-    
-    
-  }
+ 
 
   h1 {
-    font-weight: 300;
+    font-weight: 200;
     font-size: 4rem;
   }
 
@@ -30,12 +26,19 @@ export const GlobalStyle = createGlobalStyle`
     margin-bottom: 8px;
   }
 
+  h4 {
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: 'Graduate', cursive;
+  }
+
   h5 {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 `;
 

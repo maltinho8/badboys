@@ -1,4 +1,4 @@
-import './LandingPage.css';
+
 import React from 'react';
 import styled from 'styled-components';
 import ContentLandingPage from '../../PagesContent/ContentLandingPage/index';
@@ -8,7 +8,6 @@ const ContentContainer = styled.div`
   margin: 0 auto;
   
 `;
-
 
 const Homepage = () => {
   return (

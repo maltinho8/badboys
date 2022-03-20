@@ -6,32 +6,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 
-const HeadlineSmall = styled.h4`
-  font-size: 2.5rem;
-  line-height: 1;
-  margin-bottom: 1.5rem;
-  color: white;
-  
-  @media (max-width: 768px) { 
-    text-align: center; 
-  }
-
-`;
-
-
-const Text = styled.p`
-  font-size: 0.9rem;
-  color: white;
-  
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
-    text-align: center;
-  }
-`;
-
 const ContentContainer = styled.div`
-margin-left: 5rem;
-margin-right: 5rem;
+margin-left: 3rem;
+margin-right: 3rem;
 
 @media screen and (max-width: 768px) {
   margin-left: 3rem;
@@ -40,20 +17,6 @@ margin-right: 5rem;
  
 }
 `;
-
-const Boxes = styled.div`
-
-
-
-overflow: hidden;
-width: 100%;
-
-box-shadow: 0px 12px 18px -6px rgba (0,0,0,0.3);
-border-radius: 10px 10px 10px 10px;
-object-fit: contain;
-`;
-
-
 
 const NewsCard = (props) => {
   return (
@@ -79,8 +42,8 @@ const NewsCard = (props) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="success">
-          Mehr
+        <Button size="small" color="primary">
+          Zum Spiel
         </Button>
       </CardActions>
     </Card>

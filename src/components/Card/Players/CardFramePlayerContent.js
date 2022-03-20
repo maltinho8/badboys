@@ -14,7 +14,7 @@ const HorizontalContainer = styled.div`
   
   `; 
 
-  const DeetsPlayer = ({ players }) => {
+  const DetailsPlayers = ({ players }) => {
     return (
       <HorizontalContainer>
         
@@ -42,4 +42,4 @@ const HorizontalContainer = styled.div`
     )
 }
 
-export default DeetsPlayer;
+export default DetailsPlayers;

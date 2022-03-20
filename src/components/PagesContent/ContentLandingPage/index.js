@@ -7,13 +7,16 @@ import 'aos/dist/aos.css';
 import Button from '@mui/material/Button';
 import {Link} from "react-router-dom";
 import PropsNewsCard from './NewsCard/NewsCardContent';
+import Logo from '../../../assets/img/fsc.png';
+import {Helmet} from 'react-helmet';
+import '../ContentLandingPage/index.css';
 
 const Container = styled.div`
   width: 100%; 
 `;
 
 const Headline = styled.h4`
-  font-size: 6rem;
+  
   line-height: 1;
   margin-bottom: 6rem;
   color: white;
@@ -22,7 +25,7 @@ const Headline = styled.h4`
   @media (max-width: 768px) { 
     text-align: center; 
     font-size: 3rem;
-    margin-top: 7rem;
+    margin-top: 2rem;
   }
 `;
 
@@ -39,21 +42,6 @@ const HeadlineSmall = styled.h4`
 
 `;
 
-const VerticalHeadline = styled.h5`
-  
-  line-height: 1;
-  margin-bottom: 10rem;
-  color: white;
-  margin-top: -18rem;
- 
-  margin-left: 15rem;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  
-  @media (max-width: 768px) { 
-    display:none;
-  }
-`;
 
 const TextHeader = styled.p`
   font-size: 1.0rem;
@@ -83,6 +71,9 @@ text-align: center;
 
 const VerticalContainer = styled.div`
 text-align: center;
+@media screen and (max-width: 768px) {
+  margin-top: 5rem;
+}
 `;
 
 const ButtonContainer = styled.div`
@@ -115,9 +106,14 @@ margin-right: 5rem;
 }
 `;
 
+const WidgetContainer = styled.div`
+
+`;
+
 const HeadlineDrawingContainer = styled.div`
 display: flex;
 justify-content: center;
+margin-top: 1.25rem;
 `;
 
 
@@ -139,7 +135,7 @@ margin-top:3rem;
 const Boxes = styled.div`
 
 
-border: 1px solid orange;
+
 overflow: hidden;
 width: 100%;
 margin: 0 auto;
@@ -165,15 +161,17 @@ opacity: 0.7;
 
 const ContentLandingPage = () => {
 
-  const newscards = [
+  const newscontent = [
     {
       title: 'vs. SV Union 06',
-      description: 'Am Wochenende ging es wieder hoch her auf der Poloritze im Norden von Berlin. Zu Gast war die Mannschaft von SV Union 06.'
+      description: 'Am Wochenende ging es wieder hoch her auf der Poloritze im Norden von Berlin. Zu Gast war die Mannschaft von SV Union 06.',
+      
       
     },
     { 
     title: 'vs. BSV 92',
-    description: 'Am Wochenende ging es wieder hoch her auf der Poloritze im Norden von Berlin. Zu Gast war die Mannschaft von BSV 92.'
+    description: 'Am Wochenende ging es wieder hoch her auf der Poloritze im Norden von Berlin. Zu Gast war die Mannschaft von BSV 92.',
+    
     
   },
   { 
@@ -211,9 +209,7 @@ const ContentLandingPage = () => {
       </ButtonContainer>
       </HeadlineTextContainer>
       <VerticalContainer>
-        <VerticalHeadline>
-      BADBOYS Saison 2021/2022
-      </VerticalHeadline>
+        <img alt="Logo" src={Logo} />
       </VerticalContainer>
          <HeaderContainer>
         <Headline>
@@ -221,12 +217,41 @@ const ContentLandingPage = () => {
       </Headline>
       </HeaderContainer>
       
-      <BackgroundSection1>
+      
+      <Wrapper>
+      <ContentContainer>
+      <HeadlineSmall>
+      News
+      </HeadlineSmall>
+      <PropsNewsCard newscards={newscontent}/> 
+      </ContentContainer>
+      </Wrapper>
+      <br />
+      <br />
+      <ContentContainer>
+      <HeadlineSmall>
+      Letztes Spiel/Nächstes Spiel
+      </HeadlineSmall>
+      <br />
+      <br />
+      <div id="widget3"></div>
+      <Helmet>
+	    <script type="text/javascript">
+		          new fussballdeWidgetAPI().showWidget('widget3', '02HJSALFS4000000VUM1DNPGVVPNNEUJ');
+	    </script>
+      </Helmet>
+      </ContentContainer>
+      <br/>
+      <br />
+      <br/>
+      <br />
       <Wrapper>
       <ContentContainer>
       <HeadlineSmall>
       Teamchemie
       </HeadlineSmall>
+      <br/>
+      <br />
       <Boxes>
       <Text>
       Bei den BadBoys zählen vor allem Teamgeist und Wille. Die Komponente Attraktivität wird direkt
@@ -241,24 +266,8 @@ const ContentLandingPage = () => {
         <HeadlineDrawing />
       </HeadlineDrawingContainer>
       </Wrapper>
-      </BackgroundSection1>
       
-      <Wrapper>
-      <ContentContainer>
-      <HeadlineSmall>
-      Aktuelles
-      </HeadlineSmall>
-      <PropsNewsCard props={newscards}/> 
-      </ContentContainer>
-        
-      
-      
-      </Wrapper>
-      
-      <br />
-      <br />
 
-      
       <Wrapper>
       <ContentContainer>
       <HeadlineSmall>
@@ -280,6 +289,16 @@ const ContentLandingPage = () => {
       </TimeLineContainer>
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <VerticalContainer>
+        <img alt="Logo" src={Logo} />
+        <Text>Im Norden ganz oben.</Text>
+      </VerticalContainer>
+
+      
 
 
       {/*
