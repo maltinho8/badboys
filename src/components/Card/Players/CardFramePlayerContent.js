@@ -20,6 +20,7 @@ const HorizontalContainer = styled.div`
         
           {players.map((player) => {
             const { saison, verein, position, legende, status, name, jahr, avatar, link} = player;
+
             
             return (
               

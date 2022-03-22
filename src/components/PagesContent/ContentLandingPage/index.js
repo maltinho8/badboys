@@ -15,7 +15,7 @@ const Container = styled.div`
   width: 100%; 
 `;
 
-const Headline = styled.h4`
+const Headline = styled.h1`
   
   line-height: 1;
   margin-bottom: 6rem;
@@ -30,8 +30,8 @@ const Headline = styled.h4`
 `;
 
 
-const HeadlineSmall = styled.h4`
-  font-size: 2.5rem;
+const HeadlineSmall = styled.h2`
+  
   line-height: 1;
   margin-bottom: 1.5rem;
   color: white;
@@ -44,7 +44,7 @@ const HeadlineSmall = styled.h4`
 
 
 const TextHeader = styled.p`
-  font-size: 1.0rem;
+  
   color: white;
   @media screen and (max-width: 768px) {
     font-size: 1rem;
@@ -78,6 +78,10 @@ text-align: center;
 
 const ButtonContainer = styled.div`
 margin-top: 1rem;
+margin-right: 0.7rem;
+@media screen and (max-width: 768px) {
+  margin-right: 0rem;
+}
 `;
 
 const HeadlineTextContainer = styled.div`
@@ -104,10 +108,6 @@ margin-right: 5rem;
   display: block;
  
 }
-`;
-
-const WidgetContainer = styled.div`
-
 `;
 
 const HeadlineDrawingContainer = styled.div`
@@ -151,12 +151,6 @@ box-shadow: 0px 12px 18px -6px rgba (0,0,0,0.3);
 border-radius: 10px 10px 10px 10px;
 object-fit: contain;
 `;
-
-const BackgroundSection1 = styled.div`
-background-color: black;
-opacity: 0.7;
-`;
-
 
 
 const ContentLandingPage = () => {
@@ -230,7 +224,7 @@ const ContentLandingPage = () => {
       <br />
       <ContentContainer>
       <HeadlineSmall>
-      Letztes Spiel/Nächstes Spiel
+      Aktuelles
       </HeadlineSmall>
       <br />
       <br />

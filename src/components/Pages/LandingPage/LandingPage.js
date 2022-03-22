@@ -7,6 +7,8 @@ const ContentContainer = styled.div`
   width: 100vwimportant!;
   margin: 0 auto;
   
+   
+  
 `;
 
 const Homepage = () => {

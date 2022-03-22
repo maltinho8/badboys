@@ -9,7 +9,7 @@ const Container = styled.div`
 `;
 
 const Headline = styled.h2`
-font-size: 4rem;
+
 line-height: 1;
 margin-bottom: 2rem;
 color: white;

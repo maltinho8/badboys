@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './index.css';
+import Avatar from '@mui/material/Avatar';
 
 const Container = styled.div`
   padding: 1rem;
@@ -11,24 +12,22 @@ const Container = styled.div`
 `;
 
 const Headline = styled.h2`
-font-size: 4rem;
+
 line-height: 1;
 margin-bottom: 2rem;
 color: white;
 `;
 
-const BlogWrapper = styled.div`
-  
+const InterviewContainer = styled.div`
+  padding: 1rem;
+  border: 1px solid white;
 `;
 
 
-const BlogContainer = styled.div`
-  display:inline-block;
-  margin-right: 40px;
-`;
 
 const Text = styled.div`
   font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 `;
 
 const ContentHallOfFame = () => {
@@ -44,6 +43,12 @@ const ContentHallOfFame = () => {
      Blablahfggdfg gf erg zer uzfudfguer ezruerg zeewur werzeuw wuzeg wuegr.
 
       </Text>
+      <InterviewContainer>
+      <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+        <Text>Name: Tobias Haby</Text>
+        <Text>Name: Tobias Haby</Text>
+        <Text>Name: Tobias Haby</Text>
+      </InterviewContainer>
 
       
 

@@ -29,7 +29,7 @@ const NewsCard = (props) => {
         <CardMedia
           component="img"
           height="140"
-          image="https://images.unsplash.com/photo-1641135698530-8d919344c0e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          image="https://images.unsplash.com/photo-1614632537190-23e4146777db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
           alt="green iguana"
         />
         <CardContent>

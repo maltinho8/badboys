@@ -19,26 +19,19 @@ export const GlobalStyle = createGlobalStyle`
   h1 {
     font-weight: 200;
     font-size: 4rem;
+    font-family: 'Bungee', cursive;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 2.5rem;
     margin-bottom: 8px;
-  }
-
-  h4 {
-    font-size: 5rem;
-    font-weight: 600;
-    font-family: 'Graduate', cursive;
-  }
-
-  h5 {
-    font-size: 0.8rem;
-    
+    font-family: 'Bungee', cursive;
   }
 
   p {
     font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
   }
 `;
 

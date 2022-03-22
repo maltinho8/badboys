@@ -7,9 +7,6 @@
 
 import firebase from 'firebase';
 
-const obj = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
-console.log(obj);
-
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
   authDomain: process.env.REACT_APP_AUTHDOMAIN,
@@ -22,7 +19,7 @@ const firebaseConfig = {
 };
 
 
-console.log (firebaseConfig);
+
 
 try {
   firebase.initializeApp(firebaseConfig);
