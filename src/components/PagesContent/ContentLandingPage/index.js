@@ -12,7 +12,8 @@ import {Helmet} from 'react-helmet';
 import '../ContentLandingPage/index.css';
 
 const Container = styled.div`
-  width: 100%; 
+padding: 1rem;
+color: ${({theme}) => theme.palette.text.light};
 `;
 
 const Headline = styled.h1`
@@ -26,6 +27,7 @@ const Headline = styled.h1`
     text-align: center; 
     font-size: 3rem;
     margin-top: 2rem;
+    font-size: 2.5rem;
   }
 `;
 
@@ -38,6 +40,7 @@ const HeadlineSmall = styled.h2`
   
   @media (max-width: 768px) { 
     text-align: center; 
+    font-size: 2.2rem;
   }
 
 `;
@@ -159,6 +162,7 @@ const ContentLandingPage = () => {
     {
       title: 'vs. SV Union 06',
       description: 'Am Wochenende ging es wieder hoch her auf der Poloritze im Norden von Berlin. Zu Gast war die Mannschaft von SV Union 06.',
+      image: <img alt="ms" src={Logo} />,
       
       
     },
@@ -192,11 +196,11 @@ const ContentLandingPage = () => {
       </BoxesHeader>
       <ButtonContainer>
       <Link to="/Team" style={{ textDecoration: 'none' }}>
-      <Button variant="outlined" href="#outlined-buttons" style={{ color: 'orange' }}>
+      <Button variant="outlined" style={{ color: 'orange' }}>
               Mannschaft
       </Button></Link>&nbsp;&nbsp;
       <Link to="/Tabelle" style={{ textDecoration: 'none' }}>
-      <Button variant="outlined" href="#outlined-buttons" style={{ color: 'orange' }}>
+      <Button variant="outlined" color="success" style={{ color: 'orange' }}>
               Tabelle
       </Button>
       </Link>
