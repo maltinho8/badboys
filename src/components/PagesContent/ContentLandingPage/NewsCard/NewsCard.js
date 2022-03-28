@@ -1,23 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-<<<<<<< HEAD
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
-
-const ContentContainer = styled.div`
-margin-left: 1rem;
-margin-right: 1rem;
-
-@media screen and (max-width: 768px) {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  display: block;
- 
-}
-=======
 import Avatar from '@mui/material/Avatar';
 import InfoIcon from '@mui/icons-material/Info';
 import IconButton from '@mui/material/IconButton';
@@ -154,7 +136,6 @@ const SpaceHorizontalContainer = styled.div`
   margin-top: 10px;
   margin-bottom: 160px;
   margin-right: -580px;
->>>>>>> 9c7fc416f0c8bcacb2ec37b878915ab82f398c93
 `;
 
 const NewsCard = (props) => {

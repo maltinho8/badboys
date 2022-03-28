@@ -236,10 +236,7 @@ const ContentLandingPage = () => {
       Aktuelles
       </HeadlineSmall>
       <br />
-<<<<<<< HEAD
-      <br />
-=======
->>>>>>> 9c7fc416f0c8bcacb2ec37b878915ab82f398c93
+
       
       <div id="widget3"></div>
       <Helmet>
