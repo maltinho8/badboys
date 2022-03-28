@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Avatar from '@mui/material/Avatar';
+import InfoIcon from '@mui/icons-material/Info';
+import IconButton from '@mui/material/IconButton';
+import { orange } from '@mui/material/colors';
 
 
 const CardContainer = styled.div`
@@ -13,10 +16,11 @@ const CardContainer = styled.div`
   background-color: white;
   color: #fff;
   position: relative;
-  margin-right: 20px;
+  margin-right: 90px;
   margin-bottom: 30px;
-  @media (max-width: 300px) { 
-    margin-left: 20px; 
+  @media (max-width: 768px) { 
+    margin-left: 90px;
+    
    }
   
   
@@ -58,7 +62,7 @@ const TopContainer = styled.div`
 const BottomContainer = styled.div`
   display: flex;
   flex: 0.8;
-  padding: 0 2em;
+  
 `;
 
 const ProfilText = styled.h2`
@@ -84,7 +88,7 @@ const Logo = styled.div`
   height: 35px;
   z-index: 0;
   user-select: none;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 
   img {
       width: 75px;
@@ -103,9 +107,9 @@ const DetailsContainer = styled.div`
     `;
 
 const MediumText = styled.span`
-    font-size: 15px;
+    font-size: 18px;
     color: black;
-    font-weight: 800;
+    font-weight: 900;
     text-transform: uppercase;
   `;
 
@@ -113,22 +117,15 @@ const SmallText = styled.span`
     font-size: 11px;
     color: black;
     font-weight: 700;
-    text-transform: uppercase;
+    
   `;
 
-  const SmallText1 = styled.span`
-  font-size: 11px;
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-right: -8px;
-`;
 
 
 const SpaceHorizontalContainer = styled.div`
     display:flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: -8px;
   `;
@@ -156,11 +153,11 @@ const NewsCard = (props) => {
         
         <LogoWrapper>
           <Logo>
-          <img alt="lol" src="https://upload.wikimedia.org/wikipedia/de/thumb/f/f5/UEFA_Champions_League.svg/2000px-UEFA_Champions_League.svg.png?20080701181849"></img>
+          {props.image}
           </Logo>
           
         </LogoWrapper>
-        <MediumText>Gameday vs. ...</MediumText>
+        <MediumText>{props.title}</MediumText>
         
       </TopContainer>
       
@@ -169,9 +166,11 @@ const NewsCard = (props) => {
       <BottomContainer>
       
       <DetailsContainer>
-      <SmallText>Test</SmallText>
+      <SmallText>{props.description}</SmallText>
       <SpaceHorizontalContainer>
-      
+      <IconButton href={props.link} target="_blank" rel="noopener noreferrer">
+        <InfoIcon sx={{ color: orange[500], right: 20 }}/>
+        </IconButton>
       </SpaceHorizontalContainer>
     </DetailsContainer>
       </BottomContainer>

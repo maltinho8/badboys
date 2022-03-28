@@ -19,7 +19,7 @@ const HorizontalContainer = styled.div`
       <HorizontalContainer>
         
           {newscards.map((newsContent) => {
-            const { title, description, image} = newsContent;
+            const { title, description, image, link} = newsContent;
             
             return (
               
@@ -27,6 +27,7 @@ const HorizontalContainer = styled.div`
                 title = {title}
                 description = {description}
                 image= {image}
+                link = {link}
                 
               />
               

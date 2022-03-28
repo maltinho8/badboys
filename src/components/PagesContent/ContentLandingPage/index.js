@@ -160,23 +160,26 @@ const ContentLandingPage = () => {
 
   const newscontent = [
     {
-      title: 'vs. SV Union 06',
+      title: 'BadBoys vs. SV Union 06',
       description: 'Am Wochenende ging es wieder hoch her auf der Poloritze im Norden von Berlin. Zu Gast war die Mannschaft von SV Union 06.',
       image: <img alt="ms" src={Logo} />,
+      link: 'https://www.fupa.net/player/sascha-sievert-587369',
       
       
     },
     { 
-    title: 'vs. BSV 92',
+    title: ' BadBoys vs. BSV 92',
     description: 'Am Wochenende ging es wieder hoch her auf der Poloritze im Norden von Berlin. Zu Gast war die Mannschaft von BSV 92.',
-    
+    image: <img alt="lol" src="https://upload.wikimedia.org/wikipedia/de/thumb/f/f5/UEFA_Champions_League.svg/2000px-UEFA_Champions_League.svg.png?20080701181849"></img>,
+    link: 'https://www.fupa.net/player/sascha-sievert-587369',
     
   },
   { 
     title: 'Pokalhalbfinale',
-    description: 'Kommendes Wochenende ist es mal wieder so weit: Die BadBoys sind in ihrem Lieblingswettbewerb wieder im Halbfinale.'
-    
-  },
+    description: 'Kommendes Wochenende ist es mal wieder so weit: Die BadBoys sind in ihrem Lieblingswettbewerb wieder im Halbfinale.',
+    image: <img alt="lol" src="https://upload.wikimedia.org/wikipedia/de/thumb/f/f5/UEFA_Champions_League.svg/2000px-UEFA_Champions_League.svg.png?20080701181849"></img>,
+    link: 'https://www.fupa.net/player/sascha-sievert-587369',
+  }
   ]
 
   useEffect(() => {
@@ -221,6 +224,8 @@ const ContentLandingPage = () => {
       <HeadlineSmall>
       News
       </HeadlineSmall>
+      <br />
+      
       <PropsNewsCard newscards={newscontent}/> 
       </ContentContainer>
       </Wrapper>
@@ -231,7 +236,7 @@ const ContentLandingPage = () => {
       Aktuelles
       </HeadlineSmall>
       <br />
-      <br />
+      
       <div id="widget3"></div>
       <Helmet>
 	    <script type="text/javascript">
@@ -249,7 +254,7 @@ const ContentLandingPage = () => {
       Teamchemie
       </HeadlineSmall>
       <br/>
-      <br />
+      
       <Boxes>
       <Text>
       Bei den BadBoys zählen vor allem Teamgeist und Wille. Die Komponente Attraktivität wird direkt
@@ -271,6 +276,7 @@ const ContentLandingPage = () => {
       <HeadlineSmall>
       Erfolge
       </HeadlineSmall>
+      {/*
       <Boxes data-aos="fade-left">
       <Text>
       Neben den direkten Aufstiegen in die Spielklassen B und A und dem Einzug ins Pokalhalbfinale, wo man sich nur denkbar knapp einem Landesligisten aus
@@ -279,6 +285,7 @@ const ContentLandingPage = () => {
       internationalen Topteams gespickte Teilnehmerfeld (Spieker Wurster, SV Groß Borstel (U19) und eine Integrationsmannschaft) beim Bangoura-Cup 2019.
       </Text>
       </Boxes>
+  */}
       </ContentContainer>
       </Wrapper>
       
