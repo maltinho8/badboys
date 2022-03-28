@@ -19,13 +19,15 @@ const HorizontalContainer = styled.div`
       <HorizontalContainer>
         
           {newscards.map((newsContent) => {
-            const { title, description} = newsContent;
+            const { title, description, image, link} = newsContent;
             
             return (
               
               <NewsCard
                 title = {title}
                 description = {description}
+                image= {image}
+                link = {link}
                 
               />
               

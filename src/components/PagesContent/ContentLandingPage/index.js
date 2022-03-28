@@ -12,7 +12,8 @@ import {Helmet} from 'react-helmet';
 import '../ContentLandingPage/index.css';
 
 const Container = styled.div`
-  width: 100%; 
+padding: 1rem;
+color: ${({theme}) => theme.palette.text.light};
 `;
 
 const Headline = styled.h1`
@@ -26,6 +27,7 @@ const Headline = styled.h1`
     text-align: center; 
     font-size: 3rem;
     margin-top: 2rem;
+    font-size: 2.5rem;
   }
 `;
 
@@ -38,6 +40,7 @@ const HeadlineSmall = styled.h2`
   
   @media (max-width: 768px) { 
     text-align: center; 
+    font-size: 2.2rem;
   }
 
 `;
@@ -157,22 +160,26 @@ const ContentLandingPage = () => {
 
   const newscontent = [
     {
-      title: 'vs. SV Union 06',
+      title: 'BadBoys vs. SV Union 06',
       description: 'Am Wochenende ging es wieder hoch her auf der Poloritze im Norden von Berlin. Zu Gast war die Mannschaft von SV Union 06.',
+      image: <img alt="ms" src={Logo} />,
+      link: 'https://www.fupa.net/player/sascha-sievert-587369',
       
       
     },
     { 
-    title: 'vs. BSV 92',
+    title: ' BadBoys vs. BSV 92',
     description: 'Am Wochenende ging es wieder hoch her auf der Poloritze im Norden von Berlin. Zu Gast war die Mannschaft von BSV 92.',
-    
+    image: <img alt="lol" src="https://upload.wikimedia.org/wikipedia/de/thumb/f/f5/UEFA_Champions_League.svg/2000px-UEFA_Champions_League.svg.png?20080701181849"></img>,
+    link: 'https://www.fupa.net/player/sascha-sievert-587369',
     
   },
   { 
     title: 'Pokalhalbfinale',
-    description: 'Kommendes Wochenende ist es mal wieder so weit: Die BadBoys sind in ihrem Lieblingswettbewerb wieder im Halbfinale.'
-    
-  },
+    description: 'Kommendes Wochenende ist es mal wieder so weit: Die BadBoys sind in ihrem Lieblingswettbewerb wieder im Halbfinale.',
+    image: <img alt="lol" src="https://upload.wikimedia.org/wikipedia/de/thumb/f/f5/UEFA_Champions_League.svg/2000px-UEFA_Champions_League.svg.png?20080701181849"></img>,
+    link: 'https://www.fupa.net/player/sascha-sievert-587369',
+  }
   ]
 
   useEffect(() => {
@@ -192,11 +199,11 @@ const ContentLandingPage = () => {
       </BoxesHeader>
       <ButtonContainer>
       <Link to="/Team" style={{ textDecoration: 'none' }}>
-      <Button variant="outlined" href="#outlined-buttons" style={{ color: 'orange' }}>
+      <Button variant="outlined" style={{ color: 'orange' }}>
               Mannschaft
       </Button></Link>&nbsp;&nbsp;
       <Link to="/Tabelle" style={{ textDecoration: 'none' }}>
-      <Button variant="outlined" href="#outlined-buttons" style={{ color: 'orange' }}>
+      <Button variant="outlined" color="success" style={{ color: 'orange' }}>
               Tabelle
       </Button>
       </Link>
@@ -217,6 +224,8 @@ const ContentLandingPage = () => {
       <HeadlineSmall>
       News
       </HeadlineSmall>
+      <br />
+      
       <PropsNewsCard newscards={newscontent}/> 
       </ContentContainer>
       </Wrapper>
@@ -227,7 +236,10 @@ const ContentLandingPage = () => {
       Aktuelles
       </HeadlineSmall>
       <br />
+<<<<<<< HEAD
       <br />
+=======
+>>>>>>> 9c7fc416f0c8bcacb2ec37b878915ab82f398c93
       
       <div id="widget3"></div>
       <Helmet>
@@ -247,7 +259,7 @@ const ContentLandingPage = () => {
       Teamchemie
       </HeadlineSmall>
       <br/>
-      <br />
+      
       <Boxes>
       <Text>
       Bei den BadBoys zählen vor allem Teamgeist und Wille. Die Komponente Attraktivität wird direkt
@@ -269,6 +281,7 @@ const ContentLandingPage = () => {
       <HeadlineSmall>
       Erfolge
       </HeadlineSmall>
+      {/*
       <Boxes data-aos="fade-left">
       <Text>
       Neben den direkten Aufstiegen in die Spielklassen B und A und dem Einzug ins Pokalhalbfinale, wo man sich nur denkbar knapp einem Landesligisten aus
@@ -277,6 +290,7 @@ const ContentLandingPage = () => {
       internationalen Topteams gespickte Teilnehmerfeld (Spieker Wurster, SV Groß Borstel (U19) und eine Integrationsmannschaft) beim Bangoura-Cup 2019.
       </Text>
       </Boxes>
+  */}
       </ContentContainer>
       </Wrapper>
       
