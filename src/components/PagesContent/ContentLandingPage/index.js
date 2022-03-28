@@ -72,7 +72,7 @@ text-align: center;
 const VerticalContainer = styled.div`
 text-align: center;
 @media screen and (max-width: 768px) {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 `;
 
@@ -228,12 +228,14 @@ const ContentLandingPage = () => {
       </HeadlineSmall>
       <br />
       <br />
+      
       <div id="widget3"></div>
       <Helmet>
 	    <script type="text/javascript">
 		          new fussballdeWidgetAPI().showWidget('widget3', '02HJSALFS4000000VUM1DNPGVVPNNEUJ');
 	    </script>
       </Helmet>
+      
       </ContentContainer>
       <br/>
       <br />

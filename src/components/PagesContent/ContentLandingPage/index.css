@@ -1,6 +1,10 @@
-#widget3 iframe {
-    width: 75%;
-    height: 300px;
+
+
+
+    #widget3 iframe {
+        width: 100%;
+        height: 300px;
+        
+    }  
     
-};
 

@@ -8,7 +8,7 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
+  apiKey: "API_KEY",
   authDomain: process.env.REACT_APP_AUTHDOMAIN,
   projectId: process.env.REACT_APP_PROJECTID,
   storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
@@ -17,6 +17,8 @@ const firebaseConfig = {
   measurementId: process.env.REACT_APP_MEASUREMENT_ID
 
 };
+
+console.log(firebaseConfig);
 
 
 

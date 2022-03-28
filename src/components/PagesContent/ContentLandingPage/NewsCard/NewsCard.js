@@ -7,8 +7,8 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 
 const ContentContainer = styled.div`
-margin-left: 3rem;
-margin-right: 3rem;
+margin-left: 1rem;
+margin-right: 1rem;
 
 @media screen and (max-width: 768px) {
   margin-left: 3rem;

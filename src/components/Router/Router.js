@@ -25,7 +25,7 @@ const Routing = () => {
         <Route path='/Tabelle' component={Tabelle} />
         <Route path='/Spielplan' component={Spielplan} />
         <Route path='/HallOfFame' component={HallOfFame} />
-        <Route path='/Login' component={Login} />
+        
       </Switch>
 
       ) : (
@@ -36,7 +36,7 @@ const Routing = () => {
         <Route path='/Tabelle' component={Tabelle} />
         <Route path='/Spielplan' component={Spielplan} />
         <Route path='/HallOfFame' component={HallOfFame} />
-        <Route path='/Login' component={Login} />
+        
 
 
         </Switch>
