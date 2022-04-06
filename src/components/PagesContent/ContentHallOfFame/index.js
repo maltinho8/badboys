@@ -1,14 +1,15 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 import './index.css';
-import Avatar from '@mui/material/Avatar';
+import DetailsPlayers from '../../Card/Players/CardFramePlayerContent';
+import SG from '../../../assets/img/ProfileImages/globig.jpg';
+import CH from '../../../assets/img/ProfileImages/claudius.jpg';
+import XB from '../../../assets/img/ProfileImages/xaver.jpg';
 
 const Container = styled.div`
   padding: 1rem;
   color: ${({theme}) => theme.palette.text.light};
-  display: inline-block;
+  
 `;
 
 const Headline = styled.h2`
@@ -18,9 +19,11 @@ margin-bottom: 2rem;
 color: white;
 `;
 
-const InterviewContainer = styled.div`
-  padding: 1rem;
-  border: 1px solid white;
+const PlayerContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 
@@ -31,9 +34,40 @@ const Text = styled.div`
 `;
 
 const ContentHallOfFame = () => {
-  useEffect(() => {
-    Aos.init({duration: 2000});
-  }, []);
+  const profilesPlayers = [
+    {
+      name: 'Tobias Haby',
+      saison: '2022/2023',
+      verein: 'Frohnauer SC II',
+      position: 'TW',
+      jahr: '2017',
+      status: 'Jura-Titan',
+      avatar: <img alt="ch" src={SG} />,
+      link: 'https://www.fupa.net/player/simon-globig-1444663',
+    },
+    { 
+    name: 'Robin Kliesch',
+    saison: '2022/2023',
+    verein: 'Frohnauer SC II',
+    position: 'IV',
+    jahr: '2004',
+    status: 'Twistolero',
+    avatar: <img alt="ch" src={XB} />,
+    link: 'https://www.fupa.net/player/xaver-bunzel-lingens-1119657',
+  },
+    {
+      id: '3',
+      name: 'Robin Köster',
+      saison: '2022/2023',
+      verein: 'Frohnauer SC II',
+      position: 'IV',
+      jahr: '2012',
+      status: 'Kobin Röster',
+      avatar: <img alt="ch" src={CH} />,
+      link: 'https://www.fupa.net/player/claudius-haensler-1665429',
+    }
+  ]
+
   return (
     <Container>
       <Headline>
@@ -43,20 +77,13 @@ const ContentHallOfFame = () => {
      Blablahfggdfg gf erg zer uzfudfguer ezruerg zeewur werzeuw wuzeg wuegr.
 
       </Text>
-      <InterviewContainer>
-      <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-        <Text>Name: Tobias Haby</Text>
-        <Text>Name: Tobias Haby</Text>
-        <Text>Name: Tobias Haby</Text>
-      </InterviewContainer>
 
-      
+<PlayerContainer>
+<DetailsPlayers players={profilesPlayers}/> 
+</PlayerContainer>
 
-      <div className="grids">
-       
-        <div data-aos="fade-right" className="boxes"><img src='https://images.unsplash.com/photo-1517137879134-48acfbe3be13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80' alt="test" width="500"></img></div>
-        
-      </div>
+
+
 
       </Container>
 

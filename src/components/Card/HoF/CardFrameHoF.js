@@ -1,27 +1,26 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from "styled-components";
 import Avatar from '@mui/material/Avatar';
-import InfoIcon from '@mui/icons-material/Info';
+import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import IconButton from '@mui/material/IconButton';
 import { orange } from '@mui/material/colors';
-import DataSaverOnOutlinedIcon from '@mui/icons-material/DataSaverOnOutlined';
-
 
 const CardContainer = styled.div`
-  width: 325px;
-  height: 300px;
+  min-width: 255px;
+  min-height: 400px;
+  max-width: 555px;
+  max-height: 400px;
   display: flex;
   flex-direction: column;
   border-radius: 25px;
   box-shadow: 0 2px 7px 1px rgba(31, 31, 31, 0.2);
-  background-color: white;
+  background-color: #1d1f21;
   color: #fff;
   position: relative;
-  margin-right: 30px;
+  margin-right: 20px;
   margin-bottom: 30px;
-  @media (max-width: 768px) { 
-    margin-left: 30px;
-    
+  @media (max-width: 300px) { 
+    margin-left: 20px; 
    }
   
   
@@ -40,12 +39,12 @@ const CircleWrapper = styled.div`
 const Circle = styled.div`
   position: absolute;
   
-  top: -6em;
+  top: -4.2em;
   right: -10em;
   z-index: 0;
-  background-color: black;
-  width: 230px;
-  height: 230px;
+  background-color: white;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
 `;
 
@@ -63,11 +62,11 @@ const TopContainer = styled.div`
 const BottomContainer = styled.div`
   display: flex;
   flex: 0.8;
-  
+  padding: 0 2em;
 `;
 
 const ProfilText = styled.h2`
-  color: black;
+  color: #fff;
   margin: 0;
   z-index: 0;
   font-size: 20px;
@@ -89,11 +88,10 @@ const Logo = styled.div`
   height: 35px;
   z-index: 0;
   user-select: none;
-  margin-bottom: 50px;
 
   img {
-      width: 75px;
-      height: 75px;
+      width: auto;
+      height: 100%;
       user-select: none;
   }
 `;
@@ -103,30 +101,37 @@ const DetailsContainer = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0.3em 6px 0 6px;
-    line-height: 1.6;
+    padding: 2.5em 6px 0 6px;
+    line-height: 1.4;
     `;
 
 const MediumText = styled.span`
-    font-size: 18px;
-    color: black;
-    font-weight: 900;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 800;
     text-transform: uppercase;
   `;
 
 const SmallText = styled.span`
     font-size: 11px;
-    color: black;
+    color: #fff;
     font-weight: 700;
-    text-align: center;
+    text-transform: uppercase;
   `;
 
+  const SmallText1 = styled.span`
+  font-size: 11px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: -8px;
+`;
 
 
 const SpaceHorizontalContainer = styled.div`
     display:flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: -8px;
   `;
@@ -134,47 +139,59 @@ const SpaceHorizontalContainer = styled.div`
   const AvatarContainer = styled.div`
   display:flex;
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 160px;
-  margin-right: -580px;
+  margin-bottom: 170px;
+  margin-left: 20px;
 `;
 
-const NewsCard = (props) => {
+const CardTest = (props) => {
   return (
     <CardContainer>
-      
       <TopContainer>
         <CircleWrapper>
           <Circle></Circle>
         </CircleWrapper>
-        
         <AvatarContainer>
-        
+        <Avatar sx={{width: 25, height: 25}} alt="test" style={{ paddingBottom: '5px' }} src="https://tmssl.akamaized.net/images/wappen/head/7785.png?lm=1457014527"/>
         </AvatarContainer>
-        
         <LogoWrapper>
           <Logo>
-          {props.image}
+          <Avatar sx={{width: 90, height: 90}}>{props.avatar}</Avatar>
           </Logo>
-          
         </LogoWrapper>
-        <MediumText>{props.title}</MediumText>
-        
+        <ProfilText>{props.name}</ProfilText>
       </TopContainer>
-      
 
 
       <BottomContainer>
-      
       <DetailsContainer>
-      <SmallText>{props.description}</SmallText>
+      <SmallText>{props.saison}</SmallText>
       <SpaceHorizontalContainer>
-      <IconButton href={props.link} target="_blank" rel="noopener noreferrer" variant="outlined" style={{ paddingTop: '20px' }}><DataSaverOnOutlinedIcon></DataSaverOnOutlinedIcon></IconButton>
+        <MediumText>{props.verein}</MediumText>
+        <MediumText>{props.position}</MediumText>
+      </SpaceHorizontalContainer>
+      <br />
+
+      <SpaceHorizontalContainer>
+        <SmallText>im Verein seit:</SmallText>
+        <SmallText>{props.jahr}</SmallText>
+      </SpaceHorizontalContainer>
+
+      <br />
+      <SpaceHorizontalContainer>
+        <SmallText>{props.status}</SmallText>
+        <SmallText1>
+        <IconButton href={props.link} target="_blank" rel="noopener noreferrer">
+        <AccountCircleRoundedIcon sx={{ color: orange[500], right: 20 }}/>
+        </IconButton>
+        </SmallText1>
       </SpaceHorizontalContainer>
     </DetailsContainer>
       </BottomContainer>
     </CardContainer>
-  )
+
+
+
+  );
 }
 
-export default NewsCard
+export default CardTest;

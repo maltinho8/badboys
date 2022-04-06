@@ -11,6 +11,20 @@ import Logo from '../../../assets/img/fsc.png';
 import {Helmet} from 'react-helmet';
 import '../ContentLandingPage/index.css';
 
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  status: {
+    danger: '#e53e3e',
+  },
+  palette: {
+    primary: {
+      main: '#FFFFFF',
+      darker: '#053e85',
+    }
+  },
+});
+
 const Container = styled.div`
 padding: 1rem;
 color: ${({theme}) => theme.palette.text.light};
@@ -159,25 +173,25 @@ object-fit: contain;
 const ContentLandingPage = () => {
 
   const newscontent = [
+    { 
+      title: ' BadBoys vs. BSV 92',
+      description: 'Am Wochenende ging es wieder hoch her im Norden von Berlin. Zu Gast war die Mannschaft von BSV 92.',
+      image: <img alt="lol" src="https://www.fifplay.com/img/public/bundesliga-logo.png"></img>,
+      link: 'https://www.fupa.net/match/berliner-sv-92-m2-frohnauer-sc-1946-m2-220320',
+      
+    },
     {
-      title: 'BadBoys vs. SV Union 06',
-      description: 'Am Wochenende ging es wieder hoch her auf der Poloritze im Norden von Berlin. Zu Gast war die Mannschaft von SV Union 06.',
-      image: <img alt="ms" src={Logo} />,
-      link: 'https://www.fupa.net/player/sascha-sievert-587369',
+      title: 'BadBoys vs. Berolina Stralau',
+      description: 'Personalnot leider nur zum Teil getrotzt - BadBoys unterliegen dem Tabellenführer am Ende deutlich.',
+      image: <img alt="ms" src="https://www.fifplay.com/img/public/bundesliga-logo.png" />,
+      link: 'https://www.fupa.net/match/frohnauer-sc-1946-m2-fsv-berolina-stralau-1901-m2-220313',
       
       
     },
-    { 
-    title: ' BadBoys vs. BSV 92',
-    description: 'Am Wochenende ging es wieder hoch her auf der Poloritze im Norden von Berlin. Zu Gast war die Mannschaft von BSV 92.',
-    image: <img alt="lol" src="https://upload.wikimedia.org/wikipedia/de/thumb/f/f5/UEFA_Champions_League.svg/2000px-UEFA_Champions_League.svg.png?20080701181849"></img>,
-    link: 'https://www.fupa.net/player/sascha-sievert-587369',
-    
-  },
   { 
     title: 'Pokalhalbfinale',
-    description: 'Kommendes Wochenende ist es mal wieder so weit: Die BadBoys sind in ihrem Lieblingswettbewerb wieder im Halbfinale.',
-    image: <img alt="lol" src="https://upload.wikimedia.org/wikipedia/de/thumb/f/f5/UEFA_Champions_League.svg/2000px-UEFA_Champions_League.svg.png?20080701181849"></img>,
+    description: 'Viel vorgenommen, wenig hinbekommen. Deutliche Niederlage gegen die Reserve von Viktoria. Jetzt gilt: Mund abputzen, weitermachen!',
+    image: <img alt="lol" src="https://b04-ep-media-prod.azureedge.net/pickerimages/DFB-Pokal_Logo_2016_Kleinklein_203932_M.png"></img>,
     link: 'https://www.fupa.net/player/sascha-sievert-587369',
   }
   ]
@@ -199,13 +213,18 @@ const ContentLandingPage = () => {
       </BoxesHeader>
       <ButtonContainer>
       <Link to="/Team" style={{ textDecoration: 'none' }}>
-      <Button variant="outlined" style={{ color: 'orange' }}>
+      <ThemeProvider theme={theme}>
+      <Button variant="outlined" color="primary" style={{ color: 'orange' }}>
               Mannschaft
-      </Button></Link>&nbsp;&nbsp;
+      </Button>
+      </ThemeProvider>
+      </Link>&nbsp;&nbsp;
       <Link to="/Tabelle" style={{ textDecoration: 'none' }}>
-      <Button variant="outlined" color="success" style={{ color: 'orange' }}>
+      <ThemeProvider theme={theme}>
+      <Button variant="outlined" color="primary" style={{ color: 'orange' }}>
               Tabelle
       </Button>
+      </ThemeProvider>
       </Link>
       </ButtonContainer>
       </HeadlineTextContainer>
@@ -233,7 +252,7 @@ const ContentLandingPage = () => {
       <br />
       <ContentContainer>
       <HeadlineSmall>
-      Aktuelles
+      Spiele
       </HeadlineSmall>
       <br />
 

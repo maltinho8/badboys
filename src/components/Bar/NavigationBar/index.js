@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Burger from "../Burger";
 import {NavLink as Link} from "react-router-dom";
 
+
  const Nav = styled.nav`
   background: #000;
   height: 60px;
@@ -58,7 +59,8 @@ const NavBtnLink = styled(Link)`
   padding: 10px 22px;
   color: orange;
   outline: none;
-  border: 1px solid #256ce1;
+  border: 1px solid white;
+  opacity: 0.7;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -66,9 +68,8 @@ const NavBtnLink = styled(Link)`
   margin-left: 24px;
   &:hover {
     transition: all 0.2s ease-in-out;
-    border: 1px solid lightblue;
-    opacity: 0.8;
-    color: orange;
+    border: 1px solid white;
+    opacity: 1;
   }
 `;
 
