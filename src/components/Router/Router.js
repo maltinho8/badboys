@@ -6,7 +6,7 @@ import Homepage from '../Pages/LandingPage/LandingPage';
 import Spielplan from '../Pages/Spielplan/Spielplan.js';
 import Tabelle from "../Pages/Tabelle/Tabelle.js";
 import Team from '../Pages/Team/Team.js';
-import Login from '../Authentification/Login';
+import { Redirect } from 'react-router';
 import HallOfFame from '../Pages/HallOfFame/HallOfFame';
 
 const Routing = () => {
@@ -20,6 +20,9 @@ const Routing = () => {
     <NavigationBar />
     {isLoggedIn ? (
     <Switch>
+        <Route exact path='/'>
+          <Redirect to = "/Homepage" />
+        </Route>
         <Route path='/Homepage' component={Homepage} />
         <Route path='/Team' component={Team} />
         <Route path='/Tabelle' component={Tabelle} />
