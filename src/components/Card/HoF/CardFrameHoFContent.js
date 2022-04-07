@@ -19,23 +19,18 @@ const HorizontalContainer = styled.div`
       <HorizontalContainer>
         
           {hofs.map((hof) => {
-            const { saison, verein, position, legende, status, name, jahr, avatar1, avatar2, avatar3, link, description} = hof;
+            const { name, spitzname, position,  description, avatar1, avatar2, avatar3} = hof;
 
             
             return (
               
               <CardTest
-                saison={saison}
-                verein={verein}
-                position={position}
-                legende={legende}
-                status={status}
                 name={name}
-                jahr={jahr}
+                spitzname={spitzname}
+                position={position}
                 avatar1={avatar1}
                 avatar2={avatar2}
                 avatar3={avatar3}
-                link={link}
                 description={description}
               />
               

@@ -3,9 +3,9 @@ import styled from "styled-components";
 import Avatar from '@mui/material/Avatar';
 
 const CardContainer = styled.div`
-  min-width: 955px;
+  min-width: 100%;
   min-height: 500px;
-  max-width: 955px;
+  max-width: 100%;
   max-height: 500px;
   display: flex;
   flex-direction: column;
@@ -135,9 +135,17 @@ const SmallText = styled.span`
     font-weight: 700;
   `;
 
-const SpaceHorizontalContainer = styled.div`
+  const SpaceHorizontalContainerFirst = styled.div`
     display:flex;
     width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -20px;
+  `;
+
+const SpaceHorizontalContainer = styled.div`
+    display:flex;
+    width: 95%;
     justify-content: space-between;
     align-items: center;
     margin-bottom: -20px;
@@ -170,9 +178,9 @@ const CardTest = (props) => {
         </AvatarContainer>
         <LogoWrapper>
           <Logo>
-          <SingleLogo><Avatar sx={{width: 120, height: 120, marginRight: 3}}>{props.avatar1}</Avatar></SingleLogo>
-          <Avatar sx={{width: 160, height: 160, marginRight: 3}}>{props.avatar2}</Avatar>
-          <SingleLogo><Avatar sx={{width: 120, height: 120, marginRight: 3}}>{props.avatar3}</Avatar></SingleLogo>
+          <SingleLogo><Avatar sx={{width: 150, height: 150, marginRight: 3}}>{props.avatar1}</Avatar></SingleLogo>
+          <Avatar sx={{width: 190, height: 190, marginRight: 3}}>{props.avatar2}</Avatar>
+          <SingleLogo><Avatar sx={{width: 150, height: 150, marginRight: 3}}>{props.avatar3}</Avatar></SingleLogo>
           </Logo>
           
         </LogoWrapper>
@@ -182,11 +190,11 @@ const CardTest = (props) => {
 
       <BottomContainer>
       <DetailsContainer>
-      <SmallText>{props.saison}</SmallText>
-      <SpaceHorizontalContainer>
+      <SmallText>{props.spitzname}</SmallText>
+      <SpaceHorizontalContainerFirst>
       <ProfilText>{props.name}</ProfilText>
         <MediumText>{props.position}</MediumText>
-      </SpaceHorizontalContainer>
+      </SpaceHorizontalContainerFirst>
       <br />
 
       <SpaceHorizontalContainer>
@@ -196,7 +204,7 @@ const CardTest = (props) => {
       <br />
       <br />
       <SpaceHorizontalContainer>
-        <SmallText>Erfolge: Zweimaliger Aufstieg, Berliner Pokalhalbfinale 2019, Gewinn Bangoura Cup Hamburg</SmallText>
+        <SmallTextNormal>Erfolge: Zweimaliger Aufstieg, Berliner Pokalhalbfinale 2019, Gewinn Bangoura Cup Hamburg</SmallTextNormal>
         
       </SpaceHorizontalContainer>
 
