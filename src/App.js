@@ -11,7 +11,7 @@ const App = () => {
     
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <div className="background">
+      <div>
       <Routing />
       <Footer />
       </div>

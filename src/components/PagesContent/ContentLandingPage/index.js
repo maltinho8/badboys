@@ -190,7 +190,7 @@ const ContentLandingPage = () => {
     },
   { 
     title: 'Pokalhalbfinale',
-    description: 'Viel vorgenommen, wenig hinbekommen. Deutliche Niederlage gegen die Reserve von Viktoria. Jetzt gilt: Mund abputzen, weitermachen!',
+    description: 'Viel vorgenommen, wenig hinbekommen. Deutliche Niederlage gegen die Reserve von Viktoria.',
     image: <img alt="lol" src="https://b04-ep-media-prod.azureedge.net/pickerimages/DFB-Pokal_Logo_2016_Kleinklein_203932_M.png"></img>,
     link: 'https://www.fupa.net/player/sascha-sievert-587369',
   }
@@ -321,7 +321,7 @@ const ContentLandingPage = () => {
       <br />
       <VerticalContainer>
         <img alt="Logo" src={Logo} />
-        <Text>Im Norden ganz oben.</Text>
+        <Text>BadBoys for life.</Text>
       </VerticalContainer>
 
       

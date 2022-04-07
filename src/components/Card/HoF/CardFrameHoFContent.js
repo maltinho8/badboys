@@ -1,4 +1,4 @@
-import CardTest from './CardFramePlayer';
+import CardTest from './CardFrameHoF';
 import '../../PagesContent/ContentTeam';
 import styled from 'styled-components';
 
@@ -14,12 +14,12 @@ const HorizontalContainer = styled.div`
   
   `; 
 
-  const DetailsHoF = ({ players }) => {
+  const DetailsHoF = ({ hofs }) => {
     return (
       <HorizontalContainer>
         
-          {players.map((player) => {
-            const { saison, verein, position, legende, status, name, jahr, avatar, link} = player;
+          {hofs.map((hof) => {
+            const { saison, verein, position, legende, status, name, jahr, avatar1, avatar2, avatar3, link, description} = hof;
 
             
             return (
@@ -32,8 +32,11 @@ const HorizontalContainer = styled.div`
                 status={status}
                 name={name}
                 jahr={jahr}
-                avatar={avatar}
+                avatar1={avatar1}
+                avatar2={avatar2}
+                avatar3={avatar3}
                 link={link}
+                description={description}
               />
               
             )

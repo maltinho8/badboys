@@ -1,15 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 import Avatar from '@mui/material/Avatar';
-import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
-import IconButton from '@mui/material/IconButton';
-import { orange } from '@mui/material/colors';
 
 const CardContainer = styled.div`
-  min-width: 255px;
-  min-height: 400px;
-  max-width: 555px;
-  max-height: 400px;
+  min-width: 955px;
+  min-height: 500px;
+  max-width: 955px;
+  max-height: 500px;
   display: flex;
   flex-direction: column;
   border-radius: 25px;
@@ -19,8 +16,12 @@ const CardContainer = styled.div`
   position: relative;
   margin-right: 20px;
   margin-bottom: 30px;
-  @media (max-width: 300px) { 
+  @media (max-width: 768px) { 
     margin-left: 20px; 
+    min-width: 320px;
+    min-height: 655px;
+    max-width: 320px;
+    max-height: 655px;
    }
   
   
@@ -42,7 +43,7 @@ const Circle = styled.div`
   top: -4.2em;
   right: -10em;
   z-index: 0;
-  background-color: white;
+  background-color: #daa520;
   width: 280px;
   height: 280px;
   border-radius: 50%;
@@ -69,7 +70,7 @@ const ProfilText = styled.h2`
   color: #fff;
   margin: 0;
   z-index: 0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 
 `;
@@ -88,6 +89,7 @@ const Logo = styled.div`
   height: 35px;
   z-index: 0;
   user-select: none;
+  display: flex;
 
   img {
       width: auto;
@@ -95,6 +97,14 @@ const Logo = styled.div`
       user-select: none;
   }
 `;
+
+const SingleLogo = styled.div`
+@media (max-width: 768px) { 
+  display: none;
+ }
+`;
+
+
 
 const DetailsContainer = styled.div`
     width: 100%;
@@ -119,29 +129,33 @@ const SmallText = styled.span`
     text-transform: uppercase;
   `;
 
-  const SmallText1 = styled.span`
-  font-size: 11px;
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-right: -8px;
-`;
-
+  const SmallTextNormal = styled.span`
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+  `;
 
 const SpaceHorizontalContainer = styled.div`
     display:flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: -8px;
+    margin-bottom: -20px;
   `;
 
   const AvatarContainer = styled.div`
   display:flex;
   width: 100%;
-  margin-bottom: 170px;
+  margin-bottom: 250px;
   margin-left: 20px;
+  @media (max-width: 768px) { 
+    margin-bottom: 325px;
+   }
 `;
+
+
+
+
 
 const CardTest = (props) => {
   return (
@@ -150,15 +164,19 @@ const CardTest = (props) => {
         <CircleWrapper>
           <Circle></Circle>
         </CircleWrapper>
+        
         <AvatarContainer>
-        <Avatar sx={{width: 25, height: 25}} alt="test" style={{ paddingBottom: '5px' }} src="https://tmssl.akamaized.net/images/wappen/head/7785.png?lm=1457014527"/>
+        <Avatar sx={{width: 25, height: 25}} alt="test" style={{ paddingBottom: '10px' }} src="https://tmssl.akamaized.net/images/wappen/head/7785.png?lm=1457014527"/>
         </AvatarContainer>
         <LogoWrapper>
           <Logo>
-          <Avatar sx={{width: 90, height: 90}}>{props.avatar}</Avatar>
+          <SingleLogo><Avatar sx={{width: 120, height: 120, marginRight: 3}}>{props.avatar1}</Avatar></SingleLogo>
+          <Avatar sx={{width: 160, height: 160, marginRight: 3}}>{props.avatar2}</Avatar>
+          <SingleLogo><Avatar sx={{width: 120, height: 120, marginRight: 3}}>{props.avatar3}</Avatar></SingleLogo>
           </Logo>
+          
         </LogoWrapper>
-        <ProfilText>{props.name}</ProfilText>
+        
       </TopContainer>
 
 
@@ -166,25 +184,23 @@ const CardTest = (props) => {
       <DetailsContainer>
       <SmallText>{props.saison}</SmallText>
       <SpaceHorizontalContainer>
-        <MediumText>{props.verein}</MediumText>
+      <ProfilText>{props.name}</ProfilText>
         <MediumText>{props.position}</MediumText>
       </SpaceHorizontalContainer>
       <br />
 
       <SpaceHorizontalContainer>
-        <SmallText>im Verein seit:</SmallText>
-        <SmallText>{props.jahr}</SmallText>
+        <SmallTextNormal>{props.description}</SmallTextNormal>
+        
       </SpaceHorizontalContainer>
-
+      <br />
       <br />
       <SpaceHorizontalContainer>
-        <SmallText>{props.status}</SmallText>
-        <SmallText1>
-        <IconButton href={props.link} target="_blank" rel="noopener noreferrer">
-        <AccountCircleRoundedIcon sx={{ color: orange[500], right: 20 }}/>
-        </IconButton>
-        </SmallText1>
+        <SmallText>Erfolge: Zweimaliger Aufstieg, Berliner Pokalhalbfinale 2019, Gewinn Bangoura Cup Hamburg</SmallText>
+        
       </SpaceHorizontalContainer>
+
+    
     </DetailsContainer>
       </BottomContainer>
     </CardContainer>

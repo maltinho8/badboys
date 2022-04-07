@@ -27,6 +27,7 @@ const HallOfFame = () => {
         <StyledBody>
         <ContentContainer>
           <ContentHallOfFame/>
+          
         </ContentContainer>
         </StyledBody>
 
