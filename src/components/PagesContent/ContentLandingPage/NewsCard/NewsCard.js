@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Avatar from '@mui/material/Avatar';
-import InfoIcon from '@mui/icons-material/Info';
 import IconButton from '@mui/material/IconButton';
-import { orange } from '@mui/material/colors';
 import DataSaverOnOutlinedIcon from '@mui/icons-material/DataSaverOnOutlined';
 
 
@@ -64,15 +61,6 @@ const BottomContainer = styled.div`
   display: flex;
   flex: 0.8;
   
-`;
-
-const ProfilText = styled.h2`
-  color: black;
-  margin: 0;
-  z-index: 0;
-  font-size: 20px;
-  font-weight: 700;
-
 `;
 
 const LogoWrapper = styled.div`

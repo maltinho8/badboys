@@ -339,6 +339,8 @@ const ContentTeam = () => {
 <Text>Trainerteam</Text>
 <br />
 <DetailsCoaches coaches={profilesCoaches}/>
+<br />
+
 
 </Container>
   );

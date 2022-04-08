@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
   p {
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
+    
   }
 `;
 

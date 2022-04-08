@@ -19,7 +19,7 @@ const HorizontalContainer = styled.div`
       <HorizontalContainer>
         
           {hofs.map((hof) => {
-            const { name, spitzname, position,  description, avatar1, avatar2, avatar3} = hof;
+            const { name, spitzname, position,  description, avatar1, avatar2, avatar3, erfolg} = hof;
 
             
             return (
@@ -32,6 +32,7 @@ const HorizontalContainer = styled.div`
                 avatar2={avatar2}
                 avatar3={avatar3}
                 description={description}
+                erfolg={erfolg}
               />
               
             )

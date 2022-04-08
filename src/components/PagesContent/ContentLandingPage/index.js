@@ -318,11 +318,7 @@ const ContentLandingPage = () => {
       <br />
       <br />
       <br />
-      <br />
-      <VerticalContainer>
-        <img alt="Logo" src={Logo} />
-        <Text>BadBoys for life.</Text>
-      </VerticalContainer>
+      
 
       
 

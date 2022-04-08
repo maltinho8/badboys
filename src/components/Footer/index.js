@@ -1,5 +1,4 @@
 import React from "react";
-import './index.css';
 import styled from 'styled-components';
 
 const Box = styled.div`
@@ -10,86 +9,80 @@ const Box = styled.div`
   top: 0;
   width: 100%;
   border-top: 1px solid white;
-  @media (max-width: 768px) {
-    
-  }
+ 
 `;
    
 const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
+   
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
     /* background: red; */
 `
    
 const Column = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: left;
-  margin-left: 60px;
+  justify-content: space-between;
+  text-align: center;
+  @media (max-width: 768px) {
+
+    flex-direction: column;
+}
+  
 `;
    
 const Row = styled.div`
   display: flex;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, 
-                         minmax(185px, 1fr));
+  
   grid-gap: 270px;
    
   @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fill, 
-                           minmax(200px, 1fr));
-                           grid-gap: 10px;
+
+      grid-gap: 20px;
+      justify-content: space-evenly;
+      width: 100%;
   }
 `;
    
 const FooterLink = styled.a`
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 14px;
   text-decoration: none;
    
   &:hover {
-      color: green;
+      color: orange;
       transition: 200ms ease-in;
   }
 `;
 
-const HeadingTop = styled.h2`
-  font-size: 30px;
-  color: #fff;
-  
-  margin-bottom: 40px;
-  font-weight: bold;
-  text-align: center;
-`;
    
 const Heading = styled.p`
   font-size: 18px;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 16px;
+
+}
 `;
 
 
 const Footer = () => {
   return (
     <Box>
-      <HeadingTop>
-        BadBoys
-      </HeadingTop>
       <Container>
-        <Row>
+      <Row>
           <Column>
             <Heading>Über uns</Heading>
-            <FooterLink href="#">Mannschaft</FooterLink>
-            <FooterLink href="#">Verein</FooterLink>
+            <FooterLink href="https://www.fussball.de/spieltagsuebersicht/herren-kreisliga-a-st1-kreis-berlin-kreisliga-a-herren-saison2122-berlin/-/staffel/02EK4EN2PS000006VS5489B3VVCDCH5N-G#!/">Mannschaft</FooterLink>
+            <FooterLink href="http://www.frohnauersc.de/">Verein</FooterLink>
             
           </Column>
           <Column>
-            <Heading>Contact Us</Heading>
+            <Heading>Kontakt</Heading>
             <FooterLink href="#">Kontakt</FooterLink>
             <FooterLink href="#">Impressum</FooterLink>
             
@@ -97,17 +90,24 @@ const Footer = () => {
           <Column>
             <Heading>Social Media</Heading>
             
-            <FooterLink href="#">
+            <FooterLink href="https://instagram.com/badboysfsc?utm_medium=copy_link">
               <i className="fab fa-instagram">
                 <span style={{ marginLeft: "10px" }}>
                   Instagram
                 </span>
               </i>
             </FooterLink>
+            <FooterLink href="https://www.facebook.com/Frohnauersc/">
+              <i className="fab fa-facebook-f">
+                <span style={{ marginLeft: "10px" }}>
+                  Facebook
+                </span>
+              </i>
+            </FooterLink>
             
           </Column>
-        </Row>
-      </Container>
+          </Row>
+          </Container>
     </Box>
 
  

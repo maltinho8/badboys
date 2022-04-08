@@ -21,7 +21,7 @@ const CardContainer = styled.div`
     min-width: 320px;
     min-height: 655px;
     max-width: 320px;
-    max-height: 655px;
+    max-height: 945px;
    }
   
   
@@ -111,7 +111,7 @@ const DetailsContainer = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2.5em 6px 0 6px;
+    padding: 1em 4px 0 6px;
     line-height: 1.4;
     `;
 
@@ -140,7 +140,7 @@ const SmallText = styled.span`
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: -20px;
+    margin-bottom: 1px;
   `;
 
 const SpaceHorizontalContainer = styled.div`
@@ -148,7 +148,7 @@ const SpaceHorizontalContainer = styled.div`
     width: 95%;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: -20px;
+    margin-bottom: 10px;
   `;
 
   const AvatarContainer = styled.div`
@@ -158,6 +158,7 @@ const SpaceHorizontalContainer = styled.div`
   margin-left: 20px;
   @media (max-width: 768px) { 
     margin-bottom: 325px;
+    margin-top: 8px;
    }
 `;
 
@@ -202,12 +203,12 @@ const CardTest = (props) => {
         
       </SpaceHorizontalContainer>
       <br />
-      <br />
+     
       <SpaceHorizontalContainer>
-        <SmallTextNormal>Erfolge: Zweimaliger Aufstieg, Berliner Pokalhalbfinale 2019, Gewinn Bangoura Cup Hamburg</SmallTextNormal>
+        <SmallTextNormal>{props.erfolg}</SmallTextNormal>
         
       </SpaceHorizontalContainer>
-
+    
     
     </DetailsContainer>
       </BottomContainer>
