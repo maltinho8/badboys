@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.589ac590.chunk.css",
+    "main.js": "/static/js/main.53fe916e.chunk.js",
+    "main.js.map": "/static/js/main.53fe916e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1d675749.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1d675749.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.7e9102a9.chunk.js": "/static/js/2.7e9102a9.chunk.js",
+    "static/js/2.7e9102a9.chunk.js.map": "/static/js/2.7e9102a9.chunk.js.map",
+    "static/js/3.b8f2ee3e.chunk.js": "/static/js/3.b8f2ee3e.chunk.js",
+    "static/js/3.b8f2ee3e.chunk.js.map": "/static/js/3.b8f2ee3e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/css/main.589ac590.chunk.css.map": "/static/css/main.589ac590.chunk.css.map",
+    "static/js/2.7e9102a9.chunk.js.LICENSE.txt": "/static/js/2.7e9102a9.chunk.js.LICENSE.txt",
+    "static/media/claudius.e6349db7.jpg": "/static/media/claudius.e6349db7.jpg",
+    "static/media/fsc.0ca4697c.png": "/static/media/fsc.0ca4697c.png",
+    "static/media/fsc1.f59dd902.png": "/static/media/fsc1.f59dd902.png",
+    "static/media/globig.96f999be.jpg": "/static/media/globig.96f999be.jpg",
+    "static/media/haby1.df1d43a1.jpg": "/static/media/haby1.df1d43a1.jpg",
+    "static/media/haby2.3060fe63.jpg": "/static/media/haby2.3060fe63.jpg",
+    "static/media/haby3.7064fb3f.jpg": "/static/media/haby3.7064fb3f.jpg",
+    "static/media/kuberka1.1fe1778c.jpg": "/static/media/kuberka1.1fe1778c.jpg",
+    "static/media/kuberka2.6138cffe.PNG": "/static/media/kuberka2.6138cffe.PNG",
+    "static/media/kuberka3.f28e9bbf.jpg": "/static/media/kuberka3.f28e9bbf.jpg",
+    "static/media/moritz1.557e69e7.jpg": "/static/media/moritz1.557e69e7.jpg",
+    "static/media/moritz2.f5fc3983.jpg": "/static/media/moritz2.f5fc3983.jpg",
+    "static/media/moritz3.046a47ba.jpg": "/static/media/moritz3.046a47ba.jpg",
+    "static/media/reeperbahn.2e3d2507.jpg": "/static/media/reeperbahn.2e3d2507.jpg",
+    "static/media/trey1.922f3411.jpg": "/static/media/trey1.922f3411.jpg",
+    "static/media/trey2.9be8c96a.jpg": "/static/media/trey2.9be8c96a.jpg",
+    "static/media/trey3.097a7405.jpg": "/static/media/trey3.097a7405.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d675749.js",
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.7e9102a9.chunk.js",
+    "static/css/main.589ac590.chunk.css",
+    "static/js/main.53fe916e.chunk.js"
+  ]
+}

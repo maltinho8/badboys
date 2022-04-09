@@ -1,17 +1,36 @@
 @media only screen and (min-width: 768px ) {
     .App {
+        background: linear-gradient(
+            125.26deg,
+            rgba(0, 0, 0, 0.7) 34.32%,
+            rgba(0, 0, 0, 0.7) 60.00%
+      );    
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
-    background-attachment: fixed;
+    background-position: center;
+    filter: brightness(30%);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+  
     }
 }
 
 @media only screen and (max-width: 768px ) {
     .App {
+        filter: brightness(30%);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
-    background-attachment: fixed;
+    background-position: center;
+    
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+ 
     }
+}
+
+.content {
+   position: relative;
+
 }

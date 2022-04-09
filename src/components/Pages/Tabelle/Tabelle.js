@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import ContentTabelle from '../../PagesContent/ContentTabelle/index';
 
@@ -11,10 +11,23 @@ const ContentContainer = styled.div`
   }
 `;
 
+
 const Tabelle = () => {
+  const [counter, setCounter] = useState(10);
+
+const Up = () => {
+  setCounter(counter + 1);
+};
+
+const Down = () => {
+  setCounter(counter - 1);
+};
   return (
         <ContentContainer>
           <ContentTabelle/>
+          <button onClick={Up}>Up</button>
+          <span>{counter}</span>
+          <button onClick={Down}>Down</button>
         </ContentContainer>
   );
 }

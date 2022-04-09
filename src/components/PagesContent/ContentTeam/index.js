@@ -68,7 +68,7 @@ const ContentTeam = () => {
       position: 'TW',
       jahr: '2017',
       status: 'Jura-Titan',
-      avatar: <img alt="ch" src={SG} />,
+      avatar: <img alt="ch" src={SG} style={{border: 0, objectFit: 'cover', width: 90, height: 90}}/>,
       link: 'https://www.fupa.net/player/simon-globig-1444663',
     },
     { 
@@ -78,7 +78,7 @@ const ContentTeam = () => {
     position: 'IV',
     jahr: '2004',
     status: 'Twistolero',
-    avatar: <img alt="ch" src={XB} />,
+    avatar: <img alt="ch" src={XB} style={{border: 0, objectFit: 'cover', width: 90, height: 90}}/>,
     link: 'https://www.fupa.net/player/xaver-bunzel-lingens-1119657',
   },
     {
@@ -89,7 +89,7 @@ const ContentTeam = () => {
       position: 'IV',
       jahr: '2012',
       status: 'Aggressor',
-      avatar: <img alt="ch" src={CH} />,
+      avatar: <img alt="ch" src={CH} style={{border: 0, objectFit: 'cover', width: 90, height: 90}}/>,
       link: 'https://www.fupa.net/player/claudius-haensler-1665429',
     },
 
@@ -113,7 +113,7 @@ const ContentTeam = () => {
       position: 'RV',
       jahr: '2010',
       status: 'Capitano',
-      avatar: <img alt="jm" src={JM} />,
+      avatar: <img alt="jm" src={JM} style={{border: 0, objectFit: 'cover', width: 90, height: 90}}/>,
       link: 'https://www.fupa.net/player/justin-mohs-845294',
     },
 
@@ -173,7 +173,7 @@ const ContentTeam = () => {
       position: 'ZDM',
       jahr: '2004',
       status: 'Weißer Brasilianer',
-      avatar: <img alt="jh" src={JH} />,
+      avatar: <img alt="jh" src={JH} style={{border: 0, objectFit: 'cover', width: 90, height: 90}}/>,
       link: 'https://www.fupa.net/player/jakob-von-holst-1119752',
     },
 
@@ -197,7 +197,7 @@ const ContentTeam = () => {
       position: 'ZDM',
       jahr: '2005',
       status: 'Sahin-Bomber',
-      avatar: <img alt="es" src={ES} />,
+      avatar: <img alt="es" src={ES} style={{border: 0, objectFit: 'cover', width: 90, height: 90}} />,
       link: 'https://www.fupa.net/player/veli-sahin-1311615',
 
     },
@@ -210,7 +210,7 @@ const ContentTeam = () => {
       position: 'RF',
       jahr: '2010',
       status: 'Fifa Pro',
-      avatar: <img alt="ml" src={ML} />,
+      avatar: <img alt="ml" src={ML} style={{border: 0, objectFit: 'cover', width: 90, height: 90}}/>,
       link: 'https://www.fupa.net/player/matti-liebermann-1754451',
     },
 

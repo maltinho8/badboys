@@ -35,11 +35,9 @@ const App = () => {
     
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <div className="App" style={{backgroundImage: `linear-gradient(
-      125.26deg,
-      rgba(0, 0, 0, 0.7) 34.32%,
-      rgba(0, 0, 0, 0.7) 60.00%
-), url(${imageUrl})` }}>
+      
+      <div className="App" style={{backgroundImage:`url(${imageUrl})` }}></div>
+      <div className="content">
       <Routing />
       <SignatureLogo />
       <Footer />
