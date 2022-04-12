@@ -8,8 +8,8 @@ import Button from '@mui/material/Button';
 import {Link} from "react-router-dom";
 import PropsNewsCard from './NewsCard/NewsCardContent';
 import Logo from '../../../assets/img/fsc.png';
-import {Helmet} from 'react-helmet';
 import '../ContentLandingPage/index.css';
+import WidgetSpiele from './WidgetSpiele/Widget';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -258,15 +258,7 @@ const ContentLandingPage = () => {
       Spiele
       </HeadlineSmall>
       <br />
-
-      
-      <div id="widget3"></div>
-      <Helmet>
-	    <script type="text/javascript">
-		          new fussballdeWidgetAPI().showWidget('widget3', '02HJSALFS4000000VUM1DNPGVVPNNEUJ');
-	    </script>
-      </Helmet>
-      
+      <WidgetSpiele />
       </ContentContainer>
       <br/>
       <br />

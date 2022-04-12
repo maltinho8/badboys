@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Helmet} from 'react-helmet';
-import './index.css';
+import WidgetSpielplan from './WidgetSpielplan/Widget';
 
 const Container = styled.div`
   padding: 1rem;
@@ -21,7 +20,6 @@ const Text = styled.div`
 
 const ContentSpielplan = () => {
   return (
-    <div>
     <Container>
       <Headline>
         Spielplan
@@ -31,19 +29,8 @@ const ContentSpielplan = () => {
       </Text>  
       <br />
       <br />
+      <WidgetSpielplan />
       </Container>
-      <div id="widget2"></div>
-      <Helmet>
-
-      
-      <script type="text/javascript">
-		new fussballdeWidgetAPI().showWidget('widget2', '02H3FRGU24000000VUM1DNOPVSR4O07R');
-	</script>
-
-      </Helmet>
-
-    
-    </div>
   );
 };
 
