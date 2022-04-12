@@ -8,11 +8,6 @@ const Container = styled.div`
   color: ${({theme}) => theme.palette.text.light};
 `;
 
-const MainContainer = styled.div`
-  padding: 1rem;
-  color: ${({theme}) => theme.palette.text.light};
-`;
-
 const Headline = styled.h2`
 
 line-height: 1;
@@ -28,7 +23,7 @@ const Text = styled.div`
 
 const ContentTabelle = () => {
   return (
-    <MainContainer>
+    <div>
     <Container>
       <Headline>
         Tabelle
@@ -48,8 +43,10 @@ const ContentTabelle = () => {
 	</script>
 
       </Helmet>
+     
+     </div>
       
-      </MainContainer>
+      
 
      
     

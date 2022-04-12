@@ -21,6 +21,7 @@ const Text = styled.div`
 
 const ContentSpielplan = () => {
   return (
+    <div>
     <Container>
       <Headline>
         Spielplan
@@ -30,6 +31,7 @@ const ContentSpielplan = () => {
       </Text>  
       <br />
       <br />
+      </Container>
       <div id="widget2"></div>
       <Helmet>
 
@@ -40,7 +42,8 @@ const ContentSpielplan = () => {
 
       </Helmet>
 
-    </Container>
+    
+    </div>
   );
 };
 
