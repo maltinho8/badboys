@@ -261,7 +261,7 @@ const ContentLandingPage = () => {
       <Wrapper>
       <ContentContainer>
       <HeadlineSmall>
-      Teamchemie
+      Teamchemi
       </HeadlineSmall>
       <br/>
       
