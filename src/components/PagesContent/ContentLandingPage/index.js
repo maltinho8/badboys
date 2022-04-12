@@ -9,7 +9,6 @@ import {Link} from "react-router-dom";
 import PropsNewsCard from './NewsCard/NewsCardContent';
 import Logo from '../../../assets/img/fsc.png';
 import '../ContentLandingPage/index.css';
-import {Helmet} from 'react-helmet';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -65,7 +64,8 @@ const TextHeader = styled.p`
   color: white;
   @media screen and (max-width: 768px) {
     font-size: 1rem;
-    text-align: center;   
+    text-align: center; 
+    padding: 1rem;  
   }
 `;
 
@@ -150,9 +150,6 @@ margin-top:3rem;
 `;
 
 const Boxes = styled.div`
-
-
-
 overflow: hidden;
 width: 100%;
 margin: 0 auto;
@@ -162,7 +159,7 @@ object-fit: contain;
 `;
 
 const BoxesHeader = styled.div`
-width: 15rem;
+width: 22rem;
 overflow: hidden;
 box-shadow: 0px 12px 18px -6px rgba (0,0,0,0.3);
 border-radius: 10px 10px 10px 10px;
@@ -228,6 +225,13 @@ const ContentLandingPage = () => {
               Tabelle
       </Button>
       </ThemeProvider>
+      </Link>&nbsp;&nbsp;
+      <Link to="/Spiele" style={{ textDecoration: 'none' }}>
+      <ThemeProvider theme={theme}>
+      <Button variant="outlined" color="primary" style={{ color: 'orange' }}>
+              Upcoming
+      </Button>
+      </ThemeProvider>
       </Link>
       </ButtonContainer>
       </HeadlineTextContainer>
@@ -253,22 +257,7 @@ const ContentLandingPage = () => {
       </Wrapper>
       <br />
       <br />
-      <ContentContainer>
-      <HeadlineSmall>
-      Spiele
-      </HeadlineSmall>
-      <br />
-      <div id="widget3"></div>
-      <Helmet>
-	    <script type="text/javascript">
-		          new fussballdeWidgetAPI().showWidget('widget3', '02HJSALFS4000000VUM1DNPGVVPNNEUJ');
-	    </script>
-      </Helmet>
-      </ContentContainer>
-      <br/>
-      <br />
-      <br/>
-      <br />
+  
       <Wrapper>
       <ContentContainer>
       <HeadlineSmall>

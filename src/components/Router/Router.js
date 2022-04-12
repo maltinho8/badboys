@@ -8,6 +8,7 @@ import Tabelle from "../Pages/Tabelle/Tabelle.js";
 import Team from '../Pages/Team/Team.js';
 import { Redirect } from 'react-router';
 import HallOfFame from '../Pages/HallOfFame/HallOfFame';
+import Spiele from '../Pages/Spiele/Spiele.js';
 
 const Routing = () => {
     const [isLoggedIn, setIsLoggedIn] = useState (false)
@@ -28,6 +29,7 @@ const Routing = () => {
         <Route path='/Tabelle' component={Tabelle} />
         <Route path='/Spielplan' component={Spielplan} />
         <Route path='/HallOfFame' component={HallOfFame} />
+        <Route path='/Spiele' component={Spiele} />
         
       </Switch>
 
@@ -39,7 +41,7 @@ const Routing = () => {
         <Route path='/Tabelle' component={Tabelle} />
         <Route path='/Spielplan' component={Spielplan} />
         <Route path='/HallOfFame' component={HallOfFame} />
-        
+        <Route path='/Spiele' component={Spiele} />
 
 
         </Switch>
