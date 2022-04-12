@@ -24,6 +24,7 @@ const HorizontalContainer = styled.div`
             return (
               
               <NewsCard
+                key = {newsContent.id}
                 title = {title}
                 description = {description}
                 image= {image}

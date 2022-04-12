@@ -3,12 +3,9 @@ import styled from 'styled-components';
 import ContentTabelle from '../../PagesContent/ContentTabelle/index';
 
 const ContentContainer = styled.div`
-  width: 80%;
-  margin: 2rem 0 0 2rem;
-  @media screen and (max-width: 768px) {
-    width: 85%;
-   
-  }
+width: 100vwimportant!;
+margin: 0 auto;
+padding: 2rem;
 `;
 
 

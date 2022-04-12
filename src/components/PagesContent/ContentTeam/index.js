@@ -39,6 +39,7 @@ const Text = styled.div`
 const ContentTeam = () => {
   const profilesCoaches = [
     {
+      id: '1',
       name: 'Uwe Großmann',
       saison: '2022/2023',
       verein: 'Frohnauer SC II',
@@ -49,6 +50,7 @@ const ContentTeam = () => {
       link: 'https://www.fupa.net/player/uwe-grossmann-508703',
     },
     { 
+    id: '2',  
     name: 'Sascha Sievert',
     saison: '2022/2023',
     verein: 'Frohnauer SC II',
@@ -62,6 +64,7 @@ const ContentTeam = () => {
 
   const profilesPlayers = [
     {
+      id: '1',
       name: 'Simon Globig',
       saison: '2022/2023',
       verein: 'Frohnauer SC II',
@@ -72,6 +75,7 @@ const ContentTeam = () => {
       link: 'https://www.fupa.net/player/simon-globig-1444663',
     },
     { 
+    id: '2',  
     name: 'Xaver Bunzel',
     saison: '2022/2023',
     verein: 'Frohnauer SC II',
@@ -298,7 +302,7 @@ const ContentTeam = () => {
       link: 'https://www.fupa.net/player/paul-conradt-845302',
     },
   {
-    id: 'e21',
+    id: '21',
     name: 'Philipp Renke ',
     saison: '2022/2023',
     verein: 'Frohnauer SC II',
@@ -309,7 +313,7 @@ const ContentTeam = () => {
   },
 
   {
-    id: 'e22',
+    id: '22',
     name: 'Moritz Stoll',
     saison: '2022/2023',
     verein: 'Frohnauer SC II',

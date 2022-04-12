@@ -21,6 +21,7 @@ width: 100%;
             const { saison, verein, position, legende, status, name, jahr, avatar, link} = coach;
             return (
               <CardFrameCoach
+                key={coach.id}
                 saison={saison}
                 verein={verein}
                 position={position}

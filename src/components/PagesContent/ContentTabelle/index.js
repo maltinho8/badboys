@@ -8,6 +8,11 @@ const Container = styled.div`
   color: ${({theme}) => theme.palette.text.light};
 `;
 
+const MainContainer = styled.div`
+  padding: 1rem;
+  color: ${({theme}) => theme.palette.text.light};
+`;
+
 const Headline = styled.h2`
 
 line-height: 1;
@@ -23,6 +28,7 @@ const Text = styled.div`
 
 const ContentTabelle = () => {
   return (
+    <MainContainer>
     <Container>
       <Headline>
         Tabelle
@@ -32,19 +38,21 @@ const ContentTabelle = () => {
       </Text>
       <br />
       <br />
-      
-      <div id="widget1"></div>
+      </Container>
+      <div id="widget2"></div>
       <Helmet>
 
       
-	<script type="text/javascript">
-		new fussballdeWidgetAPI().showWidget('widget1', '02H25P4LU8000000VUM1DNPIVV2T1IAH');
+      <script type="text/javascript">
+		new fussballdeWidgetAPI().showWidget('widget2', '02H3FRGU24000000VUM1DNOPVSR4O07R');
 	</script>
 
       </Helmet>
+      
+      </MainContainer>
 
      
-    </Container>
+    
   );
 };
 

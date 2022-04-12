@@ -3,12 +3,12 @@ import Chart from "react-apexcharts";
 const { innerWidth: width } = window;
 
 const RadialChart = () =>{
-  const [series, setSeries] = useState( [
+  const [series] = useState( [
     {
       name: "BadBoys",
       data: [100, 100, 70, 60, 90, 20]
     }]);
-  const [options, setOptions] = useState(
+  const [options] = useState(
     {
       fill: {
         colors: ['orange'],

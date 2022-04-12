@@ -174,6 +174,7 @@ const ContentLandingPage = () => {
 
   const newscontent = [
     { 
+      id: '1',
       title: ' BadBoys vs. BSV 92',
       description: 'Am Wochenende ging es wieder hoch her im Norden von Berlin. Zu Gast war die Mannschaft von BSV 92.',
       image: <img alt="lol" src="https://www.fifplay.com/img/public/bundesliga-logo.png"></img>,
@@ -181,6 +182,7 @@ const ContentLandingPage = () => {
       
     },
     {
+      id: '2',
       title: 'BadBoys vs. Berolina Stralau',
       description: 'Personalnot leider nur zum Teil getrotzt - BadBoys unterliegen dem Tabellenführer am Ende deutlich.',
       image: <img alt="ms" src="https://www.fifplay.com/img/public/bundesliga-logo.png" />,
@@ -189,6 +191,7 @@ const ContentLandingPage = () => {
       
     },
   { 
+    id: '3',
     title: 'Pokalhalbfinale',
     description: 'Viel vorgenommen, wenig hinbekommen. Deutliche Niederlage gegen die Reserve von Viktoria.',
     image: <img alt="lol" src="https://b04-ep-media-prod.azureedge.net/pickerimages/DFB-Pokal_Logo_2016_Kleinklein_203932_M.png"></img>,

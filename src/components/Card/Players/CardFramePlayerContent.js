@@ -25,6 +25,7 @@ const HorizontalContainer = styled.div`
             return (
               
               <CardTest
+                key={player.id}
                 saison={saison}
                 verein={verein}
                 position={position}
