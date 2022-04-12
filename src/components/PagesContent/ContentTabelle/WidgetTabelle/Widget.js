@@ -6,15 +6,13 @@ import './Widget.css';
 const WidgetTabelle = () => {
     return (
         <>
-        <div id="widget2"></div>
+
+      <div id="widget1"></div>
       <Helmet>
-
-      
-      <script type="text/javascript">
-		new fussballdeWidgetAPI().showWidget('widget2', '02H3FRGU24000000VUM1DNOPVSR4O07R');
+	<script type="text/javascript">
+		new fussballdeWidgetAPI().showWidget('widget1', '02HRA6TRUS000000VUM1DNOEVTQI0E65');
 	</script>
-
-      </Helmet>
+  </Helmet>
       </>
 
     );
