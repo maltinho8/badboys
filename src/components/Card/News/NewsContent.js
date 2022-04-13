@@ -1,5 +1,5 @@
-import NewsCard from './NewsCard.js';
-import '../../ContentLandingPage/index.js';
+import NewsCard from './News.js';
+import '../../PagesContent/ContentLandingPage/index.js';
 import styled from 'styled-components';
 
 const HorizontalContainer = styled.div`

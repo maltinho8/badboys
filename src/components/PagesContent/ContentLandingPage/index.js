@@ -6,7 +6,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Button from '@mui/material/Button';
 import {Link} from "react-router-dom";
-import PropsNewsCard from './NewsCard/NewsCardContent';
+import PropsNewsCard from '../../Card/News/NewsContent.js';
 import Logo from '../../../assets/img/fsc.png';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -232,7 +232,7 @@ const ContentLandingPage = () => {
       </VerticalContainer>
          <HeaderContainer>
         <Headline>
-      Frohnauer SC II
+      Frohnauer SC II.
       </Headline>
       </HeaderContainer>
       
