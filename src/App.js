@@ -6,6 +6,7 @@ import Routing from './components/Router/Router';
 import desktopImage from '../src/assets/img/fsc1.png';
 import mobileImage from '../src/assets/img/reeperbahn.jpg';
 
+
 const App = () => {
   // useState - möchte den State der Komponente updaten mit dem neuen Value von window.innerWidth
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -37,6 +38,7 @@ const App = () => {
       <div className="App" style={{backgroundImage:`url(${imageUrl})` }}></div>
       <div className="content">
       <Routing />
+      
       
       </div>
     </ThemeProvider>

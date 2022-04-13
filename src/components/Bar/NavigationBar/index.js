@@ -5,12 +5,17 @@ import {NavLink as Link} from "react-router-dom";
 
 
  const Nav = styled.nav`
-  background: #000;
+  background: transparent;
   height: 60px;
+  width: 68%;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
-  z-index: 10;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  margin-bottom: 2rem;
+
 `;
 
 const NavLink = styled(Link)`

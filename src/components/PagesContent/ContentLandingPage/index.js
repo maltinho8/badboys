@@ -31,7 +31,7 @@ color: ${({theme}) => theme.palette.text.light};
 const Headline = styled.h1`
   
   line-height: 1;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
   color: white;
   margin-top: 2rem;
   
@@ -118,6 +118,7 @@ const ContentContainer = styled.div`
 margin-left: 5rem;
 margin-right: 5rem;
 
+
 @media screen and (max-width: 768px) {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -165,6 +166,10 @@ border-radius: 10px 10px 10px 10px;
 object-fit: contain;
 `;
 
+const NewsContainer = styled.div`
+margin: 0 auto;
+`;
+
 
 const ContentLandingPage = () => {
 
@@ -202,6 +207,11 @@ const ContentLandingPage = () => {
 
 
        <Container>
+          <br />
+      <br />
+      <br />
+      <br />
+      <br />
          
          <HeadlineTextContainer>
       <BoxesHeader>
@@ -237,16 +247,9 @@ const ContentLandingPage = () => {
       </HeaderContainer>
       
       
-      <Wrapper>
-      <ContentContainer>
-      <HeadlineSmall>
-      News
-      </HeadlineSmall>
-      <br />
-      
+    
       <PropsNewsCard newscards={newscontent}/> 
-      </ContentContainer>
-      </Wrapper>
+    
       <br />
       <br />
   

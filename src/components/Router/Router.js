@@ -13,6 +13,7 @@ import App from '../../App.js';
 import Impressum from '../Organisation/Imprint/Imprint.js';
 import Footer from '../Footer/index.js';
 import SignatureLogo from '../SignatureLogo/SignatureLogo.js';
+import ScrollToTop from '../ScrollToTop/ScrollToTop.js';
 
 const Routing = () => {
     const [isLoggedIn, setIsLoggedIn] = useState (false)
@@ -22,6 +23,7 @@ const Routing = () => {
 
   return (
     <Router>
+      <ScrollToTop />
     <NavigationBar />
     
     {isLoggedIn ? (
