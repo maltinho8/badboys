@@ -11,6 +11,8 @@ const WidgetTabelle = () => {
       <Helmet>
 	<script type="text/javascript">
 		new fussballdeWidgetAPI().showWidget('widget1', '02HRA6TRUS000000VUM1DNOEVTQI0E65');
+    var iframe = document.getElementById("iframe");
+    iframe.scrolling= "yes";
 	</script>
   </Helmet>
       </>
