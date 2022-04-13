@@ -7,14 +7,19 @@ import {NavLink as Link} from "react-router-dom";
  const Nav = styled.nav`
   background: transparent;
   height: 60px;
-  width: 68%;
+  
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 999;
   position: fixed;
   top: 0;
+  right: 0;
+  left:0;
   margin-bottom: 2rem;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0rem;
+  }
 
 `;
 
