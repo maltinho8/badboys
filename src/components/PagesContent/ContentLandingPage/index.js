@@ -232,7 +232,7 @@ const ContentLandingPage = () => {
       </VerticalContainer>
          <HeaderContainer>
         <Headline>
-      Frohnauer SC II.
+      Frohnauer SC II
       </Headline>
       </HeaderContainer>
       
