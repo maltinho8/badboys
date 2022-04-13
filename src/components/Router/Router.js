@@ -6,9 +6,10 @@ import Homepage from '../Pages/LandingPage/LandingPage';
 import Spielplan from '../Pages/Spielplan/Spielplan.js';
 import Tabelle from "../Pages/Tabelle/Tabelle.js";
 import Team from '../Pages/Team/Team.js';
-import { Redirect } from 'react-router';
+import { Redirect } from 'react-router-dom';
 import HallOfFame from '../Pages/HallOfFame/HallOfFame';
 import Spiele from '../Pages/Spiele/Spiele.js';
+import App from '../../App.js';
 
 const Routing = () => {
     const [isLoggedIn, setIsLoggedIn] = useState (false)
@@ -21,8 +22,8 @@ const Routing = () => {
     <NavigationBar />
     {isLoggedIn ? (
     <Switch>
-        <Route exact path='/'>
-          <Redirect to = "/Homepage" />
+        <Route exact path='/' component={App}>
+          <Redirect to = "/Homepage" component={Homepage}/>
         </Route>
         <Route path='/Homepage' component={Homepage} />
         <Route path='/Team' component={Team} />
@@ -35,7 +36,9 @@ const Routing = () => {
 
       ) : (
         <Switch>
-
+        <Route exact path='/' component={App}>
+          <Redirect to = "/Homepage" component={Homepage}/>
+        </Route>
         <Route path='/Homepage' component={Homepage} />
         <Route path='/Team' component={Team} />
         <Route path='/Tabelle' component={Tabelle} />
