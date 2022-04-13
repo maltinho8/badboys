@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import {Link} from "react-router-dom";
 
 const Box = styled.div`
   
@@ -57,6 +58,18 @@ const FooterLink = styled.a`
   }
 `;
 
+const FooterLinkReact = styled(Link)`
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-decoration: none;
+   
+  &:hover {
+      color: orange;
+      transition: 200ms ease-in;
+  }
+`;
+
    
 const Heading = styled.p`
   font-size: 18px;
@@ -84,7 +97,7 @@ const Footer = () => {
           <Column>
             <Heading>Kontakt</Heading>
             <FooterLink href="#">Kontakt</FooterLink>
-            <FooterLink href="#">Impressum</FooterLink>
+            <FooterLinkReact to='/Impressum'>Impressum</FooterLinkReact>
             
           </Column>
           <Column>

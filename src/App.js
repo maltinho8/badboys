@@ -39,8 +39,7 @@ const App = () => {
       <div className="App" style={{backgroundImage:`url(${imageUrl})` }}></div>
       <div className="content">
       <Routing />
-      <SignatureLogo />
-      <Footer />
+      
       </div>
     </ThemeProvider>
     

@@ -99,7 +99,7 @@ const NavBtnLink = styled(Link)`
 
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to={{ pathname: "https://www.paypal.com/paypalme/badboysfsc" }} target="_blank">Support</NavBtnLink>
+          <NavBtnLink to={{ pathname: "https://www.paypal.me/freddidunkel" }} target="_blank">Support</NavBtnLink>
         </NavBtn>
       </Nav>
 

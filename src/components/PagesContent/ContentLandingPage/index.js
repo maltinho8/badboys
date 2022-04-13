@@ -1,14 +1,13 @@
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
-import { HeadlineDrawing } from "../../HeadlineDrawing";
-import TimeLine from "../../TimeLine2/TimeLine2";
+import HeadlineDrawing from "../../ChartDrawing/ContentChardDrawing.js";
+import TimeLine from "../../TimeLineErfolge/TimeLineErfolge";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Button from '@mui/material/Button';
 import {Link} from "react-router-dom";
 import PropsNewsCard from './NewsCard/NewsCardContent';
 import Logo from '../../../assets/img/fsc.png';
-import '../ContentLandingPage/index.css';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -159,7 +158,7 @@ object-fit: contain;
 `;
 
 const BoxesHeader = styled.div`
-width: 22rem;
+width: 15rem;
 overflow: hidden;
 box-shadow: 0px 12px 18px -6px rgba (0,0,0,0.3);
 border-radius: 10px 10px 10px 10px;
@@ -223,13 +222,6 @@ const ContentLandingPage = () => {
       <ThemeProvider theme={theme}>
       <Button variant="outlined" color="primary" style={{ color: 'orange' }}>
               Tabelle
-      </Button>
-      </ThemeProvider>
-      </Link>&nbsp;&nbsp;
-      <Link to="/Spiele" style={{ textDecoration: 'none' }}>
-      <ThemeProvider theme={theme}>
-      <Button variant="outlined" color="primary" style={{ color: 'orange' }}>
-              Upcoming
       </Button>
       </ThemeProvider>
       </Link>

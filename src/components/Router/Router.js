@@ -1,15 +1,18 @@
 import React, {useState}  from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import NavigationBar from '../Bar/NavigationBar';
+import { Redirect } from 'react-router-dom';
+import NavigationBar from '../Bar/NavigationBar/index.js';
 import fire from '../../fire';
 import Homepage from '../Pages/LandingPage/LandingPage';
 import Spielplan from '../Pages/Spielplan/Spielplan.js';
 import Tabelle from "../Pages/Tabelle/Tabelle.js";
 import Team from '../Pages/Team/Team.js';
-import { Redirect } from 'react-router-dom';
 import HallOfFame from '../Pages/HallOfFame/HallOfFame';
 import Spiele from '../Pages/Spiele/Spiele.js';
 import App from '../../App.js';
+import Impressum from '../Organisation/Imprint/Imprint.js';
+import Footer from '../Footer/index.js';
+import SignatureLogo from '../SignatureLogo/SignatureLogo.js';
 
 const Routing = () => {
     const [isLoggedIn, setIsLoggedIn] = useState (false)
@@ -20,6 +23,7 @@ const Routing = () => {
   return (
     <Router>
     <NavigationBar />
+    
     {isLoggedIn ? (
     <Switch>
         <Route exact path='/' component={App}>
@@ -31,6 +35,7 @@ const Routing = () => {
         <Route path='/Spielplan' component={Spielplan} />
         <Route path='/HallOfFame' component={HallOfFame} />
         <Route path='/Spiele' component={Spiele} />
+        <Route path='/Impressum' component={Impressum} />
         
       </Switch>
 
@@ -45,10 +50,13 @@ const Routing = () => {
         <Route path='/Spielplan' component={Spielplan} />
         <Route path='/HallOfFame' component={HallOfFame} />
         <Route path='/Spiele' component={Spiele} />
+        <Route path='/Impressum' component={Impressum} />
 
 
         </Switch>
       )}
+      <SignatureLogo />
+      <Footer />
   </Router>
 
 
