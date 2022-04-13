@@ -166,9 +166,6 @@ border-radius: 10px 10px 10px 10px;
 object-fit: contain;
 `;
 
-const NewsContainer = styled.div`
-margin: 0 auto;
-`;
 
 
 const ContentLandingPage = () => {
