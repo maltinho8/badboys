@@ -206,7 +206,7 @@ const ContentLandingPage = () => {
             </VerticalContainer>
               <HeaderContainer>
                 <Headline>
-                  Frohnauer SC II.
+                  CRS
                 </Headline>
               </HeaderContainer>
                 <PropsNewsCard newscards={newscontent}/> 
