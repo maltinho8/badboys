@@ -1,13 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 import Burger from "../Burger";
-import {NavLink as Link} from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 
-
- const Nav = styled.nav`
+const Nav = styled.nav`
   background: transparent;
   height: 60px;
-  
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
@@ -15,12 +13,11 @@ import {NavLink as Link} from "react-router-dom";
   position: fixed;
   top: 0;
   right: 0;
-  left:0;
+  left: 0;
   margin-bottom: 2rem;
   @media screen and (max-width: 768px) {
     margin-bottom: 0rem;
   }
-
 `;
 
 const NavLink = styled(Link)`
@@ -65,7 +62,7 @@ const NavBtn = styled.nav`
 
 const NavBtnLink = styled(Link)`
   border-radius: 4px;
-  
+
   padding: 10px 22px;
   color: orange;
   outline: none;
@@ -83,40 +80,31 @@ const NavBtnLink = styled(Link)`
   }
 `;
 
-  const NavBar = () => {
-
-    return (
-        <>
+const NavBar = () => {
+  return (
+    <>
       <Nav>
-        <NavLink to='/Homepage'>
-
-        <i className="fas fa-user-ninja fa-xl"></i>
+        <NavLink to="/Homepage">
+          <i className="fas fa-user-ninja fa-xl"></i>
         </NavLink>
         <Burger />
         <NavMenu>
-          <NavLink to='/Team'>
-            Team
-          </NavLink>
-          <NavLink to='/Tabelle'>
-            Tabelle
-          </NavLink>
-          <NavLink to='/Spielplan'>
-            Spielplan
-          </NavLink>
-          <NavLink to='/HallOfFame'>
-            Hall of Fame
-          </NavLink>
-
+          <NavLink to="/Team">Team</NavLink>
+          <NavLink to="/Tabelle">Tabelle</NavLink>
+          <NavLink to="/Spielplan">Spielplan</NavLink>
+          <NavLink to="/HallOfFame">Hall of Fame</NavLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to={{ pathname: "https://www.paypal.me/freddidunkel" }} target="_blank">Support</NavBtnLink>
+          <NavBtnLink
+            to={{ pathname: "https://www.paypal.me/freddidunkel" }}
+            target="_blank"
+          >
+            Support
+          </NavBtnLink>
         </NavBtn>
       </Nav>
-
-
     </>
+  );
+};
 
-    );
-  };
-
-  export default NavBar;
+export default NavBar;
