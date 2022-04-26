@@ -98,7 +98,7 @@ const ContentTeam = () => {
       verein: "Frohnauer SC II",
       position: "IV",
       jahr: "2004",
-      status: "Twistolero",
+      status: "El Twistolero",
       avatar: (
         <img
           alt="ch"
@@ -235,7 +235,7 @@ const ContentTeam = () => {
       verein: "Frohnauer SC II",
       position: "ZDM",
       jahr: "2004",
-      status: "Weißer Brasilianer",
+      status: "Hautfarbe: Alpina",
       avatar: (
         <img
           alt="jh"
@@ -253,7 +253,7 @@ const ContentTeam = () => {
       verein: "Frohnauer SC II",
       position: "ZDM",
       jahr: "2005",
-      status: "Arbeitstier",
+      status: "Marathon Läufer",
       avatar: (
         <img
           alt="yb"
@@ -289,7 +289,7 @@ const ContentTeam = () => {
       verein: "Frohnauer SC II",
       position: "RF",
       jahr: "2010",
-      status: "Fifa Pro",
+      status: "FIFA > Real Life",
       avatar: (
         <img
           alt="ml"
@@ -307,7 +307,7 @@ const ContentTeam = () => {
       verein: "Frohnauer SC II",
       position: "LF",
       jahr: "2014",
-      status: "Stevie",
+      status: "Kugelblitz",
       avatar: <img alt="sk" src={SK} />,
       link: "https://www.fupa.net/player/steven-kassburg-1371361",
     },
@@ -355,7 +355,7 @@ const ContentTeam = () => {
       verein: "Frohnauer SC II",
       position: "ZOM",
       jahr: "2010",
-      status: "Bella Ciao",
+      status: "Forza Italia",
       avatar: (
         <img
           alt="lk"
@@ -391,7 +391,7 @@ const ContentTeam = () => {
       verein: "Frohnauer SC II",
       position: "ZOM",
       jahr: "2021",
-      status: "Silent Killer",
+      status: "Herzensbrecher",
       avatar: (
         <img
           alt="vh"
@@ -432,7 +432,7 @@ const ContentTeam = () => {
       verein: "Frohnauer SC II",
       position: "ST",
       jahr: "2010",
-      status: "Torjäger",
+      status: "Rekordstürmer",
       avatar: <img alt="ms" src={MS} />,
       link: "https://www.fupa.net/player/moritz-stoll-845270",
     },
