@@ -23,6 +23,7 @@ import UG from "../../../assets/img/ProfileImages/uwe.jpg";
 import MR from "../../../assets/img/ProfileImages/malte.jpg";
 import VH from "../../../assets/img/ProfileImages/vici.jpg";
 import MW from "../../../assets/img/ProfileImages/max.jpg";
+import JL from "../../../assets/img/ProfileImages/justus.jpg";
 
 const Container = styled.div`
   padding: 1rem;
@@ -373,7 +374,13 @@ const ContentTeam = () => {
       position: "ZOM",
       jahr: "2007",
       status: "Allergie: Passspiel",
-      avatar: "JL",
+      avatar: (
+        <img
+          alt="jl"
+          src={JL}
+          style={{ border: 0, objectFit: "cover", width: 90, height: 90 }}
+        />
+      ),
       link: "https://www.fupa.net/player/justus-lemgau-1933698",
     },
 

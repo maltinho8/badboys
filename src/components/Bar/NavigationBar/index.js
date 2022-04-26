@@ -28,8 +28,7 @@ const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  &.active {
-    color: orange;
+  &:active {
     font-weight: bold;
   }
 `;
@@ -64,7 +63,7 @@ const NavBtnLink = styled(Link)`
   border-radius: 4px;
 
   padding: 10px 22px;
-  color: orange;
+  color: white;
   outline: none;
   border: 1px solid white;
   opacity: 0.7;
@@ -85,7 +84,7 @@ const NavBar = () => {
     <>
       <Nav>
         <NavLink to="/Homepage">
-          <i className="fas fa-user-ninja fa-xl"></i>
+          <h3>FSC II.</h3>
         </NavLink>
         <Burger />
         <NavMenu>
