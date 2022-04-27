@@ -24,6 +24,7 @@ import MR from "../../../assets/img/ProfileImages/malte.jpg";
 import VH from "../../../assets/img/ProfileImages/vici.jpg";
 import MW from "../../../assets/img/ProfileImages/max.jpg";
 import JL from "../../../assets/img/ProfileImages/justus.jpg";
+import BS from "../../../assets/img/ProfileImages/basti.jpg";
 
 const Container = styled.div`
   padding: 1rem;
@@ -188,7 +189,13 @@ const ContentTeam = () => {
       position: "RV",
       jahr: "2017",
       status: "Schusswunder",
-      avatar: "BS",
+      avatar: (
+        <img
+          alt="bs"
+          src={BS}
+          style={{ border: 0, objectFit: "cover", width: 90, height: 90 }}
+        />
+      ),
       link: "https://www.fupa.net/player/sebastian-schneider-1141554",
     },
 

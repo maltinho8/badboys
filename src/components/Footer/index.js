@@ -89,7 +89,9 @@ const Footer = () => {
           </Column>
           <Column>
             <Heading>Kontakt</Heading>
-            <FooterLink href="#">Kontakt</FooterLink>
+            <FooterLink href="https://instagram.com/badboysfsc?utm_medium=copy_link">
+              Kontakt
+            </FooterLink>
             <FooterLinkReact to="/Impressum">Impressum</FooterLinkReact>
           </Column>
           <Column>
