@@ -3,9 +3,10 @@ import '../../PagesContent/ContentTeam';
 import styled from 'styled-components';
 
 const HorizontalContainer = styled.div`
-width: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
     @media screen and (max-width: 768px) {
       flex-direction: column;
       align-content: center;

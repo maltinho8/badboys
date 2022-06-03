@@ -3,8 +3,9 @@ import styled from "styled-components";
 import Burger from "../Burger";
 import { NavLink as Link } from "react-router-dom";
 
-const Nav = styled.nav`
-  background: transparent;
+
+ const Nav = styled.nav`
+  background: black;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -13,8 +14,8 @@ const Nav = styled.nav`
   position: fixed;
   top: 0;
   right: 0;
-  left: 0;
-  margin-bottom: 2rem;
+  left:0;
+  bottom: 0;
   @media screen and (max-width: 768px) {
     margin-bottom: 0rem;
   }

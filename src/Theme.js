@@ -19,12 +19,14 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 200;
     font-size: 4rem;
     font-family: 'Bungee', cursive;
+    color: black;
   }
 
   h2 {
     font-size: 2.5rem;
     margin-bottom: 8px;
     font-family: 'Bungee', cursive;
+    color: black;
   }
 
   h3 {

@@ -27,11 +27,13 @@ import JL from "../../../assets/img/ProfileImages/justus.jpg";
 import BS from "../../../assets/img/ProfileImages/basti.jpg";
 
 const Container = styled.div`
-  padding: 1rem;
-  color: ${({ theme }) => theme.palette.text.light};
+  padding-top: 3rem;
+  color: ${({theme}) => theme.palette.text.light};
 `;
 
 const PlayerContainer = styled.div`
+  width: 90%;
+  margin: 0 auto;
   @media screen and (max-width: 768px) {
     display: flex;
     justify-content: center;
@@ -39,13 +41,17 @@ const PlayerContainer = styled.div`
 `;
 
 const Headline = styled.h2`
-  line-height: 1;
-  margin-bottom: 2rem;
-  color: white;
+
+line-height: 1;
+margin-bottom: 2rem;
+text-align: center;
+
 `;
 
 const Text = styled.div`
   font-size: 1.2rem;
+  color: black;
+  text-align: center;
 `;
 
 const ContentTeam = () => {
@@ -445,23 +451,27 @@ const ContentTeam = () => {
     },
   ];
   return (
-    <Container>
-      <Headline>Team</Headline>
-      <Text>
-        Der aktuelle Kader der BadBoys der Saison 2021/2022 der Kreisliga A
-        Staffel 1.
-      </Text>
-      <br />
-      <br />
-      <PlayerContainer>
-        <DetailsPlayers players={profilesPlayers} />
-      </PlayerContainer>
-      <br />
-      <Text>Trainerteam</Text>
-      <br />
-      <DetailsCoaches coaches={profilesCoaches} />
-      <br />
-    </Container>
+
+<Container>
+<Headline>
+  Team
+</Headline>
+<Text>
+ Der aktuelle Kader der BadBoys der Saison 2021/2022 der Kreisliga A Staffel 1.
+</Text>  
+<br />
+<br />
+<PlayerContainer>
+<DetailsPlayers players={profilesPlayers}/> 
+
+<br />
+<br />
+<DetailsCoaches coaches={profilesCoaches}/>
+</PlayerContainer>
+<br />
+
+
+</Container>
   );
 };
 

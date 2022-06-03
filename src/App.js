@@ -8,6 +8,8 @@ import mobileImage from '../src/assets/img/reeperbahn.jpg';
 
 
 const App = () => {
+
+  /*
   // useState - möchte den State der Komponente updaten mit dem neuen Value von window.innerWidth
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -30,17 +32,13 @@ const App = () => {
       }
   }, []);
 
+  */
+
   return (
     
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      
-      <div className="App" style={{backgroundImage:`url(${imageUrl})` }}></div>
-      <div className="content">
       <Routing />
-      
-      
-      </div>
     </ThemeProvider>
     
     

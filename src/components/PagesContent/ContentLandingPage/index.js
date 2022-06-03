@@ -68,10 +68,12 @@ const Text = styled.p`
 
 const HeaderContainer = styled.div`
   text-align: center;
+  
 `;
 
 const VerticalContainer = styled.div`
   text-align: center;
+  margin-top: 10rem;
   @media screen and (max-width: 768px) {
     margin-top: 3rem;
   }
@@ -142,6 +144,19 @@ const BoxesHeader = styled.div`
   object-fit: contain;
 `;
 
+const Background = styled.div`
+  background-image: url("https://images.unsplash.com/photo-1600529533338-595b6acc327d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fHNvY2NlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 5rem;
+  overflow: auto;
+  
+`;
+
 const ContentLandingPage = () => {
   const newscontent = [
     {
@@ -190,18 +205,17 @@ const ContentLandingPage = () => {
   }, []);
 
   return (
-    <Container>
-      <HeadlineTextContainer>
-        <BoxesHeader>
-          <TextHeader>
-            Spätestens seit dem furiosen Reeperbahn-Auftritt 2019 erlangten die
-            BadBoys internationale Bekanntheit. Dem Durchmarsch von der
-            Kreisliga C in die Kreisliga A soll nun auch der Schritt in den
-            bezahlten Profifussball folgen.
-          </TextHeader>
-        </BoxesHeader>
-        <ButtonContainer>
-          <Link to="/Team" style={{ textDecoration: "none" }}>
+       <Container>
+         <Background>
+        <HeadlineTextContainer>
+          <BoxesHeader>
+            <TextHeader>
+              Spätestens seit dem furiosen Reeperbahn-Auftritt 2019 erlangten die BadBoys internationale Bekanntheit. Dem
+              Durchmarsch von der Kreisliga C in die Kreisliga A soll nun auch der Schritt in den bezahlten Profifussball folgen.
+            </TextHeader>
+          </BoxesHeader>
+          <ButtonContainer>
+            <Link to="/Team" style={{ textDecoration: 'none' }}>
             <ThemeProvider theme={theme}>
               <Button
                 variant="outlined"
@@ -223,51 +237,57 @@ const ContentLandingPage = () => {
                 Tabelle
               </Button>
             </ThemeProvider>
-          </Link>
-        </ButtonContainer>
-      </HeadlineTextContainer>
-      <VerticalContainer>
-        <img alt="Logo" src={Logo} />
-      </VerticalContainer>
-      <HeaderContainer>
-        <Headline>Frohnauer SC II.</Headline>
-      </HeaderContainer>
-      <PropsNewsCard newscards={newscontent} />
-      <br />
-      <br />
-      <Wrapper>
-        <ContentContainer>
-          <HeadlineSmall>Teamchemie</HeadlineSmall>
-          <br />
-          <Boxes>
-            <Text>
-              Bei den BadBoys zählen vor allem Teamgeist und Wille. Die
-              Komponente Attraktivität wird direkt im ersten Probetraining,
-              sowie im ersten Training jedes neuen Jahres, regelmäßigen
-              Kontrollen unterzogen. Die Problematik rund um das Thema Ausdauer
-              wird durch den Athletikstab um dessen Leiter Sascha Sievert
-              mithilfe engagierter Tabata-Einheiten proaktiv angegangen.
-            </Text>
-          </Boxes>
-        </ContentContainer>
-        <HeadlineDrawingContainer>
-          <HeadlineDrawing />
-        </HeadlineDrawingContainer>
-      </Wrapper>
-      <Wrapper>
-        <ContentContainer>
-          <HeadlineSmall>Erfolge</HeadlineSmall>
-        </ContentContainer>
-      </Wrapper>
-      <TimeLineContainer>
-        <TimeLine />
-      </TimeLineContainer>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-    </Container>
+            </Link>
+            </ButtonContainer>
+         </HeadlineTextContainer>
+            <VerticalContainer>
+              <img alt="Logo" src={Logo} />
+            </VerticalContainer>
+              <HeaderContainer>
+                <Headline>
+                  Frohnauer SC II.
+                </Headline>
+              </HeaderContainer>
+              </Background>
+                <PropsNewsCard newscards={newscontent}/> 
+                <br />
+                <br />
+                <Wrapper>
+                  <ContentContainer>
+                    <HeadlineSmall>
+                      Teamchemie
+                    </HeadlineSmall>
+                <br/>
+                <Boxes>
+                  <Text>
+                    Bei den BadBoys zählen vor allem Teamgeist und Wille. Die Komponente Attraktivität wird direkt
+                    im ersten Probetraining, sowie im ersten Training jedes neuen Jahres, regelmäßigen Kontrollen unterzogen.
+                    Die Problematik rund um das Thema Ausdauer wird durch den Athletikstab um dessen Leiter Sascha Sievert
+                    mithilfe engagierter Tabata-Einheiten proaktiv angegangen.
+                  </Text>
+                </Boxes>
+                  </ContentContainer>
+                <HeadlineDrawingContainer>
+                  <HeadlineDrawing />
+                </HeadlineDrawingContainer>
+                </Wrapper>
+                <Wrapper>
+                  <ContentContainer>
+                    <HeadlineSmall>
+                      Erfolge
+                    </HeadlineSmall>
+                  </ContentContainer>
+                </Wrapper>
+                <TimeLineContainer>
+                  <TimeLine />
+                </TimeLineContainer>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+        </Container>
+
   );
 };
 
