@@ -4,7 +4,7 @@ import Logo from '../../assets/img/fsc.png';
 
 const Text = styled.p`
   
-  color: white;
+  color: black;
   margin: 10px;
   @media screen and (max-width: 768px) {
     font-size: 0.9rem;

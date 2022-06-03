@@ -13,24 +13,24 @@ const SubContainer = styled.div`
 const Headline = styled.h2`
 line-height: 1;
 margin-bottom: 2rem;
-color: white;
+
   
 `;
 
 const Text = styled.p`
   font-size: 1.2rem;
-  color: white;
+  color: black;
 `;
 
 const HeadlineSmall = styled.div`
   font-size: 1rem;
-  color: white;
+  color: black;
   line-height: 1.8;
 `;
 
 const TextSmall = styled.div`
   font-size: 0.8rem;
-  color: white;
+  color: black;
   line-height: 1.4;
 `;
 

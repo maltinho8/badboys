@@ -18,7 +18,7 @@ import KK2 from '../../../assets/img/ProfileImages/kaffa2.jpg';
 import KK3 from '../../../assets/img/ProfileImages/kaffa3.jpg';
 
 const Container = styled.div`
-  padding: 1rem;
+  
   color: ${({theme}) => theme.palette.text.light};
   
 `;
@@ -27,10 +27,12 @@ const Headline = styled.h2`
 
 line-height: 1;
 margin-bottom: 2rem;
-color: white;
+text-align: center;
 `;
 
 const PlayerContainer = styled.div`
+ width: 90%;
+  margin: 0 auto;
   @media screen and (max-width: 768px) {
     display: flex;
     justify-content: center;
@@ -38,8 +40,11 @@ const PlayerContainer = styled.div`
 `;
 
 const Text = styled.div`
+  
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  text-align: center;
+  color: black;
 `;
 
 const ContentHallOfFame = () => {
@@ -99,6 +104,8 @@ const ContentHallOfFame = () => {
 
   return (
     <Container>
+      <br />
+      <br />
       <Headline>
         Hall of Fame
       </Headline>
@@ -106,6 +113,8 @@ const ContentHallOfFame = () => {
      Die bisherige Geschichte der BadBoys ist nicht nur gespickt mit zahlreichen Erfolgen, sondern auch von herausragenden Persönlichkeiten, die wegen
      unterschiedlicher Gründe nun nicht mehr Teil der Erfolgsgeschichte sind. 
       </Text>
+      <br />
+      <br />
       <br />
         <PlayerContainer>
         <DetailsHoF hofs={profilesHoF}/> 

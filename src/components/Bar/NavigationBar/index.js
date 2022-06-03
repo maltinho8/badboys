@@ -85,7 +85,7 @@ const NavBar = () => {
     <>
       <Nav>
         <NavLink to="/Homepage">
-          <h3>FSC II.</h3>
+          <h3>FSC II</h3>
         </NavLink>
         <Burger />
         <NavMenu>

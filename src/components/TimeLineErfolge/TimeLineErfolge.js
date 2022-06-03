@@ -8,7 +8,7 @@ import { styled } from "@material-ui/styles";
 
 const StyledStepLabel = styled(StepLabel)({
   "& .MuiStepLabel-label": {
-    color: "white"
+    color: "black"
   }
 });
 

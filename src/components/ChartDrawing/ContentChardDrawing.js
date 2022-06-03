@@ -11,13 +11,13 @@ const RadialChart = () =>{
   const [options] = useState(
     {
       fill: {
-        colors: ['orange'],
+        colors: ['black'],
         opacity: 0.1
       },
       stroke: {
         show: true,
         width: 3.5,
-        colors: ['orange'],
+        colors: ['black'],
         dashArray: 0
       },
       markers: {

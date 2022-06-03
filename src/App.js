@@ -1,10 +1,8 @@
-import React , {useState, useEffect} from 'react';
+import React from 'react';
 import './App.css';
 import theme, { GlobalStyle } from './Theme';
 import { ThemeProvider } from 'styled-components';
 import Routing from './components/Router/Router';
-import desktopImage from '../src/assets/img/fsc1.png';
-import mobileImage from '../src/assets/img/reeperbahn.jpg';
 
 
 const App = () => {

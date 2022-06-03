@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const Box = styled.div`
   background-color: black;
-  opacity: 0.6;
   position: sticky;
   top: 0;
   width: 100%;

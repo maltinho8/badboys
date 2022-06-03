@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import PropsNewsCard from "../../Card/News/NewsContent.js";
-import Logo from "../../../assets/img/fsc.png";
+import BackgroundImage from "../../../assets/img/fsc1.png";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
@@ -22,14 +22,9 @@ const theme = createTheme({
   },
 });
 
-const Container = styled.div`
-  padding: 1rem;
-  color: ${({ theme }) => theme.palette.text.light};
-`;
-
 const Headline = styled.h1`
   line-height: 1;
-  margin-bottom: 8rem;
+  margin-bottom: 1rem;
   color: white;
   margin-top: 2rem;
   @media (max-width: 768px) {
@@ -43,23 +38,18 @@ const Headline = styled.h1`
 const HeadlineSmall = styled.h2`
   line-height: 1;
   margin-bottom: 1.5rem;
-  color: white;
+  
   @media (max-width: 768px) {
     text-align: center;
     font-size: 2.2rem;
   }
 `;
 
-const TextHeader = styled.p`
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
-    text-align: center;
-    padding: 1rem;
-  }
-`;
 
 const Text = styled.p`
   margin: 10px;
+  color: black;
+  margin-top: 3rem;
   @media screen and (max-width: 768px) {
     font-size: 0.9rem;
     text-align: center;
@@ -68,15 +58,8 @@ const Text = styled.p`
 
 const HeaderContainer = styled.div`
   text-align: center;
+  margin-top: 38rem;
   
-`;
-
-const VerticalContainer = styled.div`
-  text-align: center;
-  margin-top: 10rem;
-  @media screen and (max-width: 768px) {
-    margin-top: 3rem;
-  }
 `;
 
 const ButtonContainer = styled.div`
@@ -90,8 +73,8 @@ const ButtonContainer = styled.div`
 const HeadlineTextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: end;
-  margin: 9rem 7rem 0 0;
+  align-items: center;
+  
   @media screen and (max-width: 768px) {
     margin: 4rem 0 0 0;
     align-items: center;
@@ -99,8 +82,9 @@ const HeadlineTextContainer = styled.div`
 `;
 
 const ContentContainer = styled.div`
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 10rem;
+  margin-right: 2rem;
+  
   @media screen and (max-width: 768px) {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -128,6 +112,7 @@ const TimeLineContainer = styled.div`
 `;
 
 const Boxes = styled.div`
+  
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
@@ -136,16 +121,10 @@ const Boxes = styled.div`
   object-fit: contain;
 `;
 
-const BoxesHeader = styled.div`
-  width: 15rem;
-  overflow: hidden;
-  box-shadow: 0px 12px 18px -6px rgba (0, 0, 0, 0.3);
-  border-radius: 10px 10px 10px 10px;
-  object-fit: contain;
-`;
 
 const Background = styled.div`
-  background-image: url("https://images.unsplash.com/photo-1600529533338-595b6acc327d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fHNvY2NlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+                       rgba(0, 0, 0, 0.7)), url(${BackgroundImage});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -154,16 +133,15 @@ const Background = styled.div`
   position: relative;
   margin-bottom: 5rem;
   overflow: auto;
-  
 `;
 
 const ContentLandingPage = () => {
   const newscontent = [
     {
       id: "1",
-      title: " BadBoys vs. BSV 92",
+      title: " BadBoys vs. BFC Südring II",
       description:
-        "Am Wochenende ging es wieder hoch her im Norden von Berlin. Zu Gast war die Mannschaft von BSV 92.",
+        "Lockerer Aufgalopp im Herzen von Berlin - die BadBoys schenken ein halbes Dutzend ein.",
       image: (
         <img
           alt="lol"
@@ -174,9 +152,9 @@ const ContentLandingPage = () => {
     },
     {
       id: "2",
-      title: "BadBoys vs. Berolina Stralau",
+      title: "BadBoys vs. SV Nord Wedding",
       description:
-        "Personalnot leider nur zum Teil getrotzt - BadBoys unterliegen dem Tabellenführer am Ende deutlich.",
+        "Spielwitz der BadBoys provoziert 5 rote Karten beim Aufstiegsaspiranten - verdienter Erfolg.",
       image: (
         <img
           alt="ms"
@@ -205,22 +183,24 @@ const ContentLandingPage = () => {
   }, []);
 
   return (
-       <Container>
+       <>
          <Background>
-        <HeadlineTextContainer>
-          <BoxesHeader>
-            <TextHeader>
-              Spätestens seit dem furiosen Reeperbahn-Auftritt 2019 erlangten die BadBoys internationale Bekanntheit. Dem
-              Durchmarsch von der Kreisliga C in die Kreisliga A soll nun auch der Schritt in den bezahlten Profifussball folgen.
-            </TextHeader>
-          </BoxesHeader>
+       
+           
+              <HeaderContainer>
+                <Headline>
+                  Frohnauer SC II
+                </Headline>
+              </HeaderContainer>
+               <HeadlineTextContainer>
+         
           <ButtonContainer>
             <Link to="/Team" style={{ textDecoration: 'none' }}>
             <ThemeProvider theme={theme}>
               <Button
                 variant="outlined"
                 color="primary"
-                style={{ color: "orange" }}
+                style={{ color: "white" }}
               >
                 Mannschaft
               </Button>
@@ -232,7 +212,7 @@ const ContentLandingPage = () => {
               <Button
                 variant="outlined"
                 color="primary"
-                style={{ color: "orange" }}
+                style={{ color: "white" }}
               >
                 Tabelle
               </Button>
@@ -240,18 +220,20 @@ const ContentLandingPage = () => {
             </Link>
             </ButtonContainer>
          </HeadlineTextContainer>
-            <VerticalContainer>
-              <img alt="Logo" src={Logo} />
-            </VerticalContainer>
-              <HeaderContainer>
-                <Headline>
-                  Frohnauer SC II.
-                </Headline>
-              </HeaderContainer>
               </Background>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                
                 <PropsNewsCard newscards={newscontent}/> 
                 <br />
                 <br />
+                <br />
+                <br />
+                <br />
+                
                 <Wrapper>
                   <ContentContainer>
                     <HeadlineSmall>
@@ -286,7 +268,7 @@ const ContentLandingPage = () => {
                 <br />
                 <br />
                 <br />
-        </Container>
+        </>
 
   );
 };

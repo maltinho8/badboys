@@ -29,11 +29,12 @@ import BS from "../../../assets/img/ProfileImages/basti.jpg";
 const Container = styled.div`
   padding-top: 3rem;
   color: ${({theme}) => theme.palette.text.light};
+  
 `;
 
 const PlayerContainer = styled.div`
-  width: 90%;
-  margin: 0 auto;
+  
+  position: relative;
   @media screen and (max-width: 768px) {
     display: flex;
     justify-content: center;
@@ -463,11 +464,11 @@ const ContentTeam = () => {
 <br />
 <PlayerContainer>
 <DetailsPlayers players={profilesPlayers}/> 
-
+</PlayerContainer>
 <br />
 <br />
 <DetailsCoaches coaches={profilesCoaches}/>
-</PlayerContainer>
+
 <br />
 
 
