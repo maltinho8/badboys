@@ -8,7 +8,6 @@ import Spielplan from '../Pages/Spielplan/Spielplan.js';
 import Tabelle from "../Pages/Tabelle/Tabelle.js";
 import Team from '../Pages/Team/Team.js';
 import HallOfFame from '../Pages/HallOfFame/HallOfFame';
-import Spiele from '../Pages/Spiele/Spiele.js';
 import App from '../../App.js';
 import Impressum from '../Organisation/Imprint/Imprint.js';
 import Footer from '../Footer/index.js';
@@ -36,7 +35,7 @@ const Routing = () => {
         <Route path='/Tabelle' component={Tabelle} />
         <Route path='/Spielplan' component={Spielplan} />
         <Route path='/HallOfFame' component={HallOfFame} />
-        <Route path='/Spiele' component={Spiele} />
+       
         <Route path='/Impressum' component={Impressum} />
         
       </Switch>
@@ -51,7 +50,7 @@ const Routing = () => {
         <Route path='/Tabelle' component={Tabelle} />
         <Route path='/Spielplan' component={Spielplan} />
         <Route path='/HallOfFame' component={HallOfFame} />
-        <Route path='/Spiele' component={Spiele} />
+        
         <Route path='/Impressum' component={Impressum} />
 
 
