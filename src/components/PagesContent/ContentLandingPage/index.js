@@ -7,7 +7,6 @@ import "aos/dist/aos.css";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import PropsNewsCard from "../../Card/News/NewsContent.js";
-import BackgroundImage from "../../../assets/img/fsc1.png";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
@@ -123,8 +122,7 @@ const Boxes = styled.div`
 
 
 const Background = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-                       rgba(0, 0, 0, 0.7)), url(${BackgroundImage});
+  background-color: black;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
