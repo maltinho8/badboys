@@ -28,9 +28,9 @@ const Headline = styled.h1`
   margin-top: 2rem;
   @media (max-width: 768px) {
     text-align: center;
-    font-size: 3rem;
-    margin-top: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    
+    
   }
 `;
 
@@ -58,6 +58,9 @@ const Text = styled.p`
 const HeaderContainer = styled.div`
   text-align: center;
   margin-top: 28rem;
+  @media screen and (max-width: 768px) {
+    margin-top: 20rem;
+  }
   
 `;
 
@@ -66,6 +69,7 @@ const ButtonContainer = styled.div`
   margin-right: 0.7rem;
   @media screen and (max-width: 768px) {
     margin-right: 0rem;
+    margin-top: 0rem;
   }
 `;
 
@@ -75,7 +79,7 @@ const HeadlineTextContainer = styled.div`
   align-items: center;
   
   @media screen and (max-width: 768px) {
-    margin: 4rem 0 0 0;
+    margin: 2rem 0 0 0;
     align-items: center;
   }
 `;
@@ -131,6 +135,9 @@ const Background = styled.div`
   position: relative;
   margin-bottom: 5rem;
   overflow: auto;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
 `;
 
 const ContentLandingPage = () => {
