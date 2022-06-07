@@ -183,8 +183,6 @@ const ContentLandingPage = () => {
   return (
        <>
          <Background>
-       
-           
               <HeaderContainer>
                 <Headline>
                   Frohnauer SC II
@@ -224,8 +222,9 @@ const ContentLandingPage = () => {
                 <br />
                 <br />
                 <br />
-                
+                <Wrapper>
                 <PropsNewsCard newscards={newscontent}/> 
+                </Wrapper>
                 <br />
                 <br />
                 <br />
