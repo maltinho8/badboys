@@ -57,7 +57,7 @@ const Text = styled.p`
 
 const HeaderContainer = styled.div`
   text-align: center;
-  margin-top: 38rem;
+  margin-top: 28rem;
   
 `;
 
