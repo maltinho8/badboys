@@ -18,8 +18,6 @@ const firebaseConfig = {
 
 };
 
-console.log(firebaseConfig);
-
 
 
 

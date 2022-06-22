@@ -23,7 +23,7 @@ const SignatureLogo = () => {
     return (
         <VerticalContainer>
         <img alt="Logo" src={Logo} />
-        <Text>BadBoys for life.</Text>
+        <Text>BadBoys.</Text>
         <br />
       </VerticalContainer>
       

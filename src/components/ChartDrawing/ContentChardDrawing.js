@@ -42,7 +42,13 @@ const RadialChart = () =>{
         }
       },
       xaxis: {
-        categories: ['Attraktivität', 'Teamgeist', 'Power', 'Spielwitz', 'Wille', 'Ausdauer']
+        categories: ['Attraktivität', 'Teamgeist', 'Power', 'Spielwitz', 'Wille', 'Ausdauer'],
+        labels: {
+          show: true,
+          style: {
+    colors: ["#050505", "#050505","#050505","#050505","#050505","#050505"]
+  }
+        }
       },
       yaxis: {
         show: false

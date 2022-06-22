@@ -20,7 +20,7 @@ const Text = styled(Link)`
     }
   `;
 
-  const Logo = styled.div`
+  const Logo = styled.h1`
   font-size: 1.2rem;
   margin-left: 5rem;
   font-weight: 700;
@@ -53,7 +53,7 @@ const Content = ({closeMenu}) => {
         <Container>
           <br/>
         {/* durch onClick - closeMenu wird genutzt, um beim Klicken des Links das Menü zu schließen  */}
-        <Logo><Link onClick={closeMenu} to="/Homepage" style={{ textDecoration: 'none', color: 'orange' }}><i className="fas fa-user-ninja"></i></Link></Logo>
+        <Logo><Link onClick={closeMenu} to="/Homepage" style={{ textDecoration: 'none', color: 'white' }}>Bad Boys</Link></Logo>
         <Text onClick={closeMenu} to="/Team" style={{ textDecoration: 'none', color: 'white' }}>Team</Text>
         <Text onClick={closeMenu} to="/Tabelle" style={{ textDecoration: 'none', color: 'white' }}>Tabelle</Text>
         <Text onClick={closeMenu} to="/Spielplan" style={{ textDecoration: 'none', color: 'white' }}>Spielplan</Text>

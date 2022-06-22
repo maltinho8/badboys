@@ -6,11 +6,7 @@ const Ul = styled.div`
   @media (max-width: 900px) {
     width: 100vw!important;
     flex-flow: column nowrap;
-    background-image: linear-gradient(
-      125.26deg,
-      rgba(0, 0, 0, 0.75) 14.32%,
-      rgba(0, 0, 0, 0.75) 90.00%
-    ),url('https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/118657807_3442834425773146_5322172505327115756_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=e3f864&_nc_ohc=n6Myo213e8cAX8Ygqoh&_nc_ht=scontent-ber1-1.xx&oh=00_AT81afUG9ltPWoUV1V38uDZ5ca3mty_O9kN5mzPRgpN0UA&oe=625AC6FB');
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

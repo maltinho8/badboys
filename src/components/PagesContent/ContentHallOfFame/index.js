@@ -18,7 +18,7 @@ import KK2 from '../../../assets/img/ProfileImages/kaffa2.jpg';
 import KK3 from '../../../assets/img/ProfileImages/kaffa3.jpg';
 
 const Container = styled.div`
-  
+  padding: 3rem;
   color: ${({theme}) => theme.palette.text.light};
   
 `;
@@ -104,8 +104,7 @@ const ContentHallOfFame = () => {
 
   return (
     <Container>
-      <br />
-      <br />
+     
       <Headline>
         Hall of Fame
       </Headline>

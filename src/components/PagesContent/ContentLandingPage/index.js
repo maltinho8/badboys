@@ -29,8 +29,17 @@ const Headline = styled.h1`
   @media (max-width: 768px) {
     text-align: center;
     font-size: 2rem;
-    
-    
+  }
+`;
+
+const SubHeadline = styled.h2`
+  line-height: 1;
+  margin-bottom: 1rem;
+  color: white;
+  margin-top: 2rem;
+  @media (max-width: 768px) {
+    text-align: center;
+    font-size: 2rem;
   }
 `;
 
@@ -126,7 +135,7 @@ const Boxes = styled.div`
 
 
 const Background = styled.div`
-  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) , url("https://images.unsplash.com/photo-1556816213-fe43a7b26d5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -144,29 +153,29 @@ const ContentLandingPage = () => {
   const newscontent = [
     {
       id: "1",
-      title: " BadBoys vs. BFC Südring II",
+      title: " BadBoys vs. BW Hohen Neuendorf",
       description:
-        "Lockerer Aufgalopp im Herzen von Berlin - die BadBoys schenken ein halbes Dutzend ein.",
+        "Unglücklicher Saisonabschluss der BadBoys - wir sehen uns nächstes Jahr!",
       image: (
         <img
           alt="lol"
           src="https://www.fifplay.com/img/public/bundesliga-logo.png"
         ></img>
       ),
-      link: "https://www.fupa.net/match/berliner-sv-92-m2-frohnauer-sc-1946-m2-220320",
+      link: "https://www.fussball.de/spiel/bw-hohen-neuendorf-ii-frohnauer-sc-ii/-/spiel/02F2CBO0VK000000VS5489B4VS0OFO4E",
     },
     {
       id: "2",
-      title: "BadBoys vs. SV Nord Wedding",
+      title: "BadBoys vs. BFC Südring II",
       description:
-        "Spielwitz der BadBoys provoziert 5 rote Karten beim Aufstiegsaspiranten - verdienter Erfolg.",
+        "Lockerer Aufgalopp im Esso 36 - BadBoys machen das halbe Dutzend komplett!",
       image: (
         <img
           alt="ms"
           src="https://www.fifplay.com/img/public/bundesliga-logo.png"
         />
       ),
-      link: "https://www.fupa.net/match/frohnauer-sc-1946-m2-fsv-berolina-stralau-1901-m2-220313",
+      link: "https://www.fussball.de/spiel/bsc-eintracht-suedring-ii-frohnauer-sc-ii/-/spiel/02F2CBO2A8000000VS5489B4VS0OFO4E",
     },
     {
       id: "3",
@@ -179,7 +188,7 @@ const ContentLandingPage = () => {
           src="https://b04-ep-media-prod.azureedge.net/pickerimages/DFB-Pokal_Logo_2016_Kleinklein_203932_M.png"
         ></img>
       ),
-      link: "https://www.fupa.net/player/sascha-sievert-587369",
+      link: "https://www.fussball.de/spiel/viktoria-berlin-ii-frohnauer-sc-ii/-/spiel/02HDJND0GG000000VS5489B3VU9MQG4F#!/",
     },
   ];
 
@@ -194,6 +203,9 @@ const ContentLandingPage = () => {
                 <Headline>
                   Frohnauer SC II
                 </Headline>
+                <SubHeadline>
+                  "Badboys"
+                </SubHeadline>
               </HeaderContainer>
                <HeadlineTextContainer>
          

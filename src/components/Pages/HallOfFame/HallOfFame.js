@@ -4,8 +4,8 @@ import ContentHallOfFame from "../../PagesContent/ContentHallOfFame";
 
 const ContentContainer = styled.div`
   width: 100vwimportant!;
-  margin: 0 auto;
-  padding: 2rem;  
+margin: 0 auto;
+padding: 2rem; 
   @media screen and (max-width: 768px) {
     width: 85%;
    

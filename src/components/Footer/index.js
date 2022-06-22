@@ -81,10 +81,8 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>Über uns</Heading>
-            <FooterLink href="https://www.fussball.de/spieltagsuebersicht/herren-kreisliga-a-st1-kreis-berlin-kreisliga-a-herren-saison2122-berlin/-/staffel/02EK4EN2PS000006VS5489B3VVCDCH5N-G#!/">
-              Mannschaft
-            </FooterLink>
-            <FooterLink href="http://www.frohnauersc.de/">Verein</FooterLink>
+            <FooterLinkReact to="/Team">Team</FooterLinkReact>
+            <FooterLink href="http://www.frohnauersc.de/" target="_blank" rel="noopener noreferrer">Verein</FooterLink>
           </Column>
           <Column>
             <Heading>Kontakt</Heading>
@@ -96,10 +94,10 @@ const Footer = () => {
           <Column>
             <Heading>Social Media</Heading>
 
-            <FooterLink href="https://instagram.com/badboysfsc?utm_medium=copy_link">
+            <FooterLink href="https://instagram.com/badboysfsc?utm_medium=copy_link" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </FooterLink>
-            <FooterLink href="https://www.facebook.com/Frohnauersc/">
+            <FooterLink href="https://www.facebook.com/Frohnauersc/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook-f"></i>
             </FooterLink>
           </Column>
