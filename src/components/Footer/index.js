@@ -27,27 +27,25 @@ const Column = styled.div`
 
 const FooterLink = styled.a`
   color: #fff;
-  margin-bottom: 10px;
-  font-size: 14px;
-  text-decoration: none;
-  &:hover {
-    color: white;
-    transition: 200ms ease-in;
-  }
+  margin-bottom: 20px;
+  font-size: 16px;
+ 
+
   `;
 
   const FooterLinkReact = styled(Link)`
-    margin-bottom: 10px;
-  font-size: 14px;
+    margin-bottom: 20px;
+  font-size: 16px;
   text-decoration: none;
-  &:hover {
-    color: white;
-    font-weight: bold;
-    transition: 200ms ease-in;
+  color: #fff;
+
     `;
 
 const Row = styled.div`
   grid-gap: 270px;
+  display:grid;
+  grid-template-columns: repeat(auto-fill, 
+                         minmax(185px, 1fr));
   @media (max-width: 768px) {
     grid-gap: 20px;
     justify-content: space-evenly;
@@ -64,35 +62,80 @@ const Heading = styled.p`
     font-size: 16px;
     `;
 
+    const Row1 = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+    grid-gap: 20px;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0rem;
+  
+`;
+
+const Row2 = styled.div`
+  display: flex;
+    grid-gap: 50px;
+    justify-content: center;
+    width: 100%;
+`;
+
+const HeadingOne = styled.h1`
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+`;
+
+const HeadingTwo = styled.p`
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+`;
+
+const RowContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+  }
+`;
+
 
 const Footer = () => {
   return (
     <Box>
       <Container>
-        <Row>
-          <Column>
-            <Heading>Über uns</Heading>
-            <FooterLinkReact to="/Team">Team</FooterLinkReact>
-            <FooterLink href="http://www.frohnauersc.de/" target="_blank" rel="noopener noreferrer">Verein</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Kontakt</Heading>
-            <FooterLink href="https://instagram.com/badboysfsc?utm_medium=copy_link">
-              Kontakt
-            </FooterLink>
-            <FooterLinkReact to="/Impressum">Impressum</FooterLinkReact>
-          </Column>
-          <Column>
-            <Heading>Social Media</Heading>
-
-            <FooterLink href="https://instagram.com/badboysfsc?utm_medium=copy_link" target="_blank" rel="noopener noreferrer">
+        <RowContainer>
+          <Row1>
+            <HeadingOne>BADBOYS</HeadingOne>
+          </Row1>
+          <Row2>
+            <Column>
+              <FooterLinkReact to="/Team">Team</FooterLinkReact>
+            </Column>
+            <Column>
+              <FooterLinkReact to="/Impressum">Impressum</FooterLinkReact>
+            </Column>
+            <Column>
+              <FooterLinkReact to="/#">Kontakt</FooterLinkReact>
+            </Column>
+            <Column>
+              <FooterLink href="https://instagram.com/badboysfsc?utm_medium=copy_link" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </FooterLink>
-            <FooterLink href="https://www.facebook.com/Frohnauersc/" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-facebook-f"></i>
-            </FooterLink>
-          </Column>
-        </Row>
+            </Column>
+          </Row2>
+        </RowContainer>
+
       </Container>
     </Box>
   );

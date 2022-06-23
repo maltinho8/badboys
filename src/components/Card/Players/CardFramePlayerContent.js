@@ -7,8 +7,7 @@ const HorizontalContainer = styled.div`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    position: relative;
+    
     @media screen and (max-width: 768px) {
       flex-direction: column;
       align-content: center;
