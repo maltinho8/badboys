@@ -29,8 +29,6 @@ const FooterLink = styled.a`
   color: #fff;
   margin-bottom: 20px;
   font-size: 16px;
- 
-
   `;
 
   const FooterLinkReact = styled(Link)`
@@ -38,28 +36,6 @@ const FooterLink = styled.a`
   font-size: 16px;
   text-decoration: none;
   color: #fff;
-
-    `;
-
-const Row = styled.div`
-  grid-gap: 270px;
-  display:grid;
-  grid-template-columns: repeat(auto-fill, 
-                         minmax(185px, 1fr));
-  @media (max-width: 768px) {
-    grid-gap: 20px;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-`;
-
-const Heading = styled.p`
-  font-size: 18px;
-   color: #fff;
-  margin-bottom: 20px;
-  font-weight: bold;
-  @media (max-width: 768px) {
-    font-size: 16px;
     `;
 
     const Row1 = styled.div`
@@ -86,16 +62,6 @@ const HeadingOne = styled.h1`
   margin-bottom: 20px;
   font-weight: bold;
   text-align: center;
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-`;
-
-const HeadingTwo = styled.p`
-  font-size: 18px;
-  color: #fff;
-  margin-bottom: 20px;
-  font-weight: bold;
   @media (max-width: 768px) {
     font-size: 16px;
   }
