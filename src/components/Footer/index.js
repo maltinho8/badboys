@@ -7,7 +7,6 @@ const Box = styled.div`
   position: sticky;
   top: 0;
   width: 100%;
-  border-top: 1px solid white;
 `;
 
 const Container = styled.div`

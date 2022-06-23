@@ -128,7 +128,7 @@ const Background = styled.div`
 
 const HeaderContainer = styled.div`
   text-align: center;
-  margin-top: 25rem;
+  margin-top: 20rem;
   
 `;
 
@@ -143,7 +143,7 @@ const ContentLandingPage = () => {
   const newscontent = [
     {
       id: "1",
-      title: " BadBoys vs. BW Hohen Neuendorf",
+      title: "BadBoys vs. Hohen Neuendorf",
       description:
         "Unglücklicher Saisonabschluss der BadBoys - wir sehen uns nächstes Jahr!",
       image: (

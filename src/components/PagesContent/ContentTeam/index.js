@@ -264,7 +264,7 @@ const ContentTeam = () => {
       verein: "Frohnauer SC II",
       position: "ZDM",
       jahr: "2005",
-      status: "Marathon Läufer",
+      status: "Marathon-Läufer",
       avatar: (
         <img
           alt="yb"
@@ -318,7 +318,7 @@ const ContentTeam = () => {
       verein: "Frohnauer SC II",
       position: "LF",
       jahr: "2014",
-      status: "Kugelblitz",
+      status: "Ski-Weltmeister",
       avatar: <img alt="sk" src={SK} />,
       link: "https://www.fupa.net/player/steven-kassburg-1371361",
     },
@@ -330,7 +330,7 @@ const ContentTeam = () => {
       verein: "Frohnauer SC II",
       position: "RF",
       jahr: "2008",
-      status: "Laufwunder",
+      status: "Säufer & Läufer",
       avatar: (
         <img
           alt="mw"
@@ -402,7 +402,7 @@ const ContentTeam = () => {
       verein: "Frohnauer SC II",
       position: "ZOM",
       jahr: "2021",
-      status: "Herzensbrecher",
+      status: "Werderaner",
       avatar: (
         <img
           alt="vh"
@@ -443,7 +443,7 @@ const ContentTeam = () => {
       verein: "Frohnauer SC II",
       position: "ST",
       jahr: "2010",
-      status: "Rekordstürmer",
+      status: "alle 3 Monate da",
       avatar: <img alt="ms" src={MS} />,
       link: "https://www.fupa.net/player/moritz-stoll-845270",
     },
