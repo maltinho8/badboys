@@ -5,8 +5,8 @@ import { NavLink as Link } from "react-router-dom";
 
 
  const Nav = styled.nav`
-  background: black;
-  height: 60px;
+  background: white;
+  height: 110px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
@@ -16,13 +16,14 @@ import { NavLink as Link } from "react-router-dom";
   right: 0;
   left:0;
   bottom: 0;
+  border-bottom: 0.1px solid black;
   @media screen and (max-width: 768px) {
     margin-bottom: 0rem;
   }
 `;
 
 const NavLink = styled(Link)`
-  color: #fff;
+  color: black;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -64,9 +65,9 @@ const NavBtnLink = styled(Link)`
   border-radius: 4px;
 
   padding: 10px 22px;
-  color: white;
+  color: black;
   outline: none;
-  border: 1px solid white;
+  border: 1px solid black;
   opacity: 0.7;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -75,7 +76,7 @@ const NavBtnLink = styled(Link)`
   margin-left: 24px;
   &:hover {
     transition: all 0.2s ease-in-out;
-    border: 1px solid white;
+    border: 1px solid black;
     opacity: 1;
   }
 `;

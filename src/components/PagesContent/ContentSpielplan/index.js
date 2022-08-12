@@ -27,7 +27,7 @@ const ContentSpielplan = () => {
         Spielplan
       </Headline>
       <Text>
-       Der Spielplan der Saison 2021/2022 der Kreisliga A Staffel 1.
+       Der Spielplan der Saison 2022/2023 der Kreisliga A Staffel 4.
       </Text>  
       <br />
       <br />

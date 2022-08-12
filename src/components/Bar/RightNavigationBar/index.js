@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import Content from './RightNavigationBarContent';
+import img from "../../../assets/img/fsc1.png";
 
 const Ul = styled.div`
   @media (max-width: 900px) {
     width: 100vw!important;
     flex-flow: column nowrap;
-    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.627),rgba(0, 0, 0, 0.8)) ,url(${img});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import PropsNewsCard from "../../Card/News/NewsContent.js";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./index.css";
+import Teamfoto from "../../../assets/img/teamfoto.jpeg";
 
 const theme = createTheme({
   status: {
@@ -73,7 +74,7 @@ const ButtonContainer = styled.div`
 
 const ContentContainer = styled.div`
   margin-left: 10rem;
-  margin-right: 2rem;
+  margin-right: 10rem;
 
   @media screen and (max-width: 768px) {
     margin-left: 3rem;
@@ -112,7 +113,7 @@ const Boxes = styled.div`
 
 
 const Background = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) , url("https://images.unsplash.com/photo-1556816213-fe43a7b26d5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.427),rgba(0, 0, 0, 0.7)) , url("https://images.unsplash.com/photo-1600529533338-595b6acc327d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHNvY2NlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -128,7 +129,7 @@ const Background = styled.div`
 
 const HeaderContainer = styled.div`
   text-align: center;
-  margin-top: 20rem;
+  margin-top: 25rem;
   
 `;
 
@@ -138,6 +139,17 @@ const HeadlineTextContainer = styled.div`
   align-items: center;
   
 `;
+
+const Image = styled.img`
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    `;
 
 const ContentLandingPage = () => {
   const newscontent = [
@@ -222,7 +234,6 @@ const ContentLandingPage = () => {
         </ButtonContainer>
         </HeadlineTextContainer>
         </Background>
-   
 
       <br />
       <br />

@@ -8,8 +8,7 @@ const WidgetTabelle = () => {
       <div id="widget1"></div>
       <Helmet>
         <script type="text/javascript">
-          new fussballdeWidgetAPI().showWidget('widget1',
-          '02HRA6TRUS000000VUM1DNOEVTQI0E65'); var a =
+        new fussballdeWidgetAPI().showWidget('widget1', '02J2GCCAM8000000VUM1DNPCVU4MLK3F'); var a =
           document.querySelector("iframe"); a.setAttribute("scrolling", "yes");
         </script>
       </Helmet>

@@ -28,7 +28,7 @@ const ContentTabelle = () => {
         Tabelle
       </Headline>
       <Text>
-      Die Tabelle der Saison 2021/2022 der Kreisliga A Staffel 1.
+      Die Tabelle der Saison 2022/2023 der Kreisliga A Staffel 4.
       </Text>
       <br />
       <br />

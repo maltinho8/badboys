@@ -5,7 +5,7 @@ import ContentTabelle from '../../PagesContent/ContentTabelle/index';
 const ContentContainer = styled.div`
 width: 100vwimportant!;
 margin: 0 auto;
-padding: 2rem;
+padding: 6.2rem;
 `;
 
 

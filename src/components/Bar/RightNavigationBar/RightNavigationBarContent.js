@@ -12,7 +12,7 @@ const Text = styled(Link)`
       margin: 0;
       transition: ease all .5s;
       margin-top: 50px;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       &:hover {
         color: #fbbe01;
       }
@@ -52,12 +52,20 @@ const Content = ({closeMenu}) => {
 
         <Container>
           <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
         {/* durch onClick - closeMenu wird genutzt, um beim Klicken des Links das Menü zu schließen  */}
         <Logo><Link onClick={closeMenu} to="/Homepage" style={{ textDecoration: 'none', color: 'white' }}>Bad Boys</Link></Logo>
         <Text onClick={closeMenu} to="/Team" style={{ textDecoration: 'none', color: 'white' }}>Team</Text>
         <Text onClick={closeMenu} to="/Tabelle" style={{ textDecoration: 'none', color: 'white' }}>Tabelle</Text>
         <Text onClick={closeMenu} to="/Spielplan" style={{ textDecoration: 'none', color: 'white' }}>Spielplan</Text>
         <Text onClick={closeMenu} to="/HallOfFame" style={{ textDecoration: 'none', color: 'white' }}>Hall of Fame</Text>
+        <br/>
+        <br/>
+        <p>Follow us on Instagram.</p>
         </Container>
 
 

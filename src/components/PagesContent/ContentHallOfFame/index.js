@@ -16,6 +16,9 @@ import TH3 from '../../../assets/img/ProfileImages/haby3.jpg';
 import KK1 from '../../../assets/img/ProfileImages/kaffa1.jpg';
 import KK2 from '../../../assets/img/ProfileImages/kaffa2.jpg';
 import KK3 from '../../../assets/img/ProfileImages/kaffa3.jpg';
+import PC1 from '../../../assets/img/ProfileImages/paul1.jpeg';
+import PC2 from '../../../assets/img/ProfileImages/paul2.png';
+import PC3 from '../../../assets/img/ProfileImages/paul3.jpeg';
 
 const Container = styled.div`
   padding: 3rem;
@@ -59,6 +62,16 @@ const ContentHallOfFame = () => {
       avatar2: <img alt="ch" src={TH2} style={{border: 0, objectFit: 'cover', width: 190, height: 190}}/>,
       avatar3: <img alt="ch" src={TH3} style={{border: 0, objectFit: 'cover', width: 150, height: 150}}/>,
     },
+    { 
+      name: 'Paul Conradt',
+      spitzname: '"Andi"',
+      position: 'ehem. ZOM',
+      erfolg: 'Erfolge: Zweimaliger Aufstieg, Berliner Pokalhalbfinale 2019 u. 2021, Gewinn Bangoura Cup Hamburg',
+      description: 'Nennt uns einen Spieler, der in diesen maximal niederen Spielklassen solch eine Motivation und Hingabe an den Tag legt - wir tun uns schwer. Paul Andi Conradt hat diese Mannschaft aus den Niederungen der Kreisliga C ins gelobte Land an der Reeperbahn und den Berliner Pokalhimmel geführt! Was er nun bei einem Verein möchte, der als Mitgliedsbeitrag 2 Immobilienanteile fordert, bleibt dahingestellt. Nichtsdestotrotz wünschen wir einem unserer verdientesten Spieler viel Erfolg für die Zukunft und begrüßen ihn gerne zum Winter wieder bei uns!',
+      avatar1: <img alt="ch" src={PC1} style={{border: 0, objectFit: 'cover', width: 150, height: 150}} />,
+      avatar2: <img alt="ch" src={PC2} style={{border: 0, objectFit: 'cover', width: 190, height: 190}}/>,
+      avatar3: <img alt="ch" src={PC3} style={{border: 0, objectFit: 'cover', width: 150, height: 150}}/>,
+  },
     { 
       name: 'Robin Kliesch',
       spitzname: '"Kaffa"',

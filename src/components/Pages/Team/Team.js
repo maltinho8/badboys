@@ -5,7 +5,7 @@ import ContentTeam from "../../PagesContent/ContentTeam/index";
 const ContentContainer = styled.div`
   width: 100vwimportant!;
   
-  padding: 2rem;
+  padding: 6.2rem;
   @media screen and (max-width: 768px) {
     width: 85%;
   }
