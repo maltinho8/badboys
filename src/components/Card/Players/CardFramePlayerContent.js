@@ -11,6 +11,7 @@ const HorizontalContainer = styled.div`
     @media screen and (max-width: 768px) {
       flex-direction: column;
       align-content: center;
+      
     }
   
   `; 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import DetailsCoaches from "../../Card/Coaches/CardFrameCoachContent";
 
 const Container = styled.div`
-  padding-top: 3rem;
+  padding: 3rem;
   color: ${({theme}) => theme.palette.text.light};
 `;
 
