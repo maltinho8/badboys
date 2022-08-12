@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import PropsNewsCard from "../../Card/News/NewsContent.js";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./index.css";
-import Teamfoto from "../../../assets/img/teamfoto.jpeg";
 
 const theme = createTheme({
   status: {
@@ -139,17 +138,6 @@ const HeadlineTextContainer = styled.div`
   align-items: center;
   
 `;
-
-const Image = styled.img`
-    width: 70%;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
-    margin: 0 auto;
-    background: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    `;
 
 const ContentLandingPage = () => {
   const newscontent = [

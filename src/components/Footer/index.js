@@ -38,33 +38,11 @@ const FooterLink = styled.a`
   color: black;
     `;
 
-    const Row1 = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-    grid-gap: 20px;
-    justify-content: center;
-    width: 100%;
-    margin-left: 0rem;
-  
-`;
-
 const Row2 = styled.div`
   display: flex;
     grid-gap: 120px;
     justify-content: center;
     width: 100%;
-`;
-
-const HeadingOne = styled.h1`
-  font-size: 24px;
-  color: black;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-align: center;
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
 `;
 
 const RowContainer = styled.div`
