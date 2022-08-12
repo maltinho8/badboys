@@ -40,7 +40,7 @@ const FooterLink = styled.a`
 
 const Row2 = styled.div`
   display: flex;
-    grid-gap: 120px;
+    grid-gap: 50px;
     justify-content: center;
     width: 100%;
 `;

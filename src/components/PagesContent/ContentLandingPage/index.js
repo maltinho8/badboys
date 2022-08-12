@@ -143,42 +143,42 @@ const ContentLandingPage = () => {
   const newscontent = [
     {
       id: "1",
-      title: "BadBoys vs. Hohen Neuendorf",
+      title: "BadBoys vs. Arminia Tegel",
       description:
-        "Unglücklicher Saisonabschluss der BadBoys - wir sehen uns nächstes Jahr!",
+        "Saisonauftakt - verletzungsgeplagte BadBoys gehen als Underdogs in das Duell.",
       image: (
         <img
           alt="lol"
           src="https://www.fifplay.com/img/public/bundesliga-logo.png"
         ></img>
       ),
-      link: "https://www.fussball.de/spiel/bw-hohen-neuendorf-ii-frohnauer-sc-ii/-/spiel/02F2CBO0VK000000VS5489B4VS0OFO4E",
+      link: "https://www.fupa.net/match/fc-arminia-tegel-m1-frohnauer-sc-1946-m2-220817",
     },
     {
       id: "2",
-      title: "BadBoys vs. BFC Südring II",
+      title: "BadBoys vs. PV Nord",
       description:
-        "Lockerer Aufgalopp im Esso 36 - BadBoys machen das halbe Dutzend komplett!",
+        "Freizeit bleibt Freizeit - lockerer Sieg zum Abschluss der Testspiele. Wir schauen voraus auf eine interessante Saison!",
       image: (
         <img
           alt="ms"
           src="https://www.fifplay.com/img/public/bundesliga-logo.png"
         />
       ),
-      link: "https://www.fussball.de/spiel/bsc-eintracht-suedring-ii-frohnauer-sc-ii/-/spiel/02F2CBO2A8000000VS5489B4VS0OFO4E",
+      link: "https://www.fupa.net/match/frohnauer-sc-1946-m2-1fc-pv-nord-freizeit1-220806",
     },
     {
       id: "3",
-      title: "Pokalhalbfinale",
+      title: "Pokal 2022/2023",
       description:
-        "Viel vorgenommen, wenig hinbekommen. Deutliche Niederlage gegen die Reserve von Viktoria.",
+        "Wer wird die erste Hürde auf dem Weg nach Berlin? Immer kurz vor dem Ziel gestoppt lechzen wir nach dem Henkelpott!",
       image: (
         <img
           alt="lol"
           src="https://b04-ep-media-prod.azureedge.net/pickerimages/DFB-Pokal_Logo_2016_Kleinklein_203932_M.png"
         ></img>
       ),
-      link: "https://www.fussball.de/spiel/viktoria-berlin-ii-frohnauer-sc-ii/-/spiel/02HDJND0GG000000VS5489B3VU9MQG4F#!/",
+      link: "#",
     },
   ];
 
